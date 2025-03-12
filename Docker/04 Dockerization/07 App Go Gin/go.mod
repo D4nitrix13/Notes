@@ -1,4 +1,4 @@
-module github.com/DanielBenjaminPerezMoralesDev13/App-Go
+module github.com/D4nitrix13/App-Go
 
 go 1.23.1
 

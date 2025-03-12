@@ -1,6 +1,6 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Explicación de cada parte del fichero `.spec` para PyInstaller***
@@ -12,8 +12,8 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 ```
 

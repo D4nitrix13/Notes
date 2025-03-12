@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 # ***Descripción de una imagen con Dockerfile***
 
@@ -8,8 +8,8 @@
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales -->
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13 -->
 # Correo electrónico: danielperezdev@proton.me -->
 
 # Las imágenes oficiales suelen venir actualizadas, por lo que no es necesario usar `apt upgrade`
@@ -213,8 +213,8 @@ docker image build ./
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales -->
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13 -->
 # Correo electrónico: danielperezdev@proton.me -->
 
 # las imagenes ya vienen actualizadas normalmente por eso no es necesario poner `apt upgrade`
@@ -423,8 +423,8 @@ ubuntu            22.04     52882761a72a   5 weeks ago      77.9MB
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales -->
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13 -->
 # Correo electrónico: danielperezdev@proton.me -->
 
 # Las imágenes oficiales suelen venir actualizadas, por lo que no es necesario usar `apt upgrade`
@@ -462,8 +462,8 @@ CMD ["node", "./index.js"]
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales -->
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13 -->
 # Correo electrónico: danielperezdev@proton.me -->
 
 # Las imágenes oficiales suelen venir actualizadas, por lo que no es necesario usar `apt upgrade`
@@ -643,8 +643,8 @@ Hello World
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales -->
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13 -->
 # Correo electrónico: danielperezdev@proton.me -->
 
 # las imagenes ya vienen actualizadas normalmente por eso no es necesario poner `apt upgrade`

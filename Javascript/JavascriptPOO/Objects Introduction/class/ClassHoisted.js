@@ -1,5 +1,5 @@
 // Author: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Email: danielperezdev@proton.me
 
 // A diferencia de las funciones, las clases no son "hoisted" (no se elevan)

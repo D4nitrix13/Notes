@@ -1,8 +1,8 @@
 #!/usr/bin/env bash -lp
 
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 apt update &>/dev/null && apt install -y python3 >/dev/null 2>/dev/null;

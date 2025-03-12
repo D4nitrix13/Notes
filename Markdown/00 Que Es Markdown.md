@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # Markdown es un lenguaje de marcado ligero creado por John Gruber y Aaron Swartz que busca ser lo más legible posible. Se utiliza principalmente para formatear texto en la web y se puede convertir en HTML

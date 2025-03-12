@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # **El comando `until` en bash se utiliza para ejecutar un bloque de comandos repetidamente hasta que una condición sea verdadera. Es una estructura de control de bucle que sigue ejecutando los comandos en su interior mientras la condición sea falsa.**

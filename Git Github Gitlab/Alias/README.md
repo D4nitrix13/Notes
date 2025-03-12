@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***"git alias"***
@@ -56,7 +56,7 @@
         editor = code --wait
    [user]
         name = Danielperezdev13
-        email = 161483842+DanielBenjaminPerezMoralesDev13@users.noreply.github.com
+        email = 161483842+D4nitrix13@users.noreply.github.com
    ```
 
     **Aquí hay una breve explicación de las secciones y configuraciones:**

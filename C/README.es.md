@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 # ***Guía de Sintaxis y Código en C***
 
@@ -9,7 +9,7 @@
 ## ***Autor***
 
 - **Nombre:** **Daniel Benjamin Perez Morales**
-- **GitHub:** *[DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13 "https://github.com/DanielBenjaminPerezMoralesDev13")*
+- **GitHub:** *[D4nitrix13](https://github.com/D4nitrix13 "https://github.com/D4nitrix13")*
 - **Correo Electrónico:** *<danielperezdev@proton.me>*
 
 ## ***Índice***
@@ -84,7 +84,7 @@
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 #include <stdio.h>
 
@@ -100,7 +100,7 @@ int main(void) {
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int edad = 25;
 float altura = 1.75;
@@ -120,7 +120,7 @@ char inicial = 'D';
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int suma = 5 + 3;
 int resta = 5 - 3;
@@ -133,7 +133,7 @@ int modulo = 5 % 3;
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int esIgual = (5 == 3);
 int esDiferente = (5 != 3);
@@ -145,7 +145,7 @@ int esMenor = (5 < 3);
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int y = (5 > 3) && (3 < 5);
 int o = (5 > 3) || (3 > 5);
@@ -158,7 +158,7 @@ int no = !(5 > 3);
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 if (edad >= 18) {
     printf("Eres mayor de edad.\n");
@@ -171,7 +171,7 @@ if (edad >= 18) {
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 // Bucle for
 for (int i = 0; i < 10; i++) {
@@ -192,7 +192,7 @@ while (j < 10) {
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int sumar(int a, int b) {
     return a + b;
@@ -211,7 +211,7 @@ int main(void) {
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int numeros[5] = {1, 2, 3, 4, 5};
 printf("El primer número es %d\n", numeros[0]);
@@ -223,7 +223,7 @@ printf("El primer número es %d\n", numeros[0]);
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int valor = 10;
 int *ptr = &valor;
@@ -236,7 +236,7 @@ printf("El valor es %d\n", *ptr);
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 struct Persona {
     char nombre[50];
@@ -253,7 +253,7 @@ printf("Nombre: %s, Edad: %d\n", persona1.nombre, persona1.edad);
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int edad;
 printf("Introduce tu edad: ");
@@ -267,7 +267,7 @@ printf("Tu edad es %d\n", edad);
 
 ```c
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 int *ptr = (int *)malloc(sizeof(int));
 *ptr = 100;

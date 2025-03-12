@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Reto: Dockerizar App Rust con Axum***
@@ -499,8 +499,8 @@ touch Dockerfile .dockerignore
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # ------------------------------------Stage 0 (Builder)--------------------------------
@@ -561,8 +561,8 @@ ENTRYPOINT [ "hello" ]
 
 ```bash
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 target/
@@ -601,8 +601,8 @@ COPY --from=builder /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.s
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # ------------------------------------Stage 0 (Builder)--------------------------------
@@ -694,8 +694,8 @@ COPY --from=builder /lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # ------------------------------------Stage 0 (Builder)--------------------------------

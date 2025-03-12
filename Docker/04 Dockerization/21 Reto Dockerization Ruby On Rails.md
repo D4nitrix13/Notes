@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Reto Dockerization Ruby On Rails***
@@ -873,8 +873,8 @@ nano Dockerfile
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # Imagen base de Ubuntu 22.04
@@ -1075,8 +1075,8 @@ cp Dockerfile Dockerfile.manual
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # Usa la imagen base de Ruby 3.0.2 desde Docker Hub

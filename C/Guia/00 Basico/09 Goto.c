@@ -1,5 +1,5 @@
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 // Compilacion: gcc -o "09 Goto" "09 Goto.c"

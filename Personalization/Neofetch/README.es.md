@@ -1,12 +1,12 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Configuración de Neofetch para Terminal***
 
 **Autor:** *Daniel Benjamin Pérez Morales*
-**GitHub:** *[DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13 "https://github.com/DanielBenjaminPerezMoralesDev13")*
+**GitHub:** *[D4nitrix13](https://github.com/D4nitrix13 "https://github.com/D4nitrix13")*
 **Correo:** *`danielperezdev@proton.me`*
 
 > [!NOTE]
@@ -41,7 +41,7 @@ neofetch --backend kitty --source /path/to/image
 1. **Clona el repositorio:**
 
    ```bash
-   git clone https://github.com/DanielBenjaminPerezMoralesDev13/Neofetch-Personalization --depth=1 --verbose
+   git clone https://github.com/D4nitrix13/Neofetch-Personalization --depth=1 --verbose
    ```
 
 2. **Navega al directorio del repositorio:**

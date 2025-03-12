@@ -1,6 +1,6 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***El fichero `MANIFEST.in` es utilizado en proyectos de Python para especificar qué Ficheros adicionales deben ser incluidos en el paquete distribuible cuando se crea una distribución del proyecto. Este fichero se usa junto con `setup.py` y se encuentra en el directorio raíz del proyecto***

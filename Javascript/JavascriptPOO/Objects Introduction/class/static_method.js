@@ -1,5 +1,5 @@
 // Author: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Email: danielperezdev@proton.me
 
 // Definimos la clase base 'User', que tiene un constructor que recibe 'name' y 'lastname' como parámetros

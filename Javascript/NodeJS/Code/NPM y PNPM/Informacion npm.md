@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Cómo instalar pnpm***
@@ -31,7 +31,7 @@ version: (1.0.0) 1.0.0
 description: Guia Node.js
 entry point: (index.js) index.js
 test command: 
-git repository: git@github.com:DanielBenjaminPerezMoralesDev13/Node-JS.git
+git repository: git@github.com:D4nitrix13/Node-JS.git
 keywords: nodejs, node
 author: Daniel Benjamin Perez Morales - D4nitrix13
 license: (ISC) MIT
@@ -51,7 +51,7 @@ About to write to /home/d4nitrix13/Desktop/NodeJs/package.json:
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/DanielBenjaminPerezMoralesDev13/Node-JS.git"
+    "url": "git+ssh://git@github.com/D4nitrix13/Node-JS.git"
   },
   "keywords": [
     "nodejs",
@@ -60,9 +60,9 @@ About to write to /home/d4nitrix13/Desktop/NodeJs/package.json:
   "author": "Daniel Benjamin Perez Morales - D4nitrix13",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS/issues"
+    "url": "https://github.com/D4nitrix13/Node-JS/issues"
   },
-  "homepage": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS#readme"
+  "homepage": "https://github.com/D4nitrix13/Node-JS#readme"
 }
 ```
 
@@ -103,7 +103,7 @@ found 0 vulnerabilities
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/DanielBenjaminPerezMoralesDev13/Node-JS.git"
+    "url": "git+ssh://git@github.com/D4nitrix13/Node-JS.git"
   },
   "keywords": [
     "nodejs",
@@ -112,9 +112,9 @@ found 0 vulnerabilities
   "author": "Daniel Benjamin Perez Morales - D4nitrix13",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS/issues"
+    "url": "https://github.com/D4nitrix13/Node-JS/issues"
   },
-  "homepage": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS#readme",
+  "homepage": "https://github.com/D4nitrix13/Node-JS#readme",
   "dependencies": {
     "picocolors": "1.0.1"
   }
@@ -2486,7 +2486,7 @@ found 0 vulnerabilities
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/DanielBenjaminPerezMoralesDev13/Node-JS.git"
+    "url": "git+ssh://git@github.com/D4nitrix13/Node-JS.git"
   },
   "keywords": [
     "nodejs",
@@ -2495,9 +2495,9 @@ found 0 vulnerabilities
   "author": "Daniel Benjamin Perez Morales - D4nitrix13",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS/issues"
+    "url": "https://github.com/D4nitrix13/Node-JS/issues"
   },
-  "homepage": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS#readme",
+  "homepage": "https://github.com/D4nitrix13/Node-JS#readme",
   "dependencies": {
     "picocolors": "1.0.1"
   },
@@ -2552,7 +2552,7 @@ Vínculo de VS Marketplace: https://marketplace.visualstudio.com/items?itemName=
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/DanielBenjaminPerezMoralesDev13/Node-JS.git"
+    "url": "git+ssh://git@github.com/D4nitrix13/Node-JS.git"
   },
   "keywords": [
     "nodejs",
@@ -2561,9 +2561,9 @@ Vínculo de VS Marketplace: https://marketplace.visualstudio.com/items?itemName=
   "author": "Daniel Benjamin Perez Morales - D4nitrix13",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS/issues"
+    "url": "https://github.com/D4nitrix13/Node-JS/issues"
   },
-  "homepage": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS#readme",
+  "homepage": "https://github.com/D4nitrix13/Node-JS#readme",
   "dependencies": {
     "picocolors": "1.0.1"
   },

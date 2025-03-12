@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Multi-Stage Builds***
@@ -23,8 +23,8 @@ cp Dockerfile Dockerfile.ubuntu
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-  # GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+  # GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # Imagen base de Go utilizando Ubuntu, ideal para aplicaciones en Go.
@@ -239,8 +239,8 @@ cp Dockerfile Dockerfile.golang
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-  # GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+  # GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # ------------------------------------Inicio Stage 0----------------------------------
@@ -335,8 +335,8 @@ CMD ./App-Go
 
   ```Dockerfile
   # Autor: Daniel Benjamin Perez Morales
-  # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-  # GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+  # GitHub: https://github.com/D4nitrix13
+  # GitLab: https://gitlab.com/D4nitrix13
   # Correo electrónico: danielperezdev@proton.me
   
   # ------------------------------------Inicio Stage 0----------------------------------
@@ -580,8 +580,8 @@ cp Dockerfile Dockerfile.multistages
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-  # GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+  # GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # ------------------------------------Inicio Stage Builder----------------------------------
@@ -765,8 +765,8 @@ cp Dockerfile Dockerfile.stages
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-  # GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+  # GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # ------------------------------------Inicio Stage 0----------------------------------
@@ -973,8 +973,8 @@ RUN CGO_ENABLED=0 go build -a -installsuffix cgo -o App-Go
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-  # GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+  # GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # ------------------------------------Inicio Stage 0----------------------------------

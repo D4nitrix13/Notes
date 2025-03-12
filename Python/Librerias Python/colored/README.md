@@ -1,6 +1,6 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***`colored` es una librería de Python que permite añadir colores y estilos a la salida en la consola. Es útil para mejorar la visibilidad de la salida del programa, especialmente cuando se trata de logs, mensajes de error, o simplemente para hacer la interfaz más atractiva.***
@@ -24,8 +24,8 @@ pip install colored
 #!/usr/bin/env python3
 
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 from sys import stdout
@@ -85,8 +85,8 @@ exit(0)
 #!/usr/bin/env python3
 
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 from typing import List, Union

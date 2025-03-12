@@ -1,6 +1,6 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Explicación detallada con comentarios en el código sobre cómo usar la librería `tomllib` en Python para manejar ficheros TOML. Primero, vamos a instalar la librería `tomllib` (que es parte del estándar en Python `3.11` y posteriores, por lo que no necesitas instalarla por separado en estas versiones). Para versiones anteriores a Python `3.11`, puedes usar `toml` o `pytoml` que son librerías de terceros***
@@ -24,8 +24,8 @@ pip install toml
 #!/usr/bin/env python3
 
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 # Importamos el módulo tomllib que está disponible en Python `3.11` y versiones posteriores
@@ -66,8 +66,8 @@ exit(0)
 
 ```toml
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 # Ejemplo de cómo cargar un fichero TOML
@@ -81,8 +81,8 @@ version = 1.0
 #!/usr/bin/env python3
 
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 # Importamos el módulo toml
@@ -122,8 +122,8 @@ exit(1)
 #!/usr/bin/env python3
 
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 from io import TextIOWrapper
@@ -157,8 +157,8 @@ exit(1)
 
 ```toml
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 [settings -> Malo]
@@ -170,8 +170,8 @@ version = 1.0 Numero Flotante
 #!/usr/bin/env python3
 
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 from sys import stderr, exit, stdout

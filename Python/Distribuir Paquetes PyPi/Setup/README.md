@@ -1,14 +1,14 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Setup.py***
 
 ```python
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 from typing import Optional
@@ -28,7 +28,7 @@ setup(
     description = "Esta utilidad, desarrollada en Python3, simplifica significativamente el proceso de configuracion de Alacritty, permitiendo ajustar de manera simple la fuente, el tema, el padding, los cursores y los estilos de la fuente.",
     long_description = README,
     long_description_content_type = "text/markdown",
-    url = "https://github.com/DanielBenjaminPerezMoralesDev13/pycrypy.git",
+    url = "https://github.com/D4nitrix13/pycrypy.git",
     packages = find_packages(where = "src"),
     package_dir = {"": "src"},  # Indica que los paquetes están en "src"
     license="MIT",
@@ -115,7 +115,7 @@ setup(
     description = "Esta utilidad, desarrollada en Python3, simplifica significativamente el proceso de configuracion de Alacritty, permitiendo ajustar de manera simple la fuente, el tema, el padding, los cursores y los estilos de la fuente.",
     long_description = README,
     long_description_content_type = "text/markdown",
-    url = "https://github.com/DanielBenjaminPerezMoralesDev13/pycrypy.git",
+    url = "https://github.com/D4nitrix13/pycrypy.git",
     packages = find_packages(where = "src"),
     package_dir = {"": "src"},  # Indica que los paquetes están en "src"
     license="MIT",
@@ -164,7 +164,7 @@ setup(
 - **`long_description_content_type`:** *`"text/markdown"`*
   - *El tipo de contenido de la descripción larga. Indica que la descripción larga está en formato Markdown.*
 
-- **`url`:** *`"https://github.com/DanielBenjaminPerezMoralesDev13/pycrypy.git"`*
+- **`url`:** *`"https://github.com/D4nitrix13/pycrypy.git"`*
   - *La URL del repositorio del paquete. Aquí se encuentra el código fuente del paquete.*
 
 - **`packages`:** *`find_packages(where = "src")`*
@@ -242,6 +242,6 @@ setup(
   - *Indica que la versión de un paquete debe ser igual o superior a la especificada. En `python_requires = ">=3.6"`, significa que se requiere Python 3.6 o superior.*
 
 - **`/`:**
-  - *En la URL `https://github.com/DanielBenjaminPerezMoralesDev13/pycrypy.git`, el símbolo `/` se usa para separar partes de la URL.*
+  - *En la URL `https://github.com/D4nitrix13/pycrypy.git`, el símbolo `/` se usa para separar partes de la URL.*
 
 *Cada uno de estos elementos ayuda a definir y configurar el paquete de Python de manera que sea correctamente instalado, utilizado y distribuido.*

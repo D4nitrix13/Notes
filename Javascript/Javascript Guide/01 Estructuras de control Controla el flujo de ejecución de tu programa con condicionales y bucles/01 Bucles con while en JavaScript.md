@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Bucles con while en JavaScript***
@@ -15,7 +15,7 @@
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 while (condición) {
@@ -37,7 +37,7 @@ while (condición) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 let cuentaAtras = 10;
@@ -60,7 +60,7 @@ console.log('¡Despegue! 🚀');
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 while (true) {
@@ -78,7 +78,7 @@ while (true) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 let cuentaAtras = 10;
@@ -103,7 +103,7 @@ while (cuentaAtras > 0) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 let cuentaAtras = 10;
@@ -129,7 +129,7 @@ while (cuentaAtras > 0) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 const NUMERO_REVISIONES = 3;
@@ -153,7 +153,7 @@ while (cuentaAtras > 0) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 let cuentaAtras = 10;
@@ -179,7 +179,7 @@ console.log(revisionesRealizadas); // -> ERROR: ReferenceError
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 while (condition) {
@@ -201,7 +201,7 @@ while (condition) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 let drinkCoffee = 0;

@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Ficheros de Exclusión y Configuración de Entorno***
@@ -31,6 +31,6 @@
 
 - **Autor:** *Daniel Benjamin Perez Morales*
 
-- **GitHub:** *[DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13 "https://github.com/DanielBenjaminPerezMoralesDev13")*
+- **GitHub:** *[D4nitrix13](https://github.com/D4nitrix13 "https://github.com/D4nitrix13")*
 
 - **Correo electrónico:** *`danielperezdev@proton.me`*

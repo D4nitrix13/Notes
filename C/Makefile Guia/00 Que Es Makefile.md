@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***GNU Make es una herramienta de construcción ampliamente utilizada en sistemas Unix y Linux. Su función principal es automatizar el proceso de compilación de programas y otros conjuntos de ficheros cuando se desarrollan proyectos de software. Aquí tienes información detallada sobre GNU Make:***

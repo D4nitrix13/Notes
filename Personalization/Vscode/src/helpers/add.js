@@ -1,5 +1,5 @@
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: [DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13)
+// GitHub: [D4nitrix13](https://github.com/D4nitrix13)
 // Correo electrónico: danielperezdev@proton.me
 
 /**

@@ -1,13 +1,13 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # **Diferencia entre operaciones sincrónicas y el concepto de ejecución secuencial en Node.js:**
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me 
 
 // Importación del módulo 'fs' para operaciones de sistema de ficheros

@@ -1,5 +1,5 @@
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo: danielperezdev@proton.me
 
 // La herencia permite que nuevos objetos adquieran propiedades de objetos existentes

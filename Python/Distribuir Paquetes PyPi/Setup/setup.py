@@ -1,6 +1,6 @@
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 from typing import Optional
@@ -20,7 +20,7 @@ setup(
     description = "Esta utilidad, desarrollada en Python3, simplifica significativamente el proceso de configuracion de Alacritty, permitiendo ajustar de manera simple la fuente, el tema, el padding, los cursores y los estilos de la fuente.",
     long_description = README,
     long_description_content_type = "text/markdown",
-    url = "https://github.com/DanielBenjaminPerezMoralesDev13/pycrypy.git",
+    url = "https://github.com/D4nitrix13/pycrypy.git",
     packages = find_packages(where = "src"),
     package_dir = {"": "src"},  # Indica que los paquetes están en "src"
     license="MIT",

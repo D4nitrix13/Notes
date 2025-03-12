@@ -1,5 +1,5 @@
 Autor: Daniel Benjamin Perez Morales
-GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+GitHub: https://github.com/D4nitrix13
 Correo electrónico: danielperezdev@proton.me
 
 # Códigos de colores ANSI. EL formato de texto van del 0 al 9, y los códigos para los colores del texto y del fondo van del 30 al 47.

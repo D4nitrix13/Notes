@@ -1,12 +1,12 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Configuración de Fastfetch para Terminal***
 
 **Autor:** *Daniel Benjamin Pérez Morales*
-**GitHub:** *[DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13 "https://github.com/DanielBenjaminPerezMoralesDev13")*
+**GitHub:** *[D4nitrix13](https://github.com/D4nitrix13 "https://github.com/D4nitrix13")*
 **Correo:** *`danielperezdev@proton.me`*
 
 *Este fichero de configuración está diseñado para personalizar la salida de Fastfetch, una herramienta que muestra información del sistema en la terminal. Esta configuración se adapta para ser utilizada con el terminal Kitty, debido a la falta de soporte para protocolos de imagen en Alacritty.*

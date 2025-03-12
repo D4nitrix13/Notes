@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # **Librerías Dinámicas y Extensiones Nativas en Lenguajes Interpretados**
@@ -669,8 +669,8 @@ Press CTRL+C to quit
 
    ```Dockerfile
    # Autor: Daniel Benjamin Perez Morales
-   # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-   # GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+   # GitHub: https://github.com/D4nitrix13
+   # GitLab: https://gitlab.com/D4nitrix13
    # Correo electrónico: danielperezdev@proton.me
 
    # Usamos la imagen base oficial de Python 3.10
@@ -719,8 +719,8 @@ Press CTRL+C to quit
 
    ```bash
    # Autor: Daniel Benjamin Perez Morales
-   # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-   # GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+   # GitHub: https://github.com/D4nitrix13
+   # GitLab: https://gitlab.com/D4nitrix13
    # Correo electrónico: danielperezdev@proton.me
 
    Dockerfile*
@@ -873,7 +873,7 @@ Press CTRL+C to quit
 
 ```Dockerfile
 # Autor:** *Daniel Benjamin Perez Morales*
-# GitHub:** *https://github.com/DanielBenjaminPerezMoralesDev13*
+# GitHub:** *https://github.com/D4nitrix13*
 # Correo electrónico:** *danielperezdev@proton.me*
 
 # Usamos la imagen base oficial de Python 3.10

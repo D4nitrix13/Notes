@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Los tres casos de importación en Node.js usando los diferentes tipos de ficheros y sus extensiones correspondientes: `.js`, `.cjs`, y `.mjs`.***
@@ -13,7 +13,7 @@
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me 
 
 // index.js
@@ -31,7 +31,7 @@ module.exports = { funcion };
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me 
 
 // Otro fichero que importa desde index.js
@@ -55,7 +55,7 @@ funcion();
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me 
 
 // index.cjs
@@ -73,7 +73,7 @@ module.exports = { funcion };
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me 
 
 // Otro fichero que importa desde index.cjs
@@ -96,7 +96,7 @@ funcion();
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me 
 
 // index.mjs
@@ -114,7 +114,7 @@ export { funcion };
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me 
 
 // Otro fichero que importa desde index.mjs

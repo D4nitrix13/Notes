@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Dockerización de Lenguajes Compilados***
@@ -45,7 +45,7 @@ touch main.go
 
 ```go
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 package main
@@ -15031,13 +15031,13 @@ go version go1.23.1 linux/amd64
 - *Para comenzar nuestro proyecto de Go, necesitaremos crear un fichero de módulo. Esto lo hacemos con el comando `go mod init`, especificando la ruta del módulo:*
 
 ```bash
-go mod init github.com/DanielBenjaminPerezMoralesDev13/App-Go
+go mod init github.com/D4nitrix13/App-Go
 ```
 
 - *Este comando genera el fichero **go.mod** que define el módulo del proyecto y la versión de Go. La salida del comando será algo como:*
 
 ```bash
-go: creating new go.mod: module github.com/DanielBenjaminPerezMoralesDev13/App-Go
+go: creating new go.mod: module github.com/D4nitrix13/App-Go
 go: to add module requirements and sums:
         go mod tidy
 ```
@@ -15073,7 +15073,7 @@ cat go.mod
 - **El contenido típico sería:**
 
 ```bash
-module github.com/DanielBenjaminPerezMoralesDev13/App-Go
+module github.com/D4nitrix13/App-Go
 
 go 1.23.1
 ```
@@ -15268,7 +15268,7 @@ rsc.io/pdf v0.1.1/go.mod h1:n8OzWcQ6Sp37PL01nO98y4iUCRdTGarVfzxY20ICaU4=
 
 ```bash
 cat go.mod
-module github.com/DanielBenjaminPerezMoralesDev13/App-Go
+module github.com/D4nitrix13/App-Go
 
 go 1.23.1
 
@@ -15461,8 +15461,8 @@ touch Dockerfile .dockerignore
 
 ```bash
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 App-Go
@@ -15479,8 +15479,8 @@ Dockerfile*
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 # Utiliza la imagen base de Ubuntu 22.04

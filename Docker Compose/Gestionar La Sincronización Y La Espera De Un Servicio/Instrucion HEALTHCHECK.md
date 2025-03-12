@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # *La instrucción `HEALTHCHECK` en Docker soporta tanto **forma exec** como **forma shell**. Sin embargo, usar **forma exec** (corchetes `[ ]`) es generalmente preferido porque es más robusto y seguro, ya que no depende de un intérprete de shell (como `/bin/sh`). Esto evita problemas con caracteres especiales y errores relacionados con el entorno del shell*
@@ -76,8 +76,8 @@ touch Dockerfile.healthcheckShellForm
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 ARG tag=bullseye
@@ -262,8 +262,8 @@ touch Dockerfile.healthcheck
 
 ```Dockerfile
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 
 ARG tag=bullseye

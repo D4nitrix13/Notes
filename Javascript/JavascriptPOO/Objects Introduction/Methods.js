@@ -1,5 +1,5 @@
 // Author: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Email: danielperezdev@proton.me
 
 // mientras que las propiedades representan datos, los métodos representan acciones

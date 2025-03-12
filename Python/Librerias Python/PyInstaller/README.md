@@ -1,6 +1,6 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***`PyInstaller` es una herramienta popular para convertir aplicaciones Python en ejecutables independientes que se pueden ejecutar en sistemas sin necesidad de tener Python instalado. Es útil para distribuir aplicaciones Python como ficheros ejecutables (.exe en Windows, binarios en Linux y macOS) que incluyen todas las dependencias necesarias.***
@@ -75,8 +75,8 @@ pyinstaller --onefile --noconsole --icon=mi_icono.ico mi_script.py
 
 ```python
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 # mi_script.spec

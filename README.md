@@ -1,6 +1,6 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Notes***
@@ -32,124 +32,124 @@
 
 # ***Guía de Docker***
 
-- *[Link a Guía de Docker](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Docker "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Docker")*
+- *[Link a Guía de Docker](https://github.com/D4nitrix13/Notes/tree/master/Docker "https://github.com/D4nitrix13/Notes/tree/master/Docker")*
 
 ---
 
 # ***Guía de Docker Compose***
 
-- *[Link a Guía de Docker Compose](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Docker%20Compose "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Docker%20Compose")*
+- *[Link a Guía de Docker Compose](https://github.com/D4nitrix13/Notes/tree/master/Docker%20Compose "https://github.com/D4nitrix13/Notes/tree/master/Docker%20Compose")*
 
 ---
 
 # ***Guía Git y Github***
 
-- *[Link a Guía Git y Github](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Git%20y%20Github "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Git%20y%20Github")*
+- *[Link a Guía Git y Github](https://github.com/D4nitrix13/Notes/tree/master/Git%20y%20Github "https://github.com/D4nitrix13/Notes/tree/master/Git%20y%20Github")*
 
 ---
 
 # ***Protección en la Red***
 
-- *[Link a Protección en la Red](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Proteccion%20En%20La%20Red "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Proteccion%20En%20La%20Red")*
+- *[Link a Protección en la Red](https://github.com/D4nitrix13/Notes/tree/master/Proteccion%20En%20La%20Red "https://github.com/D4nitrix13/Notes/tree/master/Proteccion%20En%20La%20Red")*
 
 ---
 
 # ***Programación Orientada a Objetos (POO)***
 
-- *[Link a Programación Orientada a Objetos](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Programacion%20Orientado%20Objetos%20POO "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Programacion%20Orientado%20Objetos%20POO")*
+- *[Link a Programación Orientada a Objetos](https://github.com/D4nitrix13/Notes/tree/master/Programacion%20Orientado%20Objetos%20POO "https://github.com/D4nitrix13/Notes/tree/master/Programacion%20Orientado%20Objetos%20POO")*
 
 ---
 
 # ***Pack Music Tutorials***
 
-- *[Link a Pack Music Tutorials](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Pack%20Music%20Tutorials "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Pack%20Music%20Tutorials")*
+- *[Link a Pack Music Tutorials](https://github.com/D4nitrix13/Notes/tree/master/Pack%20Music%20Tutorials "https://github.com/D4nitrix13/Notes/tree/master/Pack%20Music%20Tutorials")*
 
 ---
 
 # ***Python***
 
-- *[Link a Python](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python")*
+- *[Link a Python](https://github.com/D4nitrix13/Notes/tree/master/Python "https://github.com/D4nitrix13/Notes/tree/master/Python")*
 
 ---
 
 # ***Javascript***
 
-- *[Link a Javascript](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Javascript "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Javascript")*
+- *[Link a Javascript](https://github.com/D4nitrix13/Notes/tree/master/Javascript "https://github.com/D4nitrix13/Notes/tree/master/Javascript")*
 
 ---
 
 # ***Fastfetch Personalization***
 
-- *[Link a Fastfetch Personalization](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Fastfetch "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Fastfetch")*
+- *[Link a Fastfetch Personalization](https://github.com/D4nitrix13/Notes/tree/master/Personalization/Fastfetch "https://github.com/D4nitrix13/Notes/tree/master/Personalization/Fastfetch")*
 
 ---
 
 # ***Vscode Personalization***
 
-- *[Link a Vscode Personalization](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Fastfetch "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Vscode")*
+- *[Link a Vscode Personalization](https://github.com/D4nitrix13/Notes/tree/master/Personalization/Fastfetch "https://github.com/D4nitrix13/Notes/tree/master/Vscode")*
 
 ---
 
 # ***Lazygit Personalization***
 
-- *[Link a Lazygit Personalization](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Lazygit "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Lazygit")*
+- *[Link a Lazygit Personalization](https://github.com/D4nitrix13/Notes/tree/master/Personalization/Lazygit "https://github.com/D4nitrix13/Notes/tree/master/Personalization/Lazygit")*
 
 ---
 
 # ***Neofetch Personalization***
 
-- *[Link a Neofetch Personalization](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Neofetch "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Neofetch")*
+- *[Link a Neofetch Personalization](https://github.com/D4nitrix13/Notes/tree/master/Personalization/Neofetch "https://github.com/D4nitrix13/Notes/tree/master/Personalization/Neofetch")*
 
 ---
 
 # ***Tmux Personalization***
 
-- *[Link a Tmux Personalization](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Tmux "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Personalization/Tmux")*
+- *[Link a Tmux Personalization](https://github.com/D4nitrix13/Notes/tree/master/Personalization/Tmux "https://github.com/D4nitrix13/Notes/tree/master/Personalization/Tmux")*
 
 ---
 
 # ***Linux Debian***
 
-- *[Link a Linux Debian](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Linux%20Debian "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Linux%20Debian")*
+- *[Link a Linux Debian](https://github.com/D4nitrix13/Notes/tree/master/Linux%20Debian "https://github.com/D4nitrix13/Notes/tree/master/Linux%20Debian")*
 
 ---
 
 # ***Fonts***
 
-- *[Link a Fonts](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Fonts "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Fonts")*
+- *[Link a Fonts](https://github.com/D4nitrix13/Notes/tree/master/Fonts "https://github.com/D4nitrix13/Notes/tree/master/Fonts")*
 
 ---
 
 # ***Lua***
 
-- *[Link a Lua](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Lua "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Lua")*
+- *[Link a Lua](https://github.com/D4nitrix13/Notes/tree/master/Lua "https://github.com/D4nitrix13/Notes/tree/master/Lua")*
 
 ---
 
 # ***C***
 
-- *[Link a C](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/C "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/C")*
+- *[Link a C](https://github.com/D4nitrix13/Notes/tree/master/C "https://github.com/D4nitrix13/Notes/tree/master/C")*
 
 ---
 
 # ***Markdown***
 
-- *[Link a Markdown](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Markdown "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Markdown")*
+- *[Link a Markdown](https://github.com/D4nitrix13/Notes/tree/master/Markdown "https://github.com/D4nitrix13/Notes/tree/master/Markdown")*
 
 ---
 
 # ***Json***
 
-- *[Link a Json](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Json "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Json")*
+- *[Link a Json](https://github.com/D4nitrix13/Notes/tree/master/Json "https://github.com/D4nitrix13/Notes/tree/master/Json")*
 
 ---
 
 # ***Ficheros de Exclusión y Configuración de Entorno***
 
-- *[Link a Ficheros de Exclusión y Configuración de Entorno](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Ficheros%20de%20Exclusi%C3%B3n%20y%20Configuraci%C3%B3n%20de%20Entorno "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Ficheros%20de%20Exclusi%C3%B3n%20y%20Configuraci%C3%B3n%20de%20Entorno")*
+- *[Link a Ficheros de Exclusión y Configuración de Entorno](https://github.com/D4nitrix13/Notes/tree/master/Ficheros%20de%20Exclusi%C3%B3n%20y%20Configuraci%C3%B3n%20de%20Entorno "https://github.com/D4nitrix13/Notes/tree/master/Ficheros%20de%20Exclusi%C3%B3n%20y%20Configuraci%C3%B3n%20de%20Entorno")*
 
 ---
 
 # ***php***
 
-- *[Todo Sobre La Web Con Php](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Todo%20Sobre%20La%20Web%20Con%20Php%20%26%20XAMPP "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Todo%20Sobre%20La%20Web%20Con%20Php%20%26%20XAMPP")*
+- *[Todo Sobre La Web Con Php](https://github.com/D4nitrix13/Notes/tree/master/Todo%20Sobre%20La%20Web%20Con%20Php%20%26%20XAMPP "https://github.com/D4nitrix13/Notes/tree/master/Todo%20Sobre%20La%20Web%20Con%20Php%20%26%20XAMPP")*

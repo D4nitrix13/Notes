@@ -1,15 +1,15 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Configuración de Lazygit para Terminal***
 
 **Autor:** *Daniel Benjamin Pérez Morales*
-**GitHub:** *[DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13 "https://github.com/DanielBenjaminPerezMoralesDev13")*
+**GitHub:** *[D4nitrix13](https://github.com/D4nitrix13 "https://github.com/D4nitrix13")*
 **Correo:** *`danielperezdev@proton.me`*
 
-*[![GitHub repo](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/DanielBenjaminPerezMoralesDev13/Lazygit-Personalization "https://github.com/DanielBenjaminPerezMoralesDev13/Lazygit-Personalization")*
+*[![GitHub repo](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/D4nitrix13/Lazygit-Personalization "https://github.com/D4nitrix13/Lazygit-Personalization")*
 
 - *Este repositorio contiene una configuración personalizada para **Lazygit**, un cliente de Git en la línea de comandos que facilita la gestión de repositorios. La personalización está diseñada para mejorar la eficiencia y fluidez del trabajo con Git, a través de atajos de teclado específicos y comandos personalizados.*
 
@@ -30,7 +30,7 @@
 1. **Clona este repositorio en tu máquina local:**
 
    ```bash
-   git clone https://github.com/DanielBenjaminPerezMoralesDev13/Lazygit-Personalization.git --depth=1 --verbose
+   git clone https://github.com/D4nitrix13/Lazygit-Personalization.git --depth=1 --verbose
    ```
 
 2. *Copia el fichero de configuración (`lazygit/config.yml`) a tu directorio de configuración de `lazygit`:*

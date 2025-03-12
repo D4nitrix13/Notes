@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Explicaciones de los Ficheros***
@@ -11,8 +11,8 @@
 
 ```html
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 <!DOCTYPE html>
@@ -64,7 +64,7 @@
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: [DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13)
+// GitHub: [D4nitrix13](https://github.com/D4nitrix13)
 // Correo electrónico: danielperezdev@proton.me
 
 import add from "./helpers/add";
@@ -118,7 +118,7 @@ people;
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: [DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13)
+// GitHub: [D4nitrix13](https://github.com/D4nitrix13)
 // Correo electrónico: danielperezdev@proton.me
 
 /**
@@ -157,7 +157,7 @@ export default function add(a, b) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: [DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13)
+// GitHub: [D4nitrix13](https://github.com/D4nitrix13)
 // Correo electrónico: danielperezdev@proton.me
 
 /**

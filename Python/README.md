@@ -1,5 +1,5 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 - "https://github.com/DanielBenjaminPerezMoralesDev13 -"->
+<!-- GitHub: https://github.com/D4nitrix13 - "https://github.com/D4nitrix13 -"->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Indices***
@@ -16,30 +16,30 @@
 
 ---
 
-# ***[Python Introducción](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Python%20Introduccion "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Python%20Introduccion")***
+# ***[Python Introducción](https://github.com/D4nitrix13/Notes/tree/master/Python/Python%20Introduccion "https://github.com/D4nitrix13/Notes/tree/master/Python/Python%20Introduccion")***
 
 ---
 
-# ***[Python Intermedio](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Python%20Intermedio "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Python%20Intermedio")***
+# ***[Python Intermedio](https://github.com/D4nitrix13/Notes/tree/master/Python/Python%20Intermedio "https://github.com/D4nitrix13/Notes/tree/master/Python/Python%20Intermedio")***
 
 ---
 
-# ***[Distribuir Paquetes PyPi](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Distribuir%20Paquetes%20PyPi "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Distribuir%20Paquetes%20PyPi")***
+# ***[Distribuir Paquetes PyPi](https://github.com/D4nitrix13/Notes/tree/master/Python/Distribuir%20Paquetes%20PyPi "https://github.com/D4nitrix13/Notes/tree/master/Python/Distribuir%20Paquetes%20PyPi")***
 
 ---
 
-# ***[Python Arrows](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Python%20Arrows "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Python%20Arrows")***
+# ***[Python Arrows](https://github.com/D4nitrix13/Notes/tree/master/Python/Python%20Arrows "https://github.com/D4nitrix13/Notes/tree/master/Python/Python%20Arrows")***
 
 ---
 
-# ***[Python Tips](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Python%20Tips "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Python%20Tips")***
+# ***[Python Tips](https://github.com/D4nitrix13/Notes/tree/master/Python/Python%20Tips "https://github.com/D4nitrix13/Notes/tree/master/Python/Python%20Tips")***
 
 ---
 
-# ***[Requirements Python](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Requirements%20Python "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Requirements%20Python")***
+# ***[Requirements Python](https://github.com/D4nitrix13/Notes/tree/master/Python/Requirements%20Python "https://github.com/D4nitrix13/Notes/tree/master/Python/Requirements%20Python")***
 
 ---
 
-# ***[Sintaxis Sugar](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Sintaxis%20Sugar "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Sintaxis%20Sugar")***
+# ***[Sintaxis Sugar](https://github.com/D4nitrix13/Notes/tree/master/Python/Sintaxis%20Sugar "https://github.com/D4nitrix13/Notes/tree/master/Python/Sintaxis%20Sugar")***
 
-# ***[Programacion Orientado Objetos POO](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Programacion%20Orientado%20Objetos%20POO "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/tree/master/Python/Programacion%20Orientado%20Objetos%20POO")***
+# ***[Programacion Orientado Objetos POO](https://github.com/D4nitrix13/Notes/tree/master/Python/Programacion%20Orientado%20Objetos%20POO "https://github.com/D4nitrix13/Notes/tree/master/Python/Programacion%20Orientado%20Objetos%20POO")***

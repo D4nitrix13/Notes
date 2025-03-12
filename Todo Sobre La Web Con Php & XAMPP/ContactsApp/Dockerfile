@@ -1,6 +1,6 @@
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 # Foros
@@ -30,7 +30,7 @@ RUN apt update && apt-get install tini wget libx11-6 libxext6 iproute2 net-tools
 
 LABEL org.opencontainers.image.authors="D4nitrix13"
 LABEL org.opencontainers.image.email="danielperezdev@proton.me"
-LABEL org.opencontainers.image.github="https://github.com/DanielBenjaminPerezMoralesDev13"
+LABEL org.opencontainers.image.github="https://github.com/D4nitrix13"
 MAINTAINER "D4nitrix13" "danielperezdev@proton.me"
 ENV PATH="$PATH:/opt/lampp/bin"
 

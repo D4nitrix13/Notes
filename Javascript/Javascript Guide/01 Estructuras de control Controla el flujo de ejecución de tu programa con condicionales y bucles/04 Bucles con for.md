@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Bucles con for***
@@ -15,7 +15,7 @@
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 for (inicialización; condición; actualización) {
@@ -37,7 +37,7 @@ for (inicialización; condición; actualización) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 for (let number = 1; number <= 10; number++) {
@@ -57,7 +57,7 @@ for (let number = 1; number <= 10; number++) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 let i = 5;
@@ -77,7 +77,7 @@ console.log(i); // -> 6
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 for (let i = 10; i >= 0; i--) {
@@ -97,7 +97,7 @@ for (let i = 10; i >= 0; i--) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 for (let i = 0, j = 5; i < 5; i++, j--) {
@@ -120,7 +120,7 @@ for (let i = 0, j = 5; i < 5; i++, j--) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 for (let i = 0; i < 10; i++) {
@@ -147,7 +147,7 @@ for (let i = 0; i < 10; i++) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 for (let i = 1; i <= 10; i++) {
@@ -168,7 +168,7 @@ for (let i = 1; i <= 10; i++) {
 
 1. ```javascript
     // Autor: Daniel Benjamin Perez Morales
-    // GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+    // GitHub: https://github.com/D4nitrix13
     // Correo electrónico: danielperezdev@proton.me
    
    for (let i = 0, i < array.length, i++) {
@@ -180,7 +180,7 @@ for (let i = 1; i <= 10; i++) {
 
    ```javascript
    // Autor: Daniel Benjamin Perez Morales
-   // GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+   // GitHub: https://github.com/D4nitrix13
    // Correo electrónico: danielperezdev@proton.me
    
    for (let i = 0; i < array.length; i++) {
@@ -194,7 +194,7 @@ for (let i = 1; i <= 10; i++) {
 
 ```javascript
 // Autor: Daniel Benjamin Perez Morales
-// GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
+// GitHub: https://github.com/D4nitrix13
 // Correo electrónico: danielperezdev@proton.me
 
 for (let i = 0; i < 10 && i !== 3; i++) {

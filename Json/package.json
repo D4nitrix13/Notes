@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanielBenjaminPerezMoralesDev13/Notes/"
+    "url": "git+https://github.com/D4nitrix13/Notes/"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/issues"
+    "url": "https://github.com/D4nitrix13/Notes/issues"
   },
-  "homepage": "https://github.com/DanielBenjaminPerezMoralesDev13/Notes/",
+  "homepage": "https://github.com/D4nitrix13/Notes/",
   "dependencies": {
     "live-server": "^1.2.1"
   }

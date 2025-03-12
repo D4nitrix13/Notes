@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Linux Personalization Repository 🌟***
@@ -30,4 +30,4 @@
 
 ## ***💬 Contacto***
 
-**Para dudas o sugerencias, contáctame en [danielperezdev@proton.me](danielperezdev@proton.me "danielperezdev@proton.me") o abre un [issue](https://github.com/DanielBenjaminPerezMoralesDev13/Notes/issues).**
+**Para dudas o sugerencias, contáctame en [danielperezdev@proton.me](danielperezdev@proton.me "danielperezdev@proton.me") o abre un [issue](https://github.com/D4nitrix13/Notes/issues).**

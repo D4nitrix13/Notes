@@ -1,5 +1,5 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- Github Gitlab: https://Github Gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- Github Gitlab: https://Github Gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # ***Guía de Git y Github Gitlab***

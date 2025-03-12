@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 # Al utilizar comillas invertidas (\`) para delimitar un bloque de código en Markdown, es importante escapar ciertos caracteres que pueden interferir con la interpretación correcta del texto, especialmente cuando se trata de caracteres que tienen un significado especial en Markdown o en la shell

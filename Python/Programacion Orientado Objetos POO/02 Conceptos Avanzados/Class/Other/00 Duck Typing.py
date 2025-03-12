@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # Autor: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
 # Correo electrónico: danielperezdev@proton.me
 """
 Duck Typing es un concepto en Python que se refiere a la idea de que no importa el tipo de objeto con el que estás trabajando, sino qué operaciones o comportamientos puedes hacer con él. Si un objeto se comporta como un pato (es decir, tiene los mismos métodos y propiedades), entonces puedes tratarlo como un pato.

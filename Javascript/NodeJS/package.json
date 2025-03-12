@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/DanielBenjaminPerezMoralesDev13/Node-JS.git"
+    "url": "git+ssh://git@github.com/D4nitrix13/Node-JS.git"
   },
   "keywords": [
     "nodejs",
@@ -17,9 +17,9 @@
   "author": "Daniel Benjamin Perez Morales - D4nitrix13",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS/issues"
+    "url": "https://github.com/D4nitrix13/Node-JS/issues"
   },
-  "homepage": "https://github.com/DanielBenjaminPerezMoralesDev13/Node-JS#readme",
+  "homepage": "https://github.com/D4nitrix13/Node-JS#readme",
   "dependencies": {
     "picocolors": "1.0.1"
   },

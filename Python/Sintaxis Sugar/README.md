@@ -1,6 +1,6 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- GitLab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***La `"sintaxis sugar"`** (o `"syntactic sugar"` en inglés) en programación se refiere a una forma de escribir código que no introduce nuevas funcionalidades, sino que hace que el código sea más fácil de leer y escribir. Es un tipo de "azúcar sintáctico" que simplifica la escritura de ciertas expresiones o estructuras en el lenguaje de programación, haciéndolas más concisas o naturales sin cambiar la funcionalidad del código***
