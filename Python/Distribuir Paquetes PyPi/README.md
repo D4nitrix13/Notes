@@ -5,6 +5,8 @@
 
 # ***Para distribuir un paquete de Python, necesitarás preparar y subir tu paquete a un repositorio de Python, como PyPI (Python3 Package Index) o TestPyPI (un índice de paquetes de prueba).***
 
+*[pep-0440](https://peps.python.org/pep-0440/ "https://peps.python.org/pep-0440/")*
+
 ## ***[https://pypi.org/manage/account/token/](https://pypi.org/manage/account/token/ "https://pypi.org/manage/account/token/")***
 
 - **Propósito:** *Esta página te permite gestionar los tokens de API para tu cuenta en PyPI. Los tokens de API son una forma segura de autenticarte al publicar paquetes o interactuar con el repositorio PyPI sin necesidad de usar tu contraseña.*
@@ -165,7 +167,7 @@ nano ~/.pypirc
 
 - **Uso:**
   - **Distribución:** *Permite que los desarrolladores suban sus paquetes para que estén disponibles para la comunidad de Python.*
-  - **Instalación:** *Los usuarios pueden instalar paquetes desde PyPI utilizando `pip`, por ejemplo, `pip install nombre-del-paquete`.*
+  - **Instalación:** *Los usuarios pueden instalar paquetes desde PyPI utilizando `pip`, por ejemplo, `pip install name-package`.*
 
 - **Características:**
   - **Alcance Global:** *Es el repositorio más grande y accesible para la comunidad de Python.*
@@ -260,7 +262,868 @@ password = <token>
 - **`sdist`:** *Crea una distribución fuente (fichero `.tar.gz`).*
 - **`bdist_wheel`:** *Crea una distribución en formato wheel (`.whl`).*
 
-  *Esto generará los ficheros en el directorio `dist`.*
+**Esto generará los ficheros en el directorio `dist`.**
+
+- *Salida Del Comando*
+
+```bash
+running sdist
+running egg_info
+writing src/pycrypy.egg-info/PKG-INFO
+writing dependency_links to src/pycrypy.egg-info/dependency_links.txt
+writing entry points to src/pycrypy.egg-info/entry_points.txt
+writing requirements to src/pycrypy.egg-info/requires.txt
+writing top-level names to src/pycrypy.egg-info/top_level.txt
+reading manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE.es.md'
+adding license file 'LICENSE.md'
+writing manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+running check
+creating pycrypy-1.0.0.dev0
+creating pycrypy-1.0.0.dev0/dist
+creating pycrypy-1.0.0.dev0/src/cli
+creating pycrypy-1.0.0.dev0/src/config
+creating pycrypy-1.0.0.dev0/src/dark_themes
+creating pycrypy-1.0.0.dev0/src/lib
+creating pycrypy-1.0.0.dev0/src/light_themes
+creating pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+creating pycrypy-1.0.0.dev0/src/recommended_themes
+copying files to pycrypy-1.0.0.dev0...
+copying CODE_OF_CONDUCT.md -> pycrypy-1.0.0.dev0
+copying CODIGO_CONDUCTA.md -> pycrypy-1.0.0.dev0
+copying CONTRIBUCION.md -> pycrypy-1.0.0.dev0
+copying LICENSE.es.md -> pycrypy-1.0.0.dev0
+copying LICENSE.md -> pycrypy-1.0.0.dev0
+copying MANIFEST.in -> pycrypy-1.0.0.dev0
+copying README.es.md -> pycrypy-1.0.0.dev0
+copying README.md -> pycrypy-1.0.0.dev0
+copying SECURITY.es.md -> pycrypy-1.0.0.dev0
+copying SECURITY.md -> pycrypy-1.0.0.dev0
+copying pycrypy.spec -> pycrypy-1.0.0.dev0
+copying pyproject.toml -> pycrypy-1.0.0.dev0
+copying requirements.txt -> pycrypy-1.0.0.dev0
+copying setup.py -> pycrypy-1.0.0.dev0
+copying dist/pycrypy-1.0.0.dev0-py3-none-any.whl -> pycrypy-1.0.0.dev0/dist
+copying dist/pycrypy-1.0.0.dev0.tar.gz -> pycrypy-1.0.0.dev0/dist
+copying src/cli/__init__.py -> pycrypy-1.0.0.dev0/src/cli
+copying src/cli/cli.py -> pycrypy-1.0.0.dev0/src/cli
+copying src/cli/main.py -> pycrypy-1.0.0.dev0/src/cli
+copying src/config/__init__.py -> pycrypy-1.0.0.dev0/src/config
+copying src/config/errors.py -> pycrypy-1.0.0.dev0/src/config
+copying src/config/path.py -> pycrypy-1.0.0.dev0/src/config
+copying src/config/themes.py -> pycrypy-1.0.0.dev0/src/config
+copying src/dark_themes/Cobalt2.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/Mariana.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/__init__.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/afterglow.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/alacritty_0_12.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/ashes_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/base16_default_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/bluish.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/breeze.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/catppuccin_frappe.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/catppuccin_macchiato.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/catppuccin_mocha.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/chicago95.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/citylights.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/dark_pastels.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/deep_space.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/doom_one.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/dracula_plus.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/enfocado_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/everforest_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/falcon.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/flat_remix.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/flexoki.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/github_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/github_dark_dimmed.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gnome_terminal.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/google.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gruvbox_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gruvbox_material.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gruvbox_material_hard_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gruvbox_material_medium_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/hardhacker.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/hatsunemiku.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/horizon_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/inferno.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/iris.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/kanagawa_dragon.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/kanagawa_wave.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/konsole_linux.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/low_contrast.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/marine_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/material_theme.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/meliora.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/monokai.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/monokai_pro.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/moonlight_ii_vscode.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/nightfox.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/nord.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/one_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/papercolor_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/pencil_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/rainbow.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/remedy_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/rose_pine_moon.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/seashells.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/smoooooth.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/snazzy.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/solarized_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/solarized_osaka.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/taerminal.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/tango_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/tender.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/terminal_app.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/tomorrow_night.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/tomorrow_night_bright.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/ubuntu.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/vesper.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/wombat.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/zenburn.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/lib/__init__.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/alacritty_key.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_cursor_blinking.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_cursor_shape.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_cursor_thickness.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_font.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_font_size.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_font_style.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_opacity.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_padding.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_theme_path.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/format_ansi_color.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/list_dark_themes.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/list_light_themes.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/list_recommended_themes.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/load_new_theme.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/light_themes/__init__.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/alabaster.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/ashes_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/atom_one_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/ayu_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/catppuccin_latte.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/enfocado_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/everforest_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light_colorblind.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light_default.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light_high_contrast.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light_tritanopia.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/gruvbox_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/gruvbox_material_hard_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/gruvbox_material_medium_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/high_contrast.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/msx.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/night_owlish_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/noctis_lux.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/nord_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/papercolor_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/papertheme.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/pencil_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/rose_pine_dawn.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/solarized_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/pycrypy.egg-info/PKG-INFO -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/SOURCES.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/dependency_links.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/entry_points.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/requires.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/top_level.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/recommended_themes/__init__.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/alabaster_dark.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/argonaut.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/aura.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/ayu_dark.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/ayu_mirage.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/baitong.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/blood_moon.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/bluescreen.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/campbell.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/carbonfox.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/catppuccin.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/challenger_deep.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/cyber_punk_neon.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/dark_pride.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/dracula.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/dracula_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/github_dark_colorblind.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/github_dark_default.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/github_dark_high_contrast.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/github_dark_tritanopia.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/gotham.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/greenscreen.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/hyper.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/iterm.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/material_darker.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/material_ocean.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/material_theme_mod.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/midnight_haze.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/monokai_charcoal.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/monokai_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/night_owl.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/nightfly.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/nord_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/nord_wave.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/nordic.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/oceanic_next.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/omni.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/onedark_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/palenight.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/pastel_dark.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/rose_pine.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/rosepine_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/thelovelace.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/tokyo_night.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/tokyo_night_storm.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/xterm.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/pycrypy.egg-info/SOURCES.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+Writing pycrypy-1.0.0.dev0/setup.cfg
+Creating tar archive
+removing 'pycrypy-1.0.0.dev0' (and everything under it)
+running bdist_wheel
+running build
+running build_py
+creating build/lib/lib
+copying src/lib/change_cursor_shape.py -> build/lib/lib
+copying src/lib/change_padding.py -> build/lib/lib
+copying src/lib/alacritty_key.py -> build/lib/lib
+copying src/lib/change_font_style.py -> build/lib/lib
+copying src/lib/change_cursor_thickness.py -> build/lib/lib
+copying src/lib/change_theme_path.py -> build/lib/lib
+copying src/lib/list_light_themes.py -> build/lib/lib
+copying src/lib/change_cursor_blinking.py -> build/lib/lib
+copying src/lib/change_font_size.py -> build/lib/lib
+copying src/lib/change_font.py -> build/lib/lib
+copying src/lib/change_opacity.py -> build/lib/lib
+copying src/lib/__init__.py -> build/lib/lib
+copying src/lib/format_ansi_color.py -> build/lib/lib
+copying src/lib/list_recommended_themes.py -> build/lib/lib
+copying src/lib/load_new_theme.py -> build/lib/lib
+copying src/lib/list_dark_themes.py -> build/lib/lib
+creating build/lib/light_themes
+copying src/light_themes/catppuccin_latte.py -> build/lib/light_themes
+copying src/light_themes/night_owlish_light.py -> build/lib/light_themes
+copying src/light_themes/github_light_high_contrast.py -> build/lib/light_themes
+copying src/light_themes/gruvbox_material_medium_light.py -> build/lib/light_themes
+copying src/light_themes/ayu_light.py -> build/lib/light_themes
+copying src/light_themes/enfocado_light.py -> build/lib/light_themes
+copying src/light_themes/papercolor_light.py -> build/lib/light_themes
+copying src/light_themes/solarized_light.py -> build/lib/light_themes
+copying src/light_themes/high_contrast.py -> build/lib/light_themes
+copying src/light_themes/github_light_tritanopia.py -> build/lib/light_themes
+copying src/light_themes/pencil_light.py -> build/lib/light_themes
+copying src/light_themes/__init__.py -> build/lib/light_themes
+copying src/light_themes/gruvbox_light.py -> build/lib/light_themes
+copying src/light_themes/ashes_light.py -> build/lib/light_themes
+copying src/light_themes/atom_one_light.py -> build/lib/light_themes
+copying src/light_themes/rose_pine_dawn.py -> build/lib/light_themes
+copying src/light_themes/github_light.py -> build/lib/light_themes
+copying src/light_themes/github_light_colorblind.py -> build/lib/light_themes
+copying src/light_themes/alabaster.py -> build/lib/light_themes
+copying src/light_themes/msx.py -> build/lib/light_themes
+copying src/light_themes/noctis_lux.py -> build/lib/light_themes
+copying src/light_themes/github_light_default.py -> build/lib/light_themes
+copying src/light_themes/papertheme.py -> build/lib/light_themes
+copying src/light_themes/everforest_light.py -> build/lib/light_themes
+copying src/light_themes/gruvbox_material_hard_light.py -> build/lib/light_themes
+copying src/light_themes/nord_light.py -> build/lib/light_themes
+creating build/lib/cli
+copying src/cli/cli.py -> build/lib/cli
+copying src/cli/__init__.py -> build/lib/cli
+copying src/cli/main.py -> build/lib/cli
+creating build/lib/dark_themes
+copying src/dark_themes/monokai_pro.py -> build/lib/dark_themes
+copying src/dark_themes/github_dark_dimmed.py -> build/lib/dark_themes
+copying src/dark_themes/taerminal.py -> build/lib/dark_themes
+copying src/dark_themes/moonlight_ii_vscode.py -> build/lib/dark_themes
+copying src/dark_themes/deep_space.py -> build/lib/dark_themes
+copying src/dark_themes/solarized_dark.py -> build/lib/dark_themes
+copying src/dark_themes/tender.py -> build/lib/dark_themes
+copying src/dark_themes/rose_pine_moon.py -> build/lib/dark_themes
+copying src/dark_themes/tango_dark.py -> build/lib/dark_themes
+copying src/dark_themes/material_theme.py -> build/lib/dark_themes
+copying src/dark_themes/google.py -> build/lib/dark_themes
+copying src/dark_themes/falcon.py -> build/lib/dark_themes
+copying src/dark_themes/nord.py -> build/lib/dark_themes
+copying src/dark_themes/remedy_dark.py -> build/lib/dark_themes
+copying src/dark_themes/doom_one.py -> build/lib/dark_themes
+copying src/dark_themes/zenburn.py -> build/lib/dark_themes
+copying src/dark_themes/Cobalt2.py -> build/lib/dark_themes
+copying src/dark_themes/hardhacker.py -> build/lib/dark_themes
+copying src/dark_themes/rainbow.py -> build/lib/dark_themes
+copying src/dark_themes/dracula_plus.py -> build/lib/dark_themes
+copying src/dark_themes/base16_default_dark.py -> build/lib/dark_themes
+copying src/dark_themes/github_dark.py -> build/lib/dark_themes
+copying src/dark_themes/konsole_linux.py -> build/lib/dark_themes
+copying src/dark_themes/monokai.py -> build/lib/dark_themes
+copying src/dark_themes/terminal_app.py -> build/lib/dark_themes
+copying src/dark_themes/ashes_dark.py -> build/lib/dark_themes
+copying src/dark_themes/ubuntu.py -> build/lib/dark_themes
+copying src/dark_themes/Mariana.py -> build/lib/dark_themes
+copying src/dark_themes/horizon_dark.py -> build/lib/dark_themes
+copying src/dark_themes/catppuccin_mocha.py -> build/lib/dark_themes
+copying src/dark_themes/__init__.py -> build/lib/dark_themes
+copying src/dark_themes/everforest_dark.py -> build/lib/dark_themes
+copying src/dark_themes/dark_pastels.py -> build/lib/dark_themes
+copying src/dark_themes/one_dark.py -> build/lib/dark_themes
+copying src/dark_themes/marine_dark.py -> build/lib/dark_themes
+copying src/dark_themes/chicago95.py -> build/lib/dark_themes
+copying src/dark_themes/snazzy.py -> build/lib/dark_themes
+copying src/dark_themes/tomorrow_night_bright.py -> build/lib/dark_themes
+copying src/dark_themes/nightfox.py -> build/lib/dark_themes
+copying src/dark_themes/tomorrow_night.py -> build/lib/dark_themes
+copying src/dark_themes/solarized_osaka.py -> build/lib/dark_themes
+copying src/dark_themes/gruvbox_dark.py -> build/lib/dark_themes
+copying src/dark_themes/gruvbox_material_medium_dark.py -> build/lib/dark_themes
+copying src/dark_themes/low_contrast.py -> build/lib/dark_themes
+copying src/dark_themes/gnome_terminal.py -> build/lib/dark_themes
+copying src/dark_themes/pencil_dark.py -> build/lib/dark_themes
+copying src/dark_themes/catppuccin_frappe.py -> build/lib/dark_themes
+copying src/dark_themes/kanagawa_dragon.py -> build/lib/dark_themes
+copying src/dark_themes/wombat.py -> build/lib/dark_themes
+copying src/dark_themes/alacritty_0_12.py -> build/lib/dark_themes
+copying src/dark_themes/seashells.py -> build/lib/dark_themes
+copying src/dark_themes/enfocado_dark.py -> build/lib/dark_themes
+copying src/dark_themes/smoooooth.py -> build/lib/dark_themes
+copying src/dark_themes/catppuccin_macchiato.py -> build/lib/dark_themes
+copying src/dark_themes/bluish.py -> build/lib/dark_themes
+copying src/dark_themes/hatsunemiku.py -> build/lib/dark_themes
+copying src/dark_themes/breeze.py -> build/lib/dark_themes
+copying src/dark_themes/gruvbox_material.py -> build/lib/dark_themes
+copying src/dark_themes/meliora.py -> build/lib/dark_themes
+copying src/dark_themes/inferno.py -> build/lib/dark_themes
+copying src/dark_themes/papercolor_dark.py -> build/lib/dark_themes
+copying src/dark_themes/citylights.py -> build/lib/dark_themes
+copying src/dark_themes/flexoki.py -> build/lib/dark_themes
+copying src/dark_themes/gruvbox_material_hard_dark.py -> build/lib/dark_themes
+copying src/dark_themes/afterglow.py -> build/lib/dark_themes
+copying src/dark_themes/vesper.py -> build/lib/dark_themes
+copying src/dark_themes/flat_remix.py -> build/lib/dark_themes
+copying src/dark_themes/iris.py -> build/lib/dark_themes
+copying src/dark_themes/kanagawa_wave.py -> build/lib/dark_themes
+creating build/lib/config
+copying src/config/themes.py -> build/lib/config
+copying src/config/errors.py -> build/lib/config
+copying src/config/path.py -> build/lib/config
+copying src/config/__init__.py -> build/lib/config
+creating build/lib/recommended_themes
+copying src/recommended_themes/baitong.py -> build/lib/recommended_themes
+copying src/recommended_themes/onedark_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/dark_pride.py -> build/lib/recommended_themes
+copying src/recommended_themes/gotham.py -> build/lib/recommended_themes
+copying src/recommended_themes/challenger_deep.py -> build/lib/recommended_themes
+copying src/recommended_themes/omni.py -> build/lib/recommended_themes
+copying src/recommended_themes/xterm.py -> build/lib/recommended_themes
+copying src/recommended_themes/carbonfox.py -> build/lib/recommended_themes
+copying src/recommended_themes/nord_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/tokyo_night.py -> build/lib/recommended_themes
+copying src/recommended_themes/ayu_mirage.py -> build/lib/recommended_themes
+copying src/recommended_themes/campbell.py -> build/lib/recommended_themes
+copying src/recommended_themes/__init__.py -> build/lib/recommended_themes
+copying src/recommended_themes/greenscreen.py -> build/lib/recommended_themes
+copying src/recommended_themes/dracula_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/github_dark_default.py -> build/lib/recommended_themes
+copying src/recommended_themes/iterm.py -> build/lib/recommended_themes
+copying src/recommended_themes/monokai_charcoal.py -> build/lib/recommended_themes
+copying src/recommended_themes/nightfly.py -> build/lib/recommended_themes
+copying src/recommended_themes/monokai_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/ayu_dark.py -> build/lib/recommended_themes
+copying src/recommended_themes/bluescreen.py -> build/lib/recommended_themes
+copying src/recommended_themes/nord_wave.py -> build/lib/recommended_themes
+copying src/recommended_themes/github_dark_high_contrast.py -> build/lib/recommended_themes
+copying src/recommended_themes/catppuccin.py -> build/lib/recommended_themes
+copying src/recommended_themes/thelovelace.py -> build/lib/recommended_themes
+copying src/recommended_themes/pastel_dark.py -> build/lib/recommended_themes
+copying src/recommended_themes/night_owl.py -> build/lib/recommended_themes
+copying src/recommended_themes/github_dark_tritanopia.py -> build/lib/recommended_themes
+copying src/recommended_themes/alabaster_dark.py -> build/lib/recommended_themes
+copying src/recommended_themes/oceanic_next.py -> build/lib/recommended_themes
+copying src/recommended_themes/github_dark_colorblind.py -> build/lib/recommended_themes
+copying src/recommended_themes/nordic.py -> build/lib/recommended_themes
+copying src/recommended_themes/midnight_haze.py -> build/lib/recommended_themes
+copying src/recommended_themes/argonaut.py -> build/lib/recommended_themes
+copying src/recommended_themes/cyber_punk_neon.py -> build/lib/recommended_themes
+copying src/recommended_themes/blood_moon.py -> build/lib/recommended_themes
+copying src/recommended_themes/hyper.py -> build/lib/recommended_themes
+copying src/recommended_themes/material_theme_mod.py -> build/lib/recommended_themes
+copying src/recommended_themes/aura.py -> build/lib/recommended_themes
+copying src/recommended_themes/palenight.py -> build/lib/recommended_themes
+copying src/recommended_themes/rose_pine.py -> build/lib/recommended_themes
+copying src/recommended_themes/rosepine_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/material_ocean.py -> build/lib/recommended_themes
+copying src/recommended_themes/material_darker.py -> build/lib/recommended_themes
+copying src/recommended_themes/tokyo_night_storm.py -> build/lib/recommended_themes
+copying src/recommended_themes/dracula.py -> build/lib/recommended_themes
+/home/d4nitrix13/pycrypy/.venv/lib/python3.13/site-packages/setuptools/_distutils/cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/lib
+copying build/lib/lib/change_cursor_shape.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_padding.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/alacritty_key.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_font_style.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_cursor_thickness.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_theme_path.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/list_light_themes.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_cursor_blinking.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_font_size.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_font.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_opacity.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/__init__.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/format_ansi_color.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/list_recommended_themes.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/load_new_theme.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/list_dark_themes.py -> build/bdist.linux-x86_64/wheel/./lib
+creating build/bdist.linux-x86_64/wheel/light_themes
+copying build/lib/light_themes/catppuccin_latte.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/night_owlish_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light_high_contrast.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/gruvbox_material_medium_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/ayu_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/enfocado_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/papercolor_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/solarized_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/high_contrast.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light_tritanopia.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/pencil_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/__init__.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/gruvbox_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/ashes_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/atom_one_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/rose_pine_dawn.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light_colorblind.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/alabaster.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/msx.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/noctis_lux.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light_default.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/papertheme.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/everforest_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/gruvbox_material_hard_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/nord_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+creating build/bdist.linux-x86_64/wheel/cli
+copying build/lib/cli/cli.py -> build/bdist.linux-x86_64/wheel/./cli
+copying build/lib/cli/__init__.py -> build/bdist.linux-x86_64/wheel/./cli
+copying build/lib/cli/main.py -> build/bdist.linux-x86_64/wheel/./cli
+creating build/bdist.linux-x86_64/wheel/dark_themes
+copying build/lib/dark_themes/monokai_pro.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/github_dark_dimmed.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/taerminal.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/moonlight_ii_vscode.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/deep_space.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/solarized_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/tender.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/rose_pine_moon.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/tango_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/material_theme.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/google.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/falcon.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/nord.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/remedy_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/doom_one.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/zenburn.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/Cobalt2.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/hardhacker.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/rainbow.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/dracula_plus.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/base16_default_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/github_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/konsole_linux.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/monokai.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/terminal_app.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/ashes_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/ubuntu.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/Mariana.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/horizon_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/catppuccin_mocha.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/__init__.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/everforest_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/dark_pastels.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/one_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/marine_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/chicago95.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/snazzy.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/tomorrow_night_bright.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/nightfox.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/tomorrow_night.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/solarized_osaka.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gruvbox_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gruvbox_material_medium_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/low_contrast.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gnome_terminal.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/pencil_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/catppuccin_frappe.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/kanagawa_dragon.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/wombat.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/alacritty_0_12.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/seashells.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/enfocado_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/smoooooth.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/catppuccin_macchiato.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/bluish.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/hatsunemiku.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/breeze.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gruvbox_material.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/meliora.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/inferno.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/papercolor_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/citylights.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/flexoki.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gruvbox_material_hard_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/afterglow.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/vesper.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/flat_remix.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/iris.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/kanagawa_wave.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+creating build/bdist.linux-x86_64/wheel/config
+copying build/lib/config/themes.py -> build/bdist.linux-x86_64/wheel/./config
+copying build/lib/config/errors.py -> build/bdist.linux-x86_64/wheel/./config
+copying build/lib/config/path.py -> build/bdist.linux-x86_64/wheel/./config
+copying build/lib/config/__init__.py -> build/bdist.linux-x86_64/wheel/./config
+creating build/bdist.linux-x86_64/wheel/recommended_themes
+copying build/lib/recommended_themes/baitong.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/onedark_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/dark_pride.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/gotham.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/challenger_deep.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/omni.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/xterm.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/carbonfox.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/nord_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/tokyo_night.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/ayu_mirage.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/campbell.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/__init__.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/greenscreen.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/dracula_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/github_dark_default.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/iterm.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/monokai_charcoal.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/nightfly.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/monokai_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/ayu_dark.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/bluescreen.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/nord_wave.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/github_dark_high_contrast.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/catppuccin.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/thelovelace.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/pastel_dark.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/night_owl.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/github_dark_tritanopia.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/alabaster_dark.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/oceanic_next.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/github_dark_colorblind.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/nordic.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/midnight_haze.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/argonaut.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/cyber_punk_neon.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/blood_moon.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/hyper.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/material_theme_mod.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/aura.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/palenight.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/rose_pine.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/rosepine_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/material_ocean.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/material_darker.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/tokyo_night_storm.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/dracula.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+running install_egg_info
+Copying src/pycrypy.egg-info to build/bdist.linux-x86_64/wheel/./pycrypy-1.0.0.dev0-py3.13.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/pycrypy-1.0.0.dev0.dist-info/WHEEL
+creating 'dist/pycrypy-1.0.0.dev0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'cli/__init__.py'
+adding 'cli/cli.py'
+adding 'cli/main.py'
+adding 'config/__init__.py'
+adding 'config/errors.py'
+adding 'config/path.py'
+adding 'config/themes.py'
+adding 'dark_themes/Cobalt2.py'
+adding 'dark_themes/Mariana.py'
+adding 'dark_themes/__init__.py'
+adding 'dark_themes/afterglow.py'
+adding 'dark_themes/alacritty_0_12.py'
+adding 'dark_themes/ashes_dark.py'
+adding 'dark_themes/base16_default_dark.py'
+adding 'dark_themes/bluish.py'
+adding 'dark_themes/breeze.py'
+adding 'dark_themes/catppuccin_frappe.py'
+adding 'dark_themes/catppuccin_macchiato.py'
+adding 'dark_themes/catppuccin_mocha.py'
+adding 'dark_themes/chicago95.py'
+adding 'dark_themes/citylights.py'
+adding 'dark_themes/dark_pastels.py'
+adding 'dark_themes/deep_space.py'
+adding 'dark_themes/doom_one.py'
+adding 'dark_themes/dracula_plus.py'
+adding 'dark_themes/enfocado_dark.py'
+adding 'dark_themes/everforest_dark.py'
+adding 'dark_themes/falcon.py'
+adding 'dark_themes/flat_remix.py'
+adding 'dark_themes/flexoki.py'
+adding 'dark_themes/github_dark.py'
+adding 'dark_themes/github_dark_dimmed.py'
+adding 'dark_themes/gnome_terminal.py'
+adding 'dark_themes/google.py'
+adding 'dark_themes/gruvbox_dark.py'
+adding 'dark_themes/gruvbox_material.py'
+adding 'dark_themes/gruvbox_material_hard_dark.py'
+adding 'dark_themes/gruvbox_material_medium_dark.py'
+adding 'dark_themes/hardhacker.py'
+adding 'dark_themes/hatsunemiku.py'
+adding 'dark_themes/horizon_dark.py'
+adding 'dark_themes/inferno.py'
+adding 'dark_themes/iris.py'
+adding 'dark_themes/kanagawa_dragon.py'
+adding 'dark_themes/kanagawa_wave.py'
+adding 'dark_themes/konsole_linux.py'
+adding 'dark_themes/low_contrast.py'
+adding 'dark_themes/marine_dark.py'
+adding 'dark_themes/material_theme.py'
+adding 'dark_themes/meliora.py'
+adding 'dark_themes/monokai.py'
+adding 'dark_themes/monokai_pro.py'
+adding 'dark_themes/moonlight_ii_vscode.py'
+adding 'dark_themes/nightfox.py'
+adding 'dark_themes/nord.py'
+adding 'dark_themes/one_dark.py'
+adding 'dark_themes/papercolor_dark.py'
+adding 'dark_themes/pencil_dark.py'
+adding 'dark_themes/rainbow.py'
+adding 'dark_themes/remedy_dark.py'
+adding 'dark_themes/rose_pine_moon.py'
+adding 'dark_themes/seashells.py'
+adding 'dark_themes/smoooooth.py'
+adding 'dark_themes/snazzy.py'
+adding 'dark_themes/solarized_dark.py'
+adding 'dark_themes/solarized_osaka.py'
+adding 'dark_themes/taerminal.py'
+adding 'dark_themes/tango_dark.py'
+adding 'dark_themes/tender.py'
+adding 'dark_themes/terminal_app.py'
+adding 'dark_themes/tomorrow_night.py'
+adding 'dark_themes/tomorrow_night_bright.py'
+adding 'dark_themes/ubuntu.py'
+adding 'dark_themes/vesper.py'
+adding 'dark_themes/wombat.py'
+adding 'dark_themes/zenburn.py'
+adding 'lib/__init__.py'
+adding 'lib/alacritty_key.py'
+adding 'lib/change_cursor_blinking.py'
+adding 'lib/change_cursor_shape.py'
+adding 'lib/change_cursor_thickness.py'
+adding 'lib/change_font.py'
+adding 'lib/change_font_size.py'
+adding 'lib/change_font_style.py'
+adding 'lib/change_opacity.py'
+adding 'lib/change_padding.py'
+adding 'lib/change_theme_path.py'
+adding 'lib/format_ansi_color.py'
+adding 'lib/list_dark_themes.py'
+adding 'lib/list_light_themes.py'
+adding 'lib/list_recommended_themes.py'
+adding 'lib/load_new_theme.py'
+adding 'light_themes/__init__.py'
+adding 'light_themes/alabaster.py'
+adding 'light_themes/ashes_light.py'
+adding 'light_themes/atom_one_light.py'
+adding 'light_themes/ayu_light.py'
+adding 'light_themes/catppuccin_latte.py'
+adding 'light_themes/enfocado_light.py'
+adding 'light_themes/everforest_light.py'
+adding 'light_themes/github_light.py'
+adding 'light_themes/github_light_colorblind.py'
+adding 'light_themes/github_light_default.py'
+adding 'light_themes/github_light_high_contrast.py'
+adding 'light_themes/github_light_tritanopia.py'
+adding 'light_themes/gruvbox_light.py'
+adding 'light_themes/gruvbox_material_hard_light.py'
+adding 'light_themes/gruvbox_material_medium_light.py'
+adding 'light_themes/high_contrast.py'
+adding 'light_themes/msx.py'
+adding 'light_themes/night_owlish_light.py'
+adding 'light_themes/noctis_lux.py'
+adding 'light_themes/nord_light.py'
+adding 'light_themes/papercolor_light.py'
+adding 'light_themes/papertheme.py'
+adding 'light_themes/pencil_light.py'
+adding 'light_themes/rose_pine_dawn.py'
+adding 'light_themes/solarized_light.py'
+adding 'pycrypy-1.0.0.dev0.dist-info/licenses/LICENSE.es.md'
+adding 'pycrypy-1.0.0.dev0.dist-info/licenses/LICENSE.md'
+adding 'recommended_themes/__init__.py'
+adding 'recommended_themes/alabaster_dark.py'
+adding 'recommended_themes/argonaut.py'
+adding 'recommended_themes/aura.py'
+adding 'recommended_themes/ayu_dark.py'
+adding 'recommended_themes/ayu_mirage.py'
+adding 'recommended_themes/baitong.py'
+adding 'recommended_themes/blood_moon.py'
+adding 'recommended_themes/bluescreen.py'
+adding 'recommended_themes/campbell.py'
+adding 'recommended_themes/carbonfox.py'
+adding 'recommended_themes/catppuccin.py'
+adding 'recommended_themes/challenger_deep.py'
+adding 'recommended_themes/cyber_punk_neon.py'
+adding 'recommended_themes/dark_pride.py'
+adding 'recommended_themes/dracula.py'
+adding 'recommended_themes/dracula_inspired.py'
+adding 'recommended_themes/github_dark_colorblind.py'
+adding 'recommended_themes/github_dark_default.py'
+adding 'recommended_themes/github_dark_high_contrast.py'
+adding 'recommended_themes/github_dark_tritanopia.py'
+adding 'recommended_themes/gotham.py'
+adding 'recommended_themes/greenscreen.py'
+adding 'recommended_themes/hyper.py'
+adding 'recommended_themes/iterm.py'
+adding 'recommended_themes/material_darker.py'
+adding 'recommended_themes/material_ocean.py'
+adding 'recommended_themes/material_theme_mod.py'
+adding 'recommended_themes/midnight_haze.py'
+adding 'recommended_themes/monokai_charcoal.py'
+adding 'recommended_themes/monokai_inspired.py'
+adding 'recommended_themes/night_owl.py'
+adding 'recommended_themes/nightfly.py'
+adding 'recommended_themes/nord_inspired.py'
+adding 'recommended_themes/nord_wave.py'
+adding 'recommended_themes/nordic.py'
+adding 'recommended_themes/oceanic_next.py'
+adding 'recommended_themes/omni.py'
+adding 'recommended_themes/onedark_inspired.py'
+adding 'recommended_themes/palenight.py'
+adding 'recommended_themes/pastel_dark.py'
+adding 'recommended_themes/rose_pine.py'
+adding 'recommended_themes/rosepine_inspired.py'
+adding 'recommended_themes/thelovelace.py'
+adding 'recommended_themes/tokyo_night.py'
+adding 'recommended_themes/tokyo_night_storm.py'
+adding 'recommended_themes/xterm.py'
+adding 'pycrypy-1.0.0.dev0.dist-info/METADATA'
+adding 'pycrypy-1.0.0.dev0.dist-info/WHEEL'
+adding 'pycrypy-1.0.0.dev0.dist-info/entry_points.txt'
+adding 'pycrypy-1.0.0.dev0.dist-info/top_level.txt'
+adding 'pycrypy-1.0.0.dev0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+```
+
+> [!WARNING]
+> *El warning que aparece al ejecutar el comando `python3 setup.py sdist bdist_wheel` está relacionado con un cambio en las recomendaciones y prácticas de la comunidad Python en cuanto a la construcción y distribución de paquetes. En resumen, el mensaje de advertencia te está diciendo que **usar `setup.py` directamente para la instalación está obsoleto** y se está desaconsejando su uso.*
+
+```bash
+/home/d4nitrix13/pycrypy/.venv/lib/python3.13/site-packages/setuptools/_distutils/cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+```
+
+### **Detalles De La Advertencia**
+
+1. **Obsolescencia de `setup.py install`:**
+   - *Tradicionalmente, `setup.py` se usaba para la instalación de paquetes en Python. Ejecutar `python3 setup.py install` era una práctica común para instalar paquetes localmente.*
+   - *Sin embargo, esta práctica ha sido **deprecada**. Ahora, se recomienda usar herramientas basadas en estándares como **`pip`**, que se encarga de la instalación y gestión de dependencias de una forma más robusta y acorde a las mejores prácticas del ecosistema Python.*
+
+2. **Herramientas alternativas:**
+   - *En lugar de ejecutar `setup.py` directamente, se recomienda utilizar **`pypa/build`** y **`pypa/installer`**. Estas herramientas están alineadas con los nuevos estándares para la construcción y distribución de paquetes en Python.*
+   - **`pypa/build`:** *Se utiliza para construir paquetes de distribución (por ejemplo, para generar archivos `.tar.gz` o `.whl`).*
+   - **`pypa/installer`:** *Es una herramienta para instalar paquetes que respeta los estándares más recientes y está más alineada con las prácticas modernas de distribución.*
+
+3. **Motivos para la deprecación:**
+   - **Estabilidad y coherencia:** *Las nuevas herramientas como `build` y `installer` están diseñadas para ser más consistentes y predecibles, proporcionando un flujo de trabajo más estandarizado y eficiente.*
+   - **Facilidad de uso:** *Estas herramientas son más fáciles de usar y proporcionan un soporte más adecuado para los nuevos métodos de distribución, como los **`pyproject.toml`**.*
+   - **Futuro de Python:** *El ecosistema de Python está evolucionando hacia una gestión más moderna de los paquetes, y la antigua práctica de usar `setup.py` directamente para la construcción y distribución está quedando atrás.*
+
+4. **Referencia:** *La advertencia menciona un artículo de blog para mayor contexto:*
+   *[Setup By Deprecated](https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html "https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html"). En este artículo se discuten las razones detrás de la deprecación y la transición a las herramientas recomendadas.*
+
+### **¿Qué Hacer Entonces?**
+
+- *Si estás construyendo paquetes, en lugar de usar `python3 setup.py sdist bdist_wheel`, puedes usar el comando siguiente para construir los paquetes con la nueva herramienta **`build`:***
+
+  ```bash
+  python3 -m build
+  ```
+
+- **Resumen**
+
+*La advertencia se debe a que el uso directo de `setup.py` para la instalación y distribución de paquetes está obsoleto. Se recomienda usar herramientas basadas en el estándar moderno de Python, como `pypa/build` y `pip`, para una mayor estabilidad y alineación con las mejores prácticas de la comunidad Python.*
+
+### **Cuando Ejecutas El Comando:**
+
+```bash
+python3 setup.py install
+```
+
+*El proceso realizará varias tareas relacionadas con la construcción e instalación del paquete Python. Como resultado, se crearán los directorios `build` y `dist`, entre otros posibles, dependiendo de la configuración de tu proyecto.*
+
+### **Explicación detallada de los directorios `build` y `dist`**
+
+1. **Directorio `build`:**
+   - *El directorio `build` se utiliza como una carpeta temporal durante el proceso de construcción.*
+   - *Aquí se generan archivos intermedios que no están destinados a ser distribuidos ni instalados, sino que son utilizados en el proceso de construcción.*
+   - *Este directorio puede contener subdirectorios y archivos relacionados con la construcción de los archivos de distribución, como `.pyc` (archivos de bytecode) y archivos de extensión compilada si tu paquete incluye componentes en C o C++.*
+   - *El contenido de `build` suele ser específico a tu entorno de construcción y no necesita ser distribuido ni instalado. Es simplemente para facilitar la construcción del paquete.*
+
+2. **Directorio `dist`:**
+   - *El directorio `dist` es el lugar donde se generan los archivos de distribución finales, es decir, los archivos que se pueden distribuir y que otros usuarios pueden instalar.*
+   - *Estos archivos de distribución generalmente incluyen:*
+     - **Archivos `.tar.gz`** *(paquete fuente comprimido).*
+     - **Archivos `.whl`** *(paquete en formato Wheel, un formato binario que es más rápido y eficiente para instalar).*
+   - *El propósito de este directorio es contener los archivos que se usarán para distribuir el paquete (por ejemplo, para publicarlo en **PyPI** o para instalarlo en otro sistema).*
+
+### **¿Qué Ocurre En El Proceso De Instalación Con `python3 setup.py install`?**
+
+**Cuando ejecutas `python3 setup.py install`, el proceso realiza lo siguiente:**
+
+1. **Compilación:** *El paquete se compila si es necesario (por ejemplo, si hay archivos en C que deben ser compilados) y se crean archivos intermedios en el directorio `build`.*
+
+2. **Creación de archivos de distribución:** *Se generan los archivos de distribución en el directorio `dist`, como un archivo `.tar.gz` o `.whl` (dependiendo de cómo esté configurado tu `setup.py`).*
+
+3. **Instalación:** *El contenido del paquete se instala en el entorno de Python, lo que implica copiar los archivos del paquete (archivos `.py`, scripts, dependencias) a las ubicaciones adecuadas en el sistema, típicamente dentro de un directorio `site-packages` de tu entorno de Python (por ejemplo, en el directorio `lib/pythonX.X/site-packages`).*
+
+### **Proceso Detallado En Pasos**
+
+1. **Preparación:**
+   - *Se recogen todos los archivos necesarios para el paquete, como los módulos Python, archivos de datos, y cualquier otra cosa que necesite el paquete para funcionar.*
+
+2. **Construcción:**
+   - *Los archivos se compilan (si es necesario) y se empaquetan en los formatos apropiados (por ejemplo, `.tar.gz`, `.whl`).*
+
+3. **Instalación:**
+   - *El código fuente y cualquier otro recurso necesario se instalan en el entorno de Python.*
+
+   *En la actualidad, el uso de `python3 setup.py install` para la instalación directa se desaconseja, y herramientas como `pip` deberían ser usadas en su lugar. Sin embargo, el proceso de construcción sigue siendo válido, y el uso de herramientas como `pypa/build` puede generar los archivos de distribución sin necesidad de ejecutar `setup.py` directamente.*
+
+### **En resumen**
+
+- **`build/`** *contiene archivos intermedios generados durante el proceso de construcción.*
+- **`dist/`** *contiene los archivos que se pueden distribuir, como el paquete `.tar.gz` o `.whl`.*
+- **`python3 setup.py install`** *sigue funcionando, pero es preferible usar herramientas más modernas y estandarizadas, como `pip` o `build`, para construir y distribuir paquetes.*
 
 - **Instalar el Paquete Localmente para Pruebas**
 
@@ -270,15 +1133,986 @@ password = <token>
   pip install -e .
   ```
 
-- **`-e`:** *Instala el paquete en modo editable, permitiendo que los cambios en el código fuente se reflejen sin necesidad de reinstalar.*
+  ```bash
+  pip install --editable .
+  ```
+
+- **`-e` or `--editable`:** *Instala el paquete en modo editable, permitiendo que los cambios en el código fuente se reflejen sin necesidad de reinstalar.*
+
+- **Salida Del Comando**
+
+```bash
+Obtaining file:///home/d4nitrix13/pycrypy
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: altgraph>=0.17.4 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.17.4)
+Requirement already satisfied: certifi>=2025.1.31 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2025.1.31)
+Requirement already satisfied: cffi>=1.17.1 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.17.1)
+Requirement already satisfied: charset-normalizer>=3.4.1 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.4.1)
+Requirement already satisfied: colored>=2.3.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.3.0)
+Requirement already satisfied: cryptography>=44.0.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (44.0.2)
+Requirement already satisfied: docutils>=0.21.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.21.2)
+Requirement already satisfied: id>=1.5.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.5.0)
+Requirement already satisfied: idna>=3.10 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.10)
+Requirement already satisfied: jaraco.classes>=3.4.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.4.0)
+Requirement already satisfied: jaraco.context>=6.0.1 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (6.0.1)
+Requirement already satisfied: jaraco.functools>=4.1.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (4.1.0)
+Requirement already satisfied: jeepney>=0.9.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.9.0)
+Requirement already satisfied: keyring>=25.6.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (25.6.0)
+Requirement already satisfied: markdown-it-py>=3.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.0.0)
+Requirement already satisfied: mdurl>=0.1.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.1.2)
+Requirement already satisfied: more-itertools>=10.6.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (10.6.0)
+Requirement already satisfied: mypy>=1.15.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.15.0)
+Requirement already satisfied: mypy-extensions>=1.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.0.0)
+Requirement already satisfied: nh3>=0.2.21 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.2.21)
+Requirement already satisfied: packaging>=24.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (24.2)
+Requirement already satisfied: prettytable>=3.16.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.16.0)
+Requirement already satisfied: pycparser>=2.22 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.22)
+Requirement already satisfied: Pygments>=2.19.1 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.19.1)
+Requirement already satisfied: pyinstaller>=6.12.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (6.12.0)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2025.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2025.2)
+Requirement already satisfied: readme_renderer>=44.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (44.0)
+Requirement already satisfied: requests>=2.32.3 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.32.3)
+Requirement already satisfied: requests-toolbelt>=1.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.0.0)
+Requirement already satisfied: rfc3986>=2.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.0.0)
+Requirement already satisfied: rich>=14.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (14.0.0)
+Requirement already satisfied: SecretStorage>=3.3.3 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.3.3)
+Requirement already satisfied: setuptools>=78.1.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (78.1.0)
+Requirement already satisfied: toml>=0.10.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.10.2)
+Requirement already satisfied: twine>=6.1.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (6.1.0)
+Requirement already satisfied: types-toml>=0.10.8.20240310 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.10.8.20240310)
+Requirement already satisfied: typing_extensions>=4.13.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (4.13.2)
+Requirement already satisfied: urllib3>=2.4.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.4.0)
+Requirement already satisfied: wcwidth>=0.2.13 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.2.13)
+Building wheels for collected packages: pycrypy
+  Building editable for pycrypy (pyproject.toml): started
+  Building editable for pycrypy (pyproject.toml): finished with status 'done'
+  Created wheel for pycrypy: filename=pycrypy-1.0.0.dev0-0.editable-py3-none-any.whl size=7257 sha256=f268d2f3c7e9b088fb9ac9793667deddb09d6af7c5a8e599d40576383d5dc0f6
+  Stored in directory: /tmp/pip-ephem-wheel-cache-2iibetns/wheels/c7/7e/77/60eba2c2f86753dcaa99c9464b1823465b5d01ce3df8ed75ce
+Successfully built pycrypy
+Installing collected packages: pycrypy
+Successfully installed pycrypy-1.0.0.dev0
+```
 
 - **Desinstalar el Paquete**
 
   *Para desinstalar el paquete de tu entorno:*
 
   ```bash
-  pip uninstall pycrypy
+  pip uninstall pycrypy --yes
   ```
+
+  > [!TIP]
+  > *La opción `--yes` en el comando `pip uninstall pycrypy --yes` significa que se confirma automáticamente la desinstalación del paquete sin necesidad de que el usuario lo haga manualmente. Esto es útil en scripts o procesos automatizados donde no se desea interacción manual. Sin esta opción, pip solicitaría confirmación antes de proceder con la desinstalación.*
+
+---
+
+### **Construyendo un Paquete con el Nuevo Método**
+
+*En lugar de utilizar `python3 setup.py install`, la comunidad de Python recomienda usar herramientas modernas y basadas en estándares, como `pip` y `build`, para la construcción y distribución de paquetes.*
+
+#### **1. Instalación de la Herramienta `build`**
+
+**Para empezar, necesitas instalar la herramienta `build`, que es la forma moderna y estándar de construir paquetes:**
+
+```bash
+pip install build
+```
+
+#### **2. Construcción del Paquete**
+
+**Una vez instalada la herramienta, puedes usar el siguiente comando para construir tu paquete. Este comando genera los archivos de distribución en el directorio `dist/`:**
+
+```bash
+python3 -m build
+```
+
+**Este comando creará los archivos de distribución necesarios para distribuir e instalar tu paquete.**
+
+**Salida Del Comando:**
+
+```bash
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools >= 40.8.0
+* Getting build dependencies for sdist...
+running egg_info
+writing src/pycrypy.egg-info/PKG-INFO
+writing dependency_links to src/pycrypy.egg-info/dependency_links.txt
+writing entry points to src/pycrypy.egg-info/entry_points.txt
+writing requirements to src/pycrypy.egg-info/requires.txt
+writing top-level names to src/pycrypy.egg-info/top_level.txt
+reading manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE.es.md'
+adding license file 'LICENSE.md'
+writing manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+* Building sdist...
+running sdist
+running egg_info
+writing src/pycrypy.egg-info/PKG-INFO
+writing dependency_links to src/pycrypy.egg-info/dependency_links.txt
+writing entry points to src/pycrypy.egg-info/entry_points.txt
+writing requirements to src/pycrypy.egg-info/requires.txt
+writing top-level names to src/pycrypy.egg-info/top_level.txt
+reading manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE.es.md'
+adding license file 'LICENSE.md'
+writing manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+running check
+creating pycrypy-1.0.0.dev0
+creating pycrypy-1.0.0.dev0/dist
+creating pycrypy-1.0.0.dev0/src/cli
+creating pycrypy-1.0.0.dev0/src/config
+creating pycrypy-1.0.0.dev0/src/dark_themes
+creating pycrypy-1.0.0.dev0/src/lib
+creating pycrypy-1.0.0.dev0/src/light_themes
+creating pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+creating pycrypy-1.0.0.dev0/src/recommended_themes
+copying files to pycrypy-1.0.0.dev0...
+copying CODE_OF_CONDUCT.md -> pycrypy-1.0.0.dev0
+copying CODIGO_CONDUCTA.md -> pycrypy-1.0.0.dev0
+copying CONTRIBUCION.md -> pycrypy-1.0.0.dev0
+copying LICENSE.es.md -> pycrypy-1.0.0.dev0
+copying LICENSE.md -> pycrypy-1.0.0.dev0
+copying MANIFEST.in -> pycrypy-1.0.0.dev0
+copying README.es.md -> pycrypy-1.0.0.dev0
+copying README.md -> pycrypy-1.0.0.dev0
+copying SECURITY.es.md -> pycrypy-1.0.0.dev0
+copying SECURITY.md -> pycrypy-1.0.0.dev0
+copying pycrypy.spec -> pycrypy-1.0.0.dev0
+copying requirements.txt -> pycrypy-1.0.0.dev0
+copying setup.py -> pycrypy-1.0.0.dev0
+copying dist/pycrypy-1.0.0.dev0-py3-none-any.whl -> pycrypy-1.0.0.dev0/dist
+copying dist/pycrypy-1.0.0.dev0.tar.gz -> pycrypy-1.0.0.dev0/dist
+copying src/cli/__init__.py -> pycrypy-1.0.0.dev0/src/cli
+copying src/cli/cli.py -> pycrypy-1.0.0.dev0/src/cli
+copying src/cli/main.py -> pycrypy-1.0.0.dev0/src/cli
+copying src/config/__init__.py -> pycrypy-1.0.0.dev0/src/config
+copying src/config/errors.py -> pycrypy-1.0.0.dev0/src/config
+copying src/config/path.py -> pycrypy-1.0.0.dev0/src/config
+copying src/config/themes.py -> pycrypy-1.0.0.dev0/src/config
+copying src/dark_themes/Cobalt2.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/Mariana.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/__init__.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/afterglow.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/alacritty_0_12.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/ashes_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/base16_default_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/bluish.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/breeze.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/catppuccin_frappe.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/catppuccin_macchiato.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/catppuccin_mocha.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/chicago95.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/citylights.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/dark_pastels.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/deep_space.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/doom_one.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/dracula_plus.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/enfocado_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/everforest_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/falcon.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/flat_remix.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/flexoki.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/github_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/github_dark_dimmed.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gnome_terminal.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/google.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gruvbox_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gruvbox_material.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gruvbox_material_hard_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/gruvbox_material_medium_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/hardhacker.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/hatsunemiku.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/horizon_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/inferno.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/iris.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/kanagawa_dragon.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/kanagawa_wave.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/konsole_linux.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/low_contrast.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/marine_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/material_theme.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/meliora.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/monokai.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/monokai_pro.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/moonlight_ii_vscode.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/nightfox.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/nord.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/one_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/papercolor_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/pencil_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/rainbow.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/remedy_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/rose_pine_moon.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/seashells.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/smoooooth.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/snazzy.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/solarized_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/solarized_osaka.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/taerminal.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/tango_dark.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/tender.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/terminal_app.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/tomorrow_night.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/tomorrow_night_bright.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/ubuntu.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/vesper.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/wombat.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/dark_themes/zenburn.py -> pycrypy-1.0.0.dev0/src/dark_themes
+copying src/lib/__init__.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/alacritty_key.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_cursor_blinking.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_cursor_shape.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_cursor_thickness.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_font.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_font_size.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_font_style.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_opacity.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_padding.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/change_theme_path.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/format_ansi_color.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/list_dark_themes.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/list_light_themes.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/list_recommended_themes.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/lib/load_new_theme.py -> pycrypy-1.0.0.dev0/src/lib
+copying src/light_themes/__init__.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/alabaster.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/ashes_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/atom_one_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/ayu_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/catppuccin_latte.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/enfocado_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/everforest_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light_colorblind.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light_default.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light_high_contrast.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/github_light_tritanopia.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/gruvbox_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/gruvbox_material_hard_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/gruvbox_material_medium_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/high_contrast.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/msx.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/night_owlish_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/noctis_lux.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/nord_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/papercolor_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/papertheme.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/pencil_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/rose_pine_dawn.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/light_themes/solarized_light.py -> pycrypy-1.0.0.dev0/src/light_themes
+copying src/pycrypy.egg-info/PKG-INFO -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/SOURCES.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/dependency_links.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/entry_points.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/requires.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/pycrypy.egg-info/top_level.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+copying src/recommended_themes/__init__.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/alabaster_dark.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/argonaut.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/aura.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/ayu_dark.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/ayu_mirage.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/baitong.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/blood_moon.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/bluescreen.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/campbell.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/carbonfox.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/catppuccin.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/challenger_deep.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/cyber_punk_neon.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/dark_pride.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/dracula.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/dracula_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/github_dark_colorblind.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/github_dark_default.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/github_dark_high_contrast.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/github_dark_tritanopia.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/gotham.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/greenscreen.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/hyper.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/iterm.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/material_darker.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/material_ocean.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/material_theme_mod.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/midnight_haze.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/monokai_charcoal.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/monokai_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/night_owl.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/nightfly.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/nord_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/nord_wave.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/nordic.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/oceanic_next.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/omni.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/onedark_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/palenight.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/pastel_dark.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/rose_pine.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/rosepine_inspired.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/thelovelace.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/tokyo_night.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/tokyo_night_storm.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/recommended_themes/xterm.py -> pycrypy-1.0.0.dev0/src/recommended_themes
+copying src/pycrypy.egg-info/SOURCES.txt -> pycrypy-1.0.0.dev0/src/pycrypy.egg-info
+Writing pycrypy-1.0.0.dev0/setup.cfg
+Creating tar archive
+removing 'pycrypy-1.0.0.dev0' (and everything under it)
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools >= 40.8.0
+* Getting build dependencies for wheel...
+running egg_info
+writing src/pycrypy.egg-info/PKG-INFO
+writing dependency_links to src/pycrypy.egg-info/dependency_links.txt
+writing entry points to src/pycrypy.egg-info/entry_points.txt
+writing requirements to src/pycrypy.egg-info/requires.txt
+writing top-level names to src/pycrypy.egg-info/top_level.txt
+reading manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE.es.md'
+adding license file 'LICENSE.md'
+writing manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/recommended_themes
+copying src/recommended_themes/xterm.py -> build/lib/recommended_themes
+copying src/recommended_themes/tokyo_night_storm.py -> build/lib/recommended_themes
+copying src/recommended_themes/tokyo_night.py -> build/lib/recommended_themes
+copying src/recommended_themes/thelovelace.py -> build/lib/recommended_themes
+copying src/recommended_themes/rosepine_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/rose_pine.py -> build/lib/recommended_themes
+copying src/recommended_themes/pastel_dark.py -> build/lib/recommended_themes
+copying src/recommended_themes/palenight.py -> build/lib/recommended_themes
+copying src/recommended_themes/onedark_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/omni.py -> build/lib/recommended_themes
+copying src/recommended_themes/oceanic_next.py -> build/lib/recommended_themes
+copying src/recommended_themes/nordic.py -> build/lib/recommended_themes
+copying src/recommended_themes/nord_wave.py -> build/lib/recommended_themes
+copying src/recommended_themes/nord_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/nightfly.py -> build/lib/recommended_themes
+copying src/recommended_themes/night_owl.py -> build/lib/recommended_themes
+copying src/recommended_themes/monokai_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/monokai_charcoal.py -> build/lib/recommended_themes
+copying src/recommended_themes/midnight_haze.py -> build/lib/recommended_themes
+copying src/recommended_themes/material_theme_mod.py -> build/lib/recommended_themes
+copying src/recommended_themes/material_ocean.py -> build/lib/recommended_themes
+copying src/recommended_themes/material_darker.py -> build/lib/recommended_themes
+copying src/recommended_themes/iterm.py -> build/lib/recommended_themes
+copying src/recommended_themes/hyper.py -> build/lib/recommended_themes
+copying src/recommended_themes/greenscreen.py -> build/lib/recommended_themes
+copying src/recommended_themes/gotham.py -> build/lib/recommended_themes
+copying src/recommended_themes/github_dark_tritanopia.py -> build/lib/recommended_themes
+copying src/recommended_themes/github_dark_high_contrast.py -> build/lib/recommended_themes
+copying src/recommended_themes/github_dark_default.py -> build/lib/recommended_themes
+copying src/recommended_themes/github_dark_colorblind.py -> build/lib/recommended_themes
+copying src/recommended_themes/dracula_inspired.py -> build/lib/recommended_themes
+copying src/recommended_themes/dracula.py -> build/lib/recommended_themes
+copying src/recommended_themes/dark_pride.py -> build/lib/recommended_themes
+copying src/recommended_themes/cyber_punk_neon.py -> build/lib/recommended_themes
+copying src/recommended_themes/challenger_deep.py -> build/lib/recommended_themes
+copying src/recommended_themes/catppuccin.py -> build/lib/recommended_themes
+copying src/recommended_themes/carbonfox.py -> build/lib/recommended_themes
+copying src/recommended_themes/campbell.py -> build/lib/recommended_themes
+copying src/recommended_themes/bluescreen.py -> build/lib/recommended_themes
+copying src/recommended_themes/blood_moon.py -> build/lib/recommended_themes
+copying src/recommended_themes/baitong.py -> build/lib/recommended_themes
+copying src/recommended_themes/ayu_mirage.py -> build/lib/recommended_themes
+copying src/recommended_themes/ayu_dark.py -> build/lib/recommended_themes
+copying src/recommended_themes/aura.py -> build/lib/recommended_themes
+copying src/recommended_themes/argonaut.py -> build/lib/recommended_themes
+copying src/recommended_themes/alabaster_dark.py -> build/lib/recommended_themes
+copying src/recommended_themes/__init__.py -> build/lib/recommended_themes
+creating build/lib/light_themes
+copying src/light_themes/solarized_light.py -> build/lib/light_themes
+copying src/light_themes/rose_pine_dawn.py -> build/lib/light_themes
+copying src/light_themes/pencil_light.py -> build/lib/light_themes
+copying src/light_themes/papertheme.py -> build/lib/light_themes
+copying src/light_themes/papercolor_light.py -> build/lib/light_themes
+copying src/light_themes/nord_light.py -> build/lib/light_themes
+copying src/light_themes/noctis_lux.py -> build/lib/light_themes
+copying src/light_themes/night_owlish_light.py -> build/lib/light_themes
+copying src/light_themes/msx.py -> build/lib/light_themes
+copying src/light_themes/high_contrast.py -> build/lib/light_themes
+copying src/light_themes/gruvbox_material_medium_light.py -> build/lib/light_themes
+copying src/light_themes/gruvbox_material_hard_light.py -> build/lib/light_themes
+copying src/light_themes/gruvbox_light.py -> build/lib/light_themes
+copying src/light_themes/github_light_tritanopia.py -> build/lib/light_themes
+copying src/light_themes/github_light_high_contrast.py -> build/lib/light_themes
+copying src/light_themes/github_light_default.py -> build/lib/light_themes
+copying src/light_themes/github_light_colorblind.py -> build/lib/light_themes
+copying src/light_themes/github_light.py -> build/lib/light_themes
+copying src/light_themes/everforest_light.py -> build/lib/light_themes
+copying src/light_themes/enfocado_light.py -> build/lib/light_themes
+copying src/light_themes/catppuccin_latte.py -> build/lib/light_themes
+copying src/light_themes/ayu_light.py -> build/lib/light_themes
+copying src/light_themes/atom_one_light.py -> build/lib/light_themes
+copying src/light_themes/ashes_light.py -> build/lib/light_themes
+copying src/light_themes/alabaster.py -> build/lib/light_themes
+copying src/light_themes/__init__.py -> build/lib/light_themes
+creating build/lib/lib
+copying src/lib/load_new_theme.py -> build/lib/lib
+copying src/lib/list_recommended_themes.py -> build/lib/lib
+copying src/lib/list_light_themes.py -> build/lib/lib
+copying src/lib/list_dark_themes.py -> build/lib/lib
+copying src/lib/format_ansi_color.py -> build/lib/lib
+copying src/lib/change_theme_path.py -> build/lib/lib
+copying src/lib/change_padding.py -> build/lib/lib
+copying src/lib/change_opacity.py -> build/lib/lib
+copying src/lib/change_font_style.py -> build/lib/lib
+copying src/lib/change_font_size.py -> build/lib/lib
+copying src/lib/change_font.py -> build/lib/lib
+copying src/lib/change_cursor_thickness.py -> build/lib/lib
+copying src/lib/change_cursor_shape.py -> build/lib/lib
+copying src/lib/change_cursor_blinking.py -> build/lib/lib
+copying src/lib/alacritty_key.py -> build/lib/lib
+copying src/lib/__init__.py -> build/lib/lib
+creating build/lib/dark_themes
+copying src/dark_themes/zenburn.py -> build/lib/dark_themes
+copying src/dark_themes/wombat.py -> build/lib/dark_themes
+copying src/dark_themes/vesper.py -> build/lib/dark_themes
+copying src/dark_themes/ubuntu.py -> build/lib/dark_themes
+copying src/dark_themes/tomorrow_night_bright.py -> build/lib/dark_themes
+copying src/dark_themes/tomorrow_night.py -> build/lib/dark_themes
+copying src/dark_themes/terminal_app.py -> build/lib/dark_themes
+copying src/dark_themes/tender.py -> build/lib/dark_themes
+copying src/dark_themes/tango_dark.py -> build/lib/dark_themes
+copying src/dark_themes/taerminal.py -> build/lib/dark_themes
+copying src/dark_themes/solarized_osaka.py -> build/lib/dark_themes
+copying src/dark_themes/solarized_dark.py -> build/lib/dark_themes
+copying src/dark_themes/snazzy.py -> build/lib/dark_themes
+copying src/dark_themes/smoooooth.py -> build/lib/dark_themes
+copying src/dark_themes/seashells.py -> build/lib/dark_themes
+copying src/dark_themes/rose_pine_moon.py -> build/lib/dark_themes
+copying src/dark_themes/remedy_dark.py -> build/lib/dark_themes
+copying src/dark_themes/rainbow.py -> build/lib/dark_themes
+copying src/dark_themes/pencil_dark.py -> build/lib/dark_themes
+copying src/dark_themes/papercolor_dark.py -> build/lib/dark_themes
+copying src/dark_themes/one_dark.py -> build/lib/dark_themes
+copying src/dark_themes/nord.py -> build/lib/dark_themes
+copying src/dark_themes/nightfox.py -> build/lib/dark_themes
+copying src/dark_themes/moonlight_ii_vscode.py -> build/lib/dark_themes
+copying src/dark_themes/monokai_pro.py -> build/lib/dark_themes
+copying src/dark_themes/monokai.py -> build/lib/dark_themes
+copying src/dark_themes/meliora.py -> build/lib/dark_themes
+copying src/dark_themes/material_theme.py -> build/lib/dark_themes
+copying src/dark_themes/marine_dark.py -> build/lib/dark_themes
+copying src/dark_themes/low_contrast.py -> build/lib/dark_themes
+copying src/dark_themes/konsole_linux.py -> build/lib/dark_themes
+copying src/dark_themes/kanagawa_wave.py -> build/lib/dark_themes
+copying src/dark_themes/kanagawa_dragon.py -> build/lib/dark_themes
+copying src/dark_themes/iris.py -> build/lib/dark_themes
+copying src/dark_themes/inferno.py -> build/lib/dark_themes
+copying src/dark_themes/horizon_dark.py -> build/lib/dark_themes
+copying src/dark_themes/hatsunemiku.py -> build/lib/dark_themes
+copying src/dark_themes/hardhacker.py -> build/lib/dark_themes
+copying src/dark_themes/gruvbox_material_medium_dark.py -> build/lib/dark_themes
+copying src/dark_themes/gruvbox_material_hard_dark.py -> build/lib/dark_themes
+copying src/dark_themes/gruvbox_material.py -> build/lib/dark_themes
+copying src/dark_themes/gruvbox_dark.py -> build/lib/dark_themes
+copying src/dark_themes/google.py -> build/lib/dark_themes
+copying src/dark_themes/gnome_terminal.py -> build/lib/dark_themes
+copying src/dark_themes/github_dark_dimmed.py -> build/lib/dark_themes
+copying src/dark_themes/github_dark.py -> build/lib/dark_themes
+copying src/dark_themes/flexoki.py -> build/lib/dark_themes
+copying src/dark_themes/flat_remix.py -> build/lib/dark_themes
+copying src/dark_themes/falcon.py -> build/lib/dark_themes
+copying src/dark_themes/everforest_dark.py -> build/lib/dark_themes
+copying src/dark_themes/enfocado_dark.py -> build/lib/dark_themes
+copying src/dark_themes/dracula_plus.py -> build/lib/dark_themes
+copying src/dark_themes/doom_one.py -> build/lib/dark_themes
+copying src/dark_themes/deep_space.py -> build/lib/dark_themes
+copying src/dark_themes/dark_pastels.py -> build/lib/dark_themes
+copying src/dark_themes/citylights.py -> build/lib/dark_themes
+copying src/dark_themes/chicago95.py -> build/lib/dark_themes
+copying src/dark_themes/catppuccin_mocha.py -> build/lib/dark_themes
+copying src/dark_themes/catppuccin_macchiato.py -> build/lib/dark_themes
+copying src/dark_themes/catppuccin_frappe.py -> build/lib/dark_themes
+copying src/dark_themes/breeze.py -> build/lib/dark_themes
+copying src/dark_themes/bluish.py -> build/lib/dark_themes
+copying src/dark_themes/base16_default_dark.py -> build/lib/dark_themes
+copying src/dark_themes/ashes_dark.py -> build/lib/dark_themes
+copying src/dark_themes/alacritty_0_12.py -> build/lib/dark_themes
+copying src/dark_themes/afterglow.py -> build/lib/dark_themes
+copying src/dark_themes/__init__.py -> build/lib/dark_themes
+copying src/dark_themes/Mariana.py -> build/lib/dark_themes
+copying src/dark_themes/Cobalt2.py -> build/lib/dark_themes
+creating build/lib/config
+copying src/config/themes.py -> build/lib/config
+copying src/config/path.py -> build/lib/config
+copying src/config/errors.py -> build/lib/config
+copying src/config/__init__.py -> build/lib/config
+creating build/lib/cli
+copying src/cli/main.py -> build/lib/cli
+copying src/cli/cli.py -> build/lib/cli
+copying src/cli/__init__.py -> build/lib/cli
+running egg_info
+writing src/pycrypy.egg-info/PKG-INFO
+writing dependency_links to src/pycrypy.egg-info/dependency_links.txt
+writing entry points to src/pycrypy.egg-info/entry_points.txt
+writing requirements to src/pycrypy.egg-info/requires.txt
+writing top-level names to src/pycrypy.egg-info/top_level.txt
+reading manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE.es.md'
+adding license file 'LICENSE.md'
+writing manifest file 'src/pycrypy.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/cli
+copying build/lib/cli/__init__.py -> build/bdist.linux-x86_64/wheel/./cli
+copying build/lib/cli/cli.py -> build/bdist.linux-x86_64/wheel/./cli
+copying build/lib/cli/main.py -> build/bdist.linux-x86_64/wheel/./cli
+creating build/bdist.linux-x86_64/wheel/config
+copying build/lib/config/__init__.py -> build/bdist.linux-x86_64/wheel/./config
+copying build/lib/config/errors.py -> build/bdist.linux-x86_64/wheel/./config
+copying build/lib/config/path.py -> build/bdist.linux-x86_64/wheel/./config
+copying build/lib/config/themes.py -> build/bdist.linux-x86_64/wheel/./config
+creating build/bdist.linux-x86_64/wheel/dark_themes
+copying build/lib/dark_themes/Cobalt2.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/Mariana.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/__init__.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/afterglow.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/alacritty_0_12.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/ashes_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/base16_default_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/bluish.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/breeze.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/catppuccin_frappe.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/catppuccin_macchiato.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/catppuccin_mocha.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/chicago95.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/citylights.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/dark_pastels.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/deep_space.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/doom_one.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/dracula_plus.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/enfocado_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/everforest_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/falcon.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/flat_remix.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/flexoki.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/github_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/github_dark_dimmed.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gnome_terminal.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/google.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gruvbox_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gruvbox_material.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gruvbox_material_hard_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/gruvbox_material_medium_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/hardhacker.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/hatsunemiku.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/horizon_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/inferno.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/iris.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/kanagawa_dragon.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/kanagawa_wave.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/konsole_linux.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/low_contrast.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/marine_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/material_theme.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/meliora.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/monokai.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/monokai_pro.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/moonlight_ii_vscode.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/nightfox.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/nord.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/one_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/papercolor_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/pencil_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/rainbow.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/remedy_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/rose_pine_moon.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/seashells.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/smoooooth.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/snazzy.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/solarized_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/solarized_osaka.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/taerminal.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/tango_dark.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/tender.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/terminal_app.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/tomorrow_night.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/tomorrow_night_bright.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/ubuntu.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/vesper.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/wombat.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+copying build/lib/dark_themes/zenburn.py -> build/bdist.linux-x86_64/wheel/./dark_themes
+creating build/bdist.linux-x86_64/wheel/lib
+copying build/lib/lib/__init__.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/alacritty_key.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_cursor_blinking.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_cursor_shape.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_cursor_thickness.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_font.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_font_size.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_font_style.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_opacity.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_padding.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/change_theme_path.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/format_ansi_color.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/list_dark_themes.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/list_light_themes.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/list_recommended_themes.py -> build/bdist.linux-x86_64/wheel/./lib
+copying build/lib/lib/load_new_theme.py -> build/bdist.linux-x86_64/wheel/./lib
+creating build/bdist.linux-x86_64/wheel/light_themes
+copying build/lib/light_themes/__init__.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/alabaster.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/ashes_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/atom_one_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/ayu_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/catppuccin_latte.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/enfocado_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/everforest_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light_colorblind.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light_default.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light_high_contrast.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/github_light_tritanopia.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/gruvbox_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/gruvbox_material_hard_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/gruvbox_material_medium_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/high_contrast.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/msx.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/night_owlish_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/noctis_lux.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/nord_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/papercolor_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/papertheme.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/pencil_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/rose_pine_dawn.py -> build/bdist.linux-x86_64/wheel/./light_themes
+copying build/lib/light_themes/solarized_light.py -> build/bdist.linux-x86_64/wheel/./light_themes
+creating build/bdist.linux-x86_64/wheel/recommended_themes
+copying build/lib/recommended_themes/__init__.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/alabaster_dark.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/argonaut.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/aura.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/ayu_dark.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/ayu_mirage.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/baitong.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/blood_moon.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/bluescreen.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/campbell.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/carbonfox.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/catppuccin.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/challenger_deep.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/cyber_punk_neon.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/dark_pride.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/dracula.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/dracula_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/github_dark_colorblind.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/github_dark_default.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/github_dark_high_contrast.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/github_dark_tritanopia.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/gotham.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/greenscreen.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/hyper.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/iterm.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/material_darker.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/material_ocean.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/material_theme_mod.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/midnight_haze.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/monokai_charcoal.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/monokai_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/night_owl.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/nightfly.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/nord_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/nord_wave.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/nordic.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/oceanic_next.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/omni.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/onedark_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/palenight.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/pastel_dark.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/rose_pine.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/rosepine_inspired.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/thelovelace.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/tokyo_night.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/tokyo_night_storm.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+copying build/lib/recommended_themes/xterm.py -> build/bdist.linux-x86_64/wheel/./recommended_themes
+running install_egg_info
+Copying src/pycrypy.egg-info to build/bdist.linux-x86_64/wheel/./pycrypy-1.0.0.dev0-py3.13.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/pycrypy-1.0.0.dev0.dist-info/WHEEL
+creating '/home/d4nitrix13/pycrypy/dist/.tmp-8582qsdm/pycrypy-1.0.0.dev0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'cli/__init__.py'
+adding 'cli/cli.py'
+adding 'cli/main.py'
+adding 'config/__init__.py'
+adding 'config/errors.py'
+adding 'config/path.py'
+adding 'config/themes.py'
+adding 'dark_themes/Cobalt2.py'
+adding 'dark_themes/Mariana.py'
+adding 'dark_themes/__init__.py'
+adding 'dark_themes/afterglow.py'
+adding 'dark_themes/alacritty_0_12.py'
+adding 'dark_themes/ashes_dark.py'
+adding 'dark_themes/base16_default_dark.py'
+adding 'dark_themes/bluish.py'
+adding 'dark_themes/breeze.py'
+adding 'dark_themes/catppuccin_frappe.py'
+adding 'dark_themes/catppuccin_macchiato.py'
+adding 'dark_themes/catppuccin_mocha.py'
+adding 'dark_themes/chicago95.py'
+adding 'dark_themes/citylights.py'
+adding 'dark_themes/dark_pastels.py'
+adding 'dark_themes/deep_space.py'
+adding 'dark_themes/doom_one.py'
+adding 'dark_themes/dracula_plus.py'
+adding 'dark_themes/enfocado_dark.py'
+adding 'dark_themes/everforest_dark.py'
+adding 'dark_themes/falcon.py'
+adding 'dark_themes/flat_remix.py'
+adding 'dark_themes/flexoki.py'
+adding 'dark_themes/github_dark.py'
+adding 'dark_themes/github_dark_dimmed.py'
+adding 'dark_themes/gnome_terminal.py'
+adding 'dark_themes/google.py'
+adding 'dark_themes/gruvbox_dark.py'
+adding 'dark_themes/gruvbox_material.py'
+adding 'dark_themes/gruvbox_material_hard_dark.py'
+adding 'dark_themes/gruvbox_material_medium_dark.py'
+adding 'dark_themes/hardhacker.py'
+adding 'dark_themes/hatsunemiku.py'
+adding 'dark_themes/horizon_dark.py'
+adding 'dark_themes/inferno.py'
+adding 'dark_themes/iris.py'
+adding 'dark_themes/kanagawa_dragon.py'
+adding 'dark_themes/kanagawa_wave.py'
+adding 'dark_themes/konsole_linux.py'
+adding 'dark_themes/low_contrast.py'
+adding 'dark_themes/marine_dark.py'
+adding 'dark_themes/material_theme.py'
+adding 'dark_themes/meliora.py'
+adding 'dark_themes/monokai.py'
+adding 'dark_themes/monokai_pro.py'
+adding 'dark_themes/moonlight_ii_vscode.py'
+adding 'dark_themes/nightfox.py'
+adding 'dark_themes/nord.py'
+adding 'dark_themes/one_dark.py'
+adding 'dark_themes/papercolor_dark.py'
+adding 'dark_themes/pencil_dark.py'
+adding 'dark_themes/rainbow.py'
+adding 'dark_themes/remedy_dark.py'
+adding 'dark_themes/rose_pine_moon.py'
+adding 'dark_themes/seashells.py'
+adding 'dark_themes/smoooooth.py'
+adding 'dark_themes/snazzy.py'
+adding 'dark_themes/solarized_dark.py'
+adding 'dark_themes/solarized_osaka.py'
+adding 'dark_themes/taerminal.py'
+adding 'dark_themes/tango_dark.py'
+adding 'dark_themes/tender.py'
+adding 'dark_themes/terminal_app.py'
+adding 'dark_themes/tomorrow_night.py'
+adding 'dark_themes/tomorrow_night_bright.py'
+adding 'dark_themes/ubuntu.py'
+adding 'dark_themes/vesper.py'
+adding 'dark_themes/wombat.py'
+adding 'dark_themes/zenburn.py'
+adding 'lib/__init__.py'
+adding 'lib/alacritty_key.py'
+adding 'lib/change_cursor_blinking.py'
+adding 'lib/change_cursor_shape.py'
+adding 'lib/change_cursor_thickness.py'
+adding 'lib/change_font.py'
+adding 'lib/change_font_size.py'
+adding 'lib/change_font_style.py'
+adding 'lib/change_opacity.py'
+adding 'lib/change_padding.py'
+adding 'lib/change_theme_path.py'
+adding 'lib/format_ansi_color.py'
+adding 'lib/list_dark_themes.py'
+adding 'lib/list_light_themes.py'
+adding 'lib/list_recommended_themes.py'
+adding 'lib/load_new_theme.py'
+adding 'light_themes/__init__.py'
+adding 'light_themes/alabaster.py'
+adding 'light_themes/ashes_light.py'
+adding 'light_themes/atom_one_light.py'
+adding 'light_themes/ayu_light.py'
+adding 'light_themes/catppuccin_latte.py'
+adding 'light_themes/enfocado_light.py'
+adding 'light_themes/everforest_light.py'
+adding 'light_themes/github_light.py'
+adding 'light_themes/github_light_colorblind.py'
+adding 'light_themes/github_light_default.py'
+adding 'light_themes/github_light_high_contrast.py'
+adding 'light_themes/github_light_tritanopia.py'
+adding 'light_themes/gruvbox_light.py'
+adding 'light_themes/gruvbox_material_hard_light.py'
+adding 'light_themes/gruvbox_material_medium_light.py'
+adding 'light_themes/high_contrast.py'
+adding 'light_themes/msx.py'
+adding 'light_themes/night_owlish_light.py'
+adding 'light_themes/noctis_lux.py'
+adding 'light_themes/nord_light.py'
+adding 'light_themes/papercolor_light.py'
+adding 'light_themes/papertheme.py'
+adding 'light_themes/pencil_light.py'
+adding 'light_themes/rose_pine_dawn.py'
+adding 'light_themes/solarized_light.py'
+adding 'pycrypy-1.0.0.dev0.dist-info/licenses/LICENSE.es.md'
+adding 'pycrypy-1.0.0.dev0.dist-info/licenses/LICENSE.md'
+adding 'recommended_themes/__init__.py'
+adding 'recommended_themes/alabaster_dark.py'
+adding 'recommended_themes/argonaut.py'
+adding 'recommended_themes/aura.py'
+adding 'recommended_themes/ayu_dark.py'
+adding 'recommended_themes/ayu_mirage.py'
+adding 'recommended_themes/baitong.py'
+adding 'recommended_themes/blood_moon.py'
+adding 'recommended_themes/bluescreen.py'
+adding 'recommended_themes/campbell.py'
+adding 'recommended_themes/carbonfox.py'
+adding 'recommended_themes/catppuccin.py'
+adding 'recommended_themes/challenger_deep.py'
+adding 'recommended_themes/cyber_punk_neon.py'
+adding 'recommended_themes/dark_pride.py'
+adding 'recommended_themes/dracula.py'
+adding 'recommended_themes/dracula_inspired.py'
+adding 'recommended_themes/github_dark_colorblind.py'
+adding 'recommended_themes/github_dark_default.py'
+adding 'recommended_themes/github_dark_high_contrast.py'
+adding 'recommended_themes/github_dark_tritanopia.py'
+adding 'recommended_themes/gotham.py'
+adding 'recommended_themes/greenscreen.py'
+adding 'recommended_themes/hyper.py'
+adding 'recommended_themes/iterm.py'
+adding 'recommended_themes/material_darker.py'
+adding 'recommended_themes/material_ocean.py'
+adding 'recommended_themes/material_theme_mod.py'
+adding 'recommended_themes/midnight_haze.py'
+adding 'recommended_themes/monokai_charcoal.py'
+adding 'recommended_themes/monokai_inspired.py'
+adding 'recommended_themes/night_owl.py'
+adding 'recommended_themes/nightfly.py'
+adding 'recommended_themes/nord_inspired.py'
+adding 'recommended_themes/nord_wave.py'
+adding 'recommended_themes/nordic.py'
+adding 'recommended_themes/oceanic_next.py'
+adding 'recommended_themes/omni.py'
+adding 'recommended_themes/onedark_inspired.py'
+adding 'recommended_themes/palenight.py'
+adding 'recommended_themes/pastel_dark.py'
+adding 'recommended_themes/rose_pine.py'
+adding 'recommended_themes/rosepine_inspired.py'
+adding 'recommended_themes/thelovelace.py'
+adding 'recommended_themes/tokyo_night.py'
+adding 'recommended_themes/tokyo_night_storm.py'
+adding 'recommended_themes/xterm.py'
+adding 'pycrypy-1.0.0.dev0.dist-info/METADATA'
+adding 'pycrypy-1.0.0.dev0.dist-info/WHEEL'
+adding 'pycrypy-1.0.0.dev0.dist-info/entry_points.txt'
+adding 'pycrypy-1.0.0.dev0.dist-info/top_level.txt'
+adding 'pycrypy-1.0.0.dev0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built pycrypy-1.0.0.dev0.tar.gz and pycrypy-1.0.0.dev0-py3-none-any.whl
+```
+
+**Después de ejecutar el comando anterior, puedes verificar los archivos generados con el siguiente comando:**
+
+```bash
+lsd --tree dist/
+```
+
+**El resultado será algo similar a esto:**
+
+```bash
+ dist
+├──  pycrypy-1.0.0.dev0-py3-none-any.whl
+└──  pycrypy-1.0.0.dev0.tar.gz
+```
+
+- **`pycrypy-1.0.0.dev0-py3-none-any.whl`:** *Este es el archivo en formato Wheel, que es un paquete binario optimizado para instalaciones rápidas.*
+- **`pycrypy-1.0.0.dev0.tar.gz`:** *Este es el archivo fuente comprimido en formato tarball, que se puede descomprimir y construir en otros entornos.*
+
+#### **4. Ventajas del Nuevo Método**
+
+*Usar `python3 -m build` en lugar de `setup.py install` tiene varias ventajas:*
+
+- **Compatibilidad con Estándares:** *Utiliza herramientas y formatos modernos que están alineados con los estándares actuales de Python.*
+- **Mejor Soporte de Dependencias:** *La instalación con `pip` maneja automáticamente las dependencias y los problemas relacionados con los entornos de instalación.*
+- **Mayor Flexibilidad:** *Permite crear diferentes formatos de distribución como `.whl` y `.tar.gz`, lo que facilita la instalación en distintos sistemas y entornos.*
+
+---
+
+### **Instalación del Paquete `pycrypy` en Modo Editable**
+
+**Para instalar el paquete `pycrypy` en modo editable, puedes usar el siguiente comando:**
+
+```bash
+pip install -e .
+```
+
+```bash
+Obtaining file:///home/d4nitrix13/pycrypy
+  Installing build dependencies ... done
+  Checking if build backend supports build_editable ... done
+  Getting requirements to build editable ... done
+  Preparing editable metadata (pyproject.toml) ... done
+Requirement already satisfied: altgraph>=0.17.4 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.17.4)
+Requirement already satisfied: certifi>=2025.1.31 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2025.1.31)
+Requirement already satisfied: cffi>=1.17.1 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.17.1)
+Requirement already satisfied: charset-normalizer>=3.4.1 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.4.1)
+Requirement already satisfied: colored>=2.3.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.3.0)
+Requirement already satisfied: cryptography>=44.0.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (44.0.2)
+Requirement already satisfied: docutils>=0.21.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.21.2)
+Requirement already satisfied: id>=1.5.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.5.0)
+Requirement already satisfied: idna>=3.10 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.10)
+Requirement already satisfied: jaraco.classes>=3.4.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.4.0)
+Requirement already satisfied: jaraco.context>=6.0.1 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (6.0.1)
+Requirement already satisfied: jaraco.functools>=4.1.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (4.1.0)
+Requirement already satisfied: jeepney>=0.9.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.9.0)
+Requirement already satisfied: keyring>=25.6.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (25.6.0)
+Requirement already satisfied: markdown-it-py>=3.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.0.0)
+Requirement already satisfied: mdurl>=0.1.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.1.2)
+Requirement already satisfied: more-itertools>=10.6.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (10.6.0)
+Requirement already satisfied: mypy>=1.15.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.15.0)
+Requirement already satisfied: mypy-extensions>=1.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.0.0)
+Requirement already satisfied: nh3>=0.2.21 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.2.21)
+Requirement already satisfied: packaging>=24.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (24.2)
+Requirement already satisfied: prettytable>=3.16.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.16.0)
+Requirement already satisfied: pycparser>=2.22 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.22)
+Requirement already satisfied: Pygments>=2.19.1 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.19.1)
+Requirement already satisfied: pyinstaller>=6.12.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (6.12.0)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2025.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2025.2)
+Requirement already satisfied: readme_renderer>=44.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (44.0)
+Requirement already satisfied: requests>=2.32.3 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.32.3)
+Requirement already satisfied: requests-toolbelt>=1.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (1.0.0)
+Requirement already satisfied: rfc3986>=2.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.0.0)
+Requirement already satisfied: rich>=14.0.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (14.0.0)
+Requirement already satisfied: SecretStorage>=3.3.3 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (3.3.3)
+Requirement already satisfied: setuptools>=78.1.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (78.1.0)
+Requirement already satisfied: toml>=0.10.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.10.2)
+Requirement already satisfied: twine>=6.1.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (6.1.0)
+Requirement already satisfied: types-toml>=0.10.8.20240310 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.10.8.20240310)
+Requirement already satisfied: typing_extensions>=4.13.2 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (4.13.2)
+Requirement already satisfied: urllib3>=2.4.0 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (2.4.0)
+Requirement already satisfied: wcwidth>=0.2.13 in ./.venv/lib/python3.13/site-packages (from pycrypy==1.0.0.dev0) (0.2.13)
+Building wheels for collected packages: pycrypy
+  Building editable for pycrypy (pyproject.toml) ... done
+  Created wheel for pycrypy: filename=pycrypy-1.0.0.dev0-0.editable-py3-none-any.whl size=7257 sha256=298f60e6aa5e91089db2b81ee1fe2121790a5e3ec939ddcb1824ad7eb469a556
+  Stored in directory: /tmp/pip-ephem-wheel-cache-8rctczm7/wheels/c7/7e/77/60eba2c2f86753dcaa99c9464b1823465b5d01ce3df8ed75ce
+Successfully built pycrypy
+Installing collected packages: pycrypy
+Successfully installed pycrypy-1.0.0.dev0
+```
 
 ### ***¿Qué Hace `pip cache purge`?***
 
@@ -311,7 +2145,7 @@ pip cache purge
 
    ```bash
    pip cache purge
-   pip install nombre-del-paquete
+   pip install name-package
    ```
 
 2. **Liberar Espacio:**
