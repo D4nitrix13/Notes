@@ -2116,6 +2116,68 @@ Installing collected packages: pycrypy
 Successfully installed pycrypy-1.0.0.dev0
 ```
 
+---
+
+La doble estrella `**` usada en patrones como `**/__pycache__/*` en el archivo `MANIFEST.in` es una forma poderosa de hacer coincidencias recursivas en cualquier nivel del árbol de directorios.
+
+---
+
+### 🧠 ¿Qué significa `**` en `MANIFEST.in`?
+
+`**` es un **comodín recursivo** que significa:
+
+> “Coincide con **cualquier cantidad de subdirectorios** (incluyendo ninguno) desde el punto donde estás.”
+
+Por ejemplo, el patrón:
+
+```ini
+global-exclude **/__pycache__/*
+```
+
+significa:
+
+> “Excluye **todos los archivos** dentro de **cualquier directorio** llamado `__pycache__`, **sin importar dónde se encuentren** en el árbol de directorios.”
+
+Y de forma similar:
+
+```ini
+global-exclude **/.mypy_cache/*
+```
+
+excluye todos los archivos dentro de cualquier `.mypy_cache` que aparezca en cualquier lugar del proyecto.
+
+---
+
+### **Delete Directory Cache ¿Por Qué Es Útil Al Construir Paquetes?**
+
+*Cuando usas `python3 -m build` o `python3 setup.py sdist bdist_wheel`, se toma todo lo que esté listado para incluir en `MANIFEST.in` o definido por `setuptools`. Si no excluyes directorios como `__pycache__`, podrías:*
+
+- *Incluir archivos `.pyc` que **no necesitas distribuir**.*
+- *Hacer que tu paquete sea **más pesado** de lo necesario.*
+- *Generar **errores o comportamientos inesperados** en otros entornos.*
+
+---
+
+### *Por Eso Es Recomendable Hacer Una “Limpieza Previa”*
+
+**Antes de construir un paquete:**
+
+#### **Forma A — Comando Manual:**
+
+```bash
+find . -type d -name "__pycache__" -exec rm -r {} +
+```
+
+*Esto **elimina físicamente** los directorios `__pycache__`.*
+
+#### **Forma B — Exclusión Lógica Desde `MANIFEST.in`:**
+
+```ini
+global-exclude **/__pycache__/*
+```
+
+*Esto **evita que se incluyan en el paquete**, aunque sigan existiendo en disco.*
+
 ### ***¿Qué Hace `pip cache purge`?***
 
 - *El comando `pip cache purge` se usa para limpiar la caché de `pip`. Aquí te explico en detalle qué hace y por qué podría ser útil:*
