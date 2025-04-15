@@ -36,6 +36,8 @@
 
 ### ***Tokens de API***
 
+*![Token](./img/token.png "./img/token.png")*
+
 **¿Qué son?**
 
 - *Los **tokens de API** son credenciales seguras que reemplazan el uso de contraseñas para interactuar con servicios web. Se utilizan para autenticar peticiones de una manera más segura y conveniente.*
