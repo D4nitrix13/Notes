@@ -1102,7 +1102,7 @@ python3 setup.py install
 
 1. **Compilación:** *El paquete se compila si es necesario (por ejemplo, si hay archivos en C que deben ser compilados) y se crean archivos intermedios en el directorio `build`.*
 
-2. **Creación de archivos de distribución:** *Se generan los archivos de distribución en el directorio `dist`, como un archivo `.tar.gz` o `.whl` (dependiendo de cómo esté configurado tu `setup.py`).*
+2. **Creación de archivos de distribución:** *Se generan los archivos de distribución en el directorio `dist`, como un fichero `.tar.gz` o `.whl` (dependiendo de cómo esté configurado tu `setup.py`).*
 
 3. **Instalación:** *El contenido del paquete se instala en el entorno de Python, lo que implica copiar los archivos del paquete (archivos `.py`, scripts, dependencias) a las ubicaciones adecuadas en el sistema, típicamente dentro de un directorio `site-packages` de tu entorno de Python (por ejemplo, en el directorio `lib/pythonX.X/site-packages`).*
 
@@ -2039,8 +2039,8 @@ lsd --tree dist/
 └──  pycrypy-1.0.0.dev0.tar.gz
 ```
 
-- **`pycrypy-1.0.0.dev0-py3-none-any.whl`:** *Este es el archivo en formato Wheel, que es un paquete binario optimizado para instalaciones rápidas.*
-- **`pycrypy-1.0.0.dev0.tar.gz`:** *Este es el archivo fuente comprimido en formato tarball, que se puede descomprimir y construir en otros entornos.*
+- **`pycrypy-1.0.0.dev0-py3-none-any.whl`:** *Este es el fichero en formato Wheel, que es un paquete binario optimizado para instalaciones rápidas.*
+- **`pycrypy-1.0.0.dev0.tar.gz`:** *Este es el fichero fuente comprimido en formato tarball, que se puede descomprimir y construir en otros entornos.*
 
 #### **4. Ventajas del Nuevo Método**
 
@@ -2356,13 +2356,13 @@ description = A description of my package.
 
 ### ***Resumen:***
 
- **Instalar herramientas:** *`pip install setuptools wheel twine`*
- **Actualizar herramientas:** *`pip install --upgrade setuptools twine`*
- **Crear distribuciones:** *`python3 setup.py sdist bdist_wheel`*
- **Instalar localmente:** *`pip install -e .`*
- **Desinstalar:** *`pip uninstall pycrypy`*
- **Subir a PyPI:** *`twine upload --repository pypi dist/* --verbose`*
- **Subir a TestPyPI:** *`twine upload --repository testpypi dist/* --verbose`*
- **Verificar el paquete:** *`twine check dist/*`*
+- **Instalar herramientas:** *`pip install setuptools wheel twine`*
+- **Actualizar herramientas:** *`pip install --upgrade setuptools twine`*
+- **Crear distribuciones:** *`python3 setup.py sdist bdist_wheel`*
+- **Instalar localmente:** *`pip install -e .`*
+- **Desinstalar:** *`pip uninstall pycrypy`*
+- **Subir a PyPI:** *`twine upload --repository pypi dist/* --verbose`*
+- **Subir a TestPyPI:** *`twine upload --repository testpypi dist/* --verbose`*
+- **Verificar el paquete:** *`twine check dist/*`*
 
 - *Estos pasos cubren el proceso de empaquetado y distribución de un paquete de Python. Asegúrate de que todo esté bien configurado y probado antes de publicar en PyPI.*
