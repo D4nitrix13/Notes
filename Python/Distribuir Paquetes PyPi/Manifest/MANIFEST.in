@@ -3,43 +3,43 @@
 # GitLab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
-# Incluir los fichero de documentación principal.
-include ./README.*
+# Include the main documentation files.
+include README.*
 
-# Incluir el fichero de licencia del proyecto.
-include ./LICENSE*
+# Include the project's license file.
+include LICENSE*
 
-# Incluir los siguientes documentos relacionados con la conducta y seguridad.
-include ./CODE_OF_CONDUCT.md
-include ./CODIGO_CONDUCTA.md
-include ./SECURITY.*
-include ./pycrypy.spec
+# Include the following documents related to conduct and security.
+include CODE_OF_CONDUCT.md
+include CODIGO_CONDUCTA.md
+include SECURITY.*
+include pycrypy.spec
 
-# Incluir los requisitos del proyecto para la instalación de dependencias.
-include ./requirements.txt
+# Include the project's dependency installation requirements file.
+include requirements.txt
 
-# Incluir el fichero de contribución para guiar a los colaboradores.
-include ./CONTRIBUCION.md
+# Include the contribution guide to assist collaborators.
+include CONTRIBUCION.md
 
-# Incluir todos los ficheros de datos en los directorios 'src' y 'dist'.
-recursive-include ./src *
-recursive-include ./dist *
+# Include all data files in the 'src' and 'dist' directories.
+recursive-include src *
+recursive-include dist *
 
-# Excluir todos los directorios '.mypy_cache' en cualquier nivel del árbol de directorios.
-global-exclude */.mypy_cache *
+# Exclude all '.mypy_cache' directories at any level of the directory tree.
+global-exclude **/.mypy_cache *
 
-# Excluir todos los directorios '__pycache__' en cualquier nivel del árbol de directorios.
-global-exclude */__pycache__ *
+# Exclude all '__pycache__' directories at any level of the directory tree.
+global-exclude **/__pycache__ *
 
-# Excluir los ficheros del directorio '.git' para evitar incluir información de control de versiones.
-recursive-exclude ./.git *
+# Exclude files in the '.git' directory to avoid including version control information.
+recursive-exclude .git *
 
-# Excluir todos los ficheros en el directorio 'Themes' para mantener el foco en los ficheros relevantes.
-recursive-exclude ./Themes *
+# Exclude all files in the 'Themes' directory to focus on relevant files.
+recursive-exclude Themes *
 
-# Excluir los siguientes ficheros de configuración y control.
-exclude ./.gitignore
-exclude ./.gitattributes
-exclude ./.editorconfig
-exclude ./*.asc
+# Exclude the following configuration and control files.
+exclude .gitignore
+exclude .gitattributes
+exclude .editorconfig
+exclude *.asc
 
