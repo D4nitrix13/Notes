@@ -8,49 +8,81 @@
 ```python
 # Author: Daniel Benjamin Perez Morales
 # GitHub: https://github.com/D4nitrix13
-# GitLab: https://gitlab.com/D4nitrix13
+# Gitlab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
-from typing import Optional
-from setuptools import setup, find_packages
 from io import TextIOWrapper
+
+from setuptools import find_packages, setup
 
 f: TextIOWrapper
 
-with open(file = r"README.md", mode = "r", encoding = "utf-8") as f:
+with open(file=r"README.md", mode="r", encoding="utf-8") as f:
     README: str = f.read()
 
 setup(
-    name = "pycrypy",
-    version = "1.0.0",
-    author = "Daniel Benjamin Perez Morales",
-    author_email = "danielperezdev@proton.me",
-    description = "Esta utilidad, desarrollada en Python3, simplifica significativamente el proceso de configuracion de Alacritty, permitiendo ajustar de manera simple la fuente, el tema, el padding, los cursores y los estilos de la fuente.",
-    long_description = README,
-    long_description_content_type = "text/markdown",
-    url = "https://github.com/D4nitrix13/pycrypy.git",
-    packages = find_packages(where = "src"),
-    package_dir = {"": "src"},  # Indica que los paquetes están en "src"
+    name="pycrypy",
+    version="1.0.0.dev0",
+    author="Daniel Benjamin Perez Morales",
+    author_email="danielperezdev@proton.me",
+    description="This utility, developed in Python3, significantly simplifies the configuration process of Alacritty, allowing easy adjustments to font, theme, padding, cursors, and font styles.",
+    long_description=README,
+    long_description_content_type="text/markdown",
+    url="https://github.com/D4nitrix13/pycrypy.git",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},  # Indicates that packages are in "src"
     license="MIT",
-    classifiers = [
+    classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: POSIX :: Linux",
-        "Topic :: Terminals :: Terminal Emulators/X Terminals"
+        "Topic :: Terminals :: Terminal Emulators/X Terminals",
     ],
-    keywords = "alacritty",
-    python_requires = ">=3.6",
-    install_requires = [
+    keywords="alacritty",
+    python_requires=">=3.6",
+    install_requires=[
+        "altgraph >= 0.17.4",
+        "certifi >= 2025.1.31",
+        "cffi >= 1.17.1",
+        "charset-normalizer >= 3.4.1",
+        "colored >= 2.3.0",
+        "cryptography >= 44.0.2",
+        "docutils >= 0.21.2",
+        "id >= 1.5.0",
+        "idna >= 3.10",
+        "jaraco.classes >= 3.4.0",
+        "jaraco.context >= 6.0.1",
+        "jaraco.functools >= 4.1.0",
+        "jeepney >= 0.9.0",
+        "keyring >= 25.6.0",
+        "markdown-it-py >= 3.0.0",
+        "mdurl >= 0.1.2",
+        "more-itertools >= 10.6.0",
+        "mypy >= 1.15.0",
+        "mypy-extensions >= 1.0.0",
+        "nh3 >= 0.2.21",
+        "packaging >= 24.2",
+        "prettytable >= 3.16.0",
+        "pycparser >= 2.22",
+        "Pygments >= 2.19.1",
+        "pyinstaller >= 6.12.0",
+        "pyinstaller-hooks-contrib >= 2025.2",
+        "readme_renderer >= 44.0",
+        "requests >= 2.32.3",
+        "requests-toolbelt >= 1.0.0",
+        "rfc3986 >= 2.0.0",
+        "rich >= 14.0.0",
+        "SecretStorage >= 3.3.3",
+        "setuptools >= 78.1.0",
         "toml >= 0.10.2",
-        "colored >= 2.2.4",
-        "mypy >= 1.10.0",
-        "pyinstaller >= 6.6.0",
-        "prettytable >= 3.10.2",
+        "twine >= 6.1.0",
+        "types-toml >= 0.10.8.20240310",
+        "typing_extensions >= 4.13.2",
+        "urllib3 >= 2.4.0",
+        "wcwidth >= 0.2.13",
     ],
-    include_package_data = True,
-    entry_points = {
-        "console_scripts": ["pycrypy = cli.main:main"]
-    }
+    include_package_data=True,
+    entry_points=dict(console_scripts=["pycrypy = cli.main:main"]),
 )
 ```
 
@@ -103,36 +135,68 @@ with open(file = r"README.md", mode = "r", encoding = "utf-8") as f:
 
 ```python
 setup(
-    name = "pycrypy",
-    version = "1.0.0",
-    author = "Daniel Benjamin Perez Morales",
-    author_email = "danielperezdev@proton.me",
-    description = "Esta utilidad, desarrollada en Python3, simplifica significativamente el proceso de configuracion de Alacritty, permitiendo ajustar de manera simple la fuente, el tema, el padding, los cursores y los estilos de la fuente.",
-    long_description = README,
-    long_description_content_type = "text/markdown",
-    url = "https://github.com/D4nitrix13/pycrypy.git",
-    packages = find_packages(where = "src"),
-    package_dir = {"": "src"},  # Indica que los paquetes están en "src"
+    name="pycrypy",
+    version="1.0.0.dev0",
+    author="Daniel Benjamin Perez Morales",
+    author_email="danielperezdev@proton.me",
+    description="This utility, developed in Python3, significantly simplifies the configuration process of Alacritty, allowing easy adjustments to font, theme, padding, cursors, and font styles.",
+    long_description=README,
+    long_description_content_type="text/markdown",
+    url="https://github.com/D4nitrix13/pycrypy.git",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},  # Indicates that packages are in "src"
     license="MIT",
-    classifiers = [
+    classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: POSIX :: Linux",
-        "Topic :: Terminals :: Terminal Emulators/X Terminals"
+        "Topic :: Terminals :: Terminal Emulators/X Terminals",
     ],
-    keywords = "alacritty",
-    python_requires = ">=3.6",
-    install_requires = [
+    keywords="alacritty",
+    python_requires=">=3.6",
+    install_requires=[
+        "altgraph >= 0.17.4",
+        "certifi >= 2025.1.31",
+        "cffi >= 1.17.1",
+        "charset-normalizer >= 3.4.1",
+        "colored >= 2.3.0",
+        "cryptography >= 44.0.2",
+        "docutils >= 0.21.2",
+        "id >= 1.5.0",
+        "idna >= 3.10",
+        "jaraco.classes >= 3.4.0",
+        "jaraco.context >= 6.0.1",
+        "jaraco.functools >= 4.1.0",
+        "jeepney >= 0.9.0",
+        "keyring >= 25.6.0",
+        "markdown-it-py >= 3.0.0",
+        "mdurl >= 0.1.2",
+        "more-itertools >= 10.6.0",
+        "mypy >= 1.15.0",
+        "mypy-extensions >= 1.0.0",
+        "nh3 >= 0.2.21",
+        "packaging >= 24.2",
+        "prettytable >= 3.16.0",
+        "pycparser >= 2.22",
+        "Pygments >= 2.19.1",
+        "pyinstaller >= 6.12.0",
+        "pyinstaller-hooks-contrib >= 2025.2",
+        "readme_renderer >= 44.0",
+        "requests >= 2.32.3",
+        "requests-toolbelt >= 1.0.0",
+        "rfc3986 >= 2.0.0",
+        "rich >= 14.0.0",
+        "SecretStorage >= 3.3.3",
+        "setuptools >= 78.1.0",
         "toml >= 0.10.2",
-        "colored >= 2.2.4",
-        "mypy >= 1.10.0",
-        "pyinstaller >= 6.6.0",
-        "prettytable >= 3.10.2",
+        "twine >= 6.1.0",
+        "types-toml >= 0.10.8.20240310",
+        "typing_extensions >= 4.13.2",
+        "urllib3 >= 2.4.0",
+        "wcwidth >= 0.2.13",
     ],
-    include_package_data = True,
-    entry_points = {
-        "console_scripts": ["pycrypy = cli.main:main"]
-    }
+    include_package_data=True,
+    entry_points=dict(console_scripts=["pycrypy = cli.main:main"]),
 )
 ```
 
@@ -141,7 +205,7 @@ setup(
 - **`name`:** *`"pycrypy"`*
   - *Nombre del paquete. Es el nombre con el que se instalará y referenciará el paquete en PyPI y otros sistemas de gestión de paquetes.*
 
-- **`version`:** *`"1.0.0"`*
+- **`version`:** *`"1.0.0.dev0"`*
   - *Versión del paquete. Sigue la convención de versión semántica (SemVer) para indicar la versión del software.*
 
 - **`author`:** *`"Daniel Benjamin Perez Morales"`*
@@ -194,20 +258,88 @@ setup(
 
   ```python
   [
-    "toml >= 0.10.2",
-    "colored >= 2.2.4",
-    "mypy >= 1.10.0",
-    "pyinstaller >= 6.6.0",
-    "prettytable >= 3.10.2",
+        "altgraph >= 0.17.4",
+        "certifi >= 2025.1.31",
+        "cffi >= 1.17.1",
+        "charset-normalizer >= 3.4.1",
+        "colored >= 2.3.0",
+        "cryptography >= 44.0.2",
+        "docutils >= 0.21.2",
+        "id >= 1.5.0",
+        "idna >= 3.10",
+        "jaraco.classes >= 3.4.0",
+        "jaraco.context >= 6.0.1",
+        "jaraco.functools >= 4.1.0",
+        "jeepney >= 0.9.0",
+        "keyring >= 25.6.0",
+        "markdown-it-py >= 3.0.0",
+        "mdurl >= 0.1.2",
+        "more-itertools >= 10.6.0",
+        "mypy >= 1.15.0",
+        "mypy-extensions >= 1.0.0",
+        "nh3 >= 0.2.21",
+        "packaging >= 24.2",
+        "prettytable >= 3.16.0",
+        "pycparser >= 2.22",
+        "Pygments >= 2.19.1",
+        "pyinstaller >= 6.12.0",
+        "pyinstaller-hooks-contrib >= 2025.2",
+        "readme_renderer >= 44.0",
+        "requests >= 2.32.3",
+        "requests-toolbelt >= 1.0.0",
+        "rfc3986 >= 2.0.0",
+        "rich >= 14.0.0",
+        "SecretStorage >= 3.3.3",
+        "setuptools >= 78.1.0",
+        "toml >= 0.10.2",
+        "twine >= 6.1.0",
+        "types-toml >= 0.10.8.20240310",
+        "typing_extensions >= 4.13.2",
+        "urllib3 >= 2.4.0",
+        "wcwidth >= 0.2.13",
   ]
   ```
 
   - *Una lista de dependencias que se instalarán automáticamente cuando se instale el paquete.*
-    - *Aquí, el paquete requiere `toml` versión **0.10.2** o superior*
-    - *Aquí, el paquete requiere `colored` versión **2.2.4** o superior*
-    - *Aquí, el paquete requiere `mypy` versión **1.10.0** o superior*
-    - *Aquí, el paquete requiere `pyinstaller` versión **6.6.0** o superior*
-    - *Aquí, el paquete requiere `prettytable` versión **3.10.2** o superior*
+    - *Aquí, el paquete requiere `altgraph` versión **0.17.4** o superior.*
+    - *Aquí, el paquete requiere `certifi` versión **2025.1.31** o superior.*
+    - *Aquí, el paquete requiere `cffi` versión **1.17.1** o superior.*
+    - *Aquí, el paquete requiere `charset-normalizer` versión **3.4.1** o superior.*
+    - *Aquí, el paquete requiere `colored` versión **2.3.0** o superior.*
+    - *Aquí, el paquete requiere `cryptography` versión **44.0.2** o superior.*
+    - *Aquí, el paquete requiere `docutils` versión **0.21.2** o superior.*
+    - *Aquí, el paquete requiere `id` versión **1.5.0** o superior.*
+    - *Aquí, el paquete requiere `idna` versión **3.10** o superior.*
+    - *Aquí, el paquete requiere `jaraco.classes` versión **3.4.0** o superior.*
+    - *Aquí, el paquete requiere `jaraco.context` versión **6.0.1** o superior.*
+    - *Aquí, el paquete requiere `jaraco.functools` versión **4.1.0** o superior.*
+    - *Aquí, el paquete requiere `jeepney` versión **0.9.0** o superior.*
+    - *Aquí, el paquete requiere `keyring` versión **25.6.0** o superior.*
+    - *Aquí, el paquete requiere `markdown-it-py` versión **3.0.0** o superior.*
+    - *Aquí, el paquete requiere `mdurl` versión **0.1.2** o superior.*
+    - *Aquí, el paquete requiere `more-itertools` versión **10.6.0** o superior.*
+    - *Aquí, el paquete requiere `mypy` versión **1.15.0** o superior.*
+    - *Aquí, el paquete requiere `mypy-extensions` versión **1.0.0** o superior.*
+    - *Aquí, el paquete requiere `nh3` versión **0.2.21** o superior.*
+    - *Aquí, el paquete requiere `packaging` versión **24.2** o superior.*
+    - *Aquí, el paquete requiere `prettytable` versión **3.16.0** o superior.*
+    - *Aquí, el paquete requiere `pycparser` versión **2.22** o superior.*
+    - *Aquí, el paquete requiere `Pygments` versión **2.19.1** o superior.*
+    - *Aquí, el paquete requiere `pyinstaller` versión **6.12.0** o superior.*
+    - *Aquí, el paquete requiere `pyinstaller-hooks-contrib` versión **2025.2** o superior.*
+    - *Aquí, el paquete requiere `readme_renderer` versión **44.0** o superior.*
+    - *Aquí, el paquete requiere `requests` versión **2.32.3** o superior.*
+    - *Aquí, el paquete requiere `requests-toolbelt` versión **1.0.0** o superior.*
+    - *Aquí, el paquete requiere `rfc3986` versión **2.0.0** o superior.*
+    - *Aquí, el paquete requiere `rich` versión **14.0.0** o superior.*
+    - *Aquí, el paquete requiere `SecretStorage` versión **3.3.3** o superior.*
+    - *Aquí, el paquete requiere `setuptools` versión **78.1.0** o superior.*
+    - *Aquí, el paquete requiere `toml` versión **0.10.2** o superior.*
+    - *Aquí, el paquete requiere `twine` versión **6.1.0** o superior.*
+    - *Aquí, el paquete requiere `types-toml` versión **0.10.8.20240310** o superior.*
+    - *Aquí, el paquete requiere `typing_extensions` versión **4.13.2** o superior.*
+    - *Aquí, el paquete requiere `urllib3` versión **2.4.0** o superior.*
+    - *Aquí, el paquete requiere `wcwidth` versión **0.2.13** o superior.*
 
 - **`include_package_data`:** *`True`*
   - *Un booleano que indica si se deben incluir datos adicionales del paquete (como ficheros de datos) que no están especificados en `MANIFEST.in`.*
@@ -215,12 +347,12 @@ setup(
 - **`entry_points`:**
 
   ```python
-  {
-      "console_scripts": ["pycrypy = cli.main:main"]
-  }
+  dict(
+    console_scripts = [ "pycrypy = cli.main:main" ]
+  ),
   ```
 
-  - *Define los puntos de entrada del paquete, como los scripts de consola. Aquí, se especifica que el comando `pycrypy` en la línea de comandos ejecutará la función `main` del módulo `cli.main`.*
+- *Define los puntos de entrada del paquete, como los scripts de consola. Aquí, se especifica que el comando `pycrypy` en la línea de comandos ejecutará la función `main` del módulo `cli.main`.*
 
 ### ***Significado de los Símbolos***
 
