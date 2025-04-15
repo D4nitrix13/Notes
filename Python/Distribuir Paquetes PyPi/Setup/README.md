@@ -15,7 +15,7 @@ from typing import Optional
 from setuptools import setup, find_packages
 from io import TextIOWrapper
 
-f: Optional[TextIOWrapper] = None
+f: TextIOWrapper
 
 with open(file = r"README.md", mode = "r", encoding = "utf-8") as f:
     README: str = f.read()
@@ -57,16 +57,11 @@ setup(
 ## ***1. Importaciones***
 
 ```python
-from typing import Optional
 from setuptools import setup, find_packages
 from io import TextIOWrapper
 ```
 
-### ***`from typing import Optional`***
-
-*Esta línea importa el tipo `Optional` del módulo `typing`. `Optional` se usa para indicar que una variable puede tener un valor del tipo especificado o ser `None`.*
-
-#### ***`from setuptools import setup, find_packages`***
+### ***`from setuptools import setup, find_packages`***
 
 `setuptools` *es una biblioteca que facilita la creación, distribución y gestión de paquetes Python. Importa dos funciones:*
 
@@ -80,13 +75,13 @@ from io import TextIOWrapper
 ### ***2. Abrir y Leer el Fichero `README.md`***
 
 ```python
-f: Optional[TextIOWrapper] = None
+f: TextIOWrapper
 
 with open(file = r"README.md", mode = "r", encoding = "utf-8") as f:
     README: str = f.read()
 ```
 
-#### ***`f: Optional[TextIOWrapper] = None`***
+#### ***`f: TextIOWrapper`***
 
 *Aquí se define una variable `f` que puede ser de tipo `TextIOWrapper` o `None`. Inicialmente, `f` se establece en `None`. Esto es parte de la anotación de tipos, que ayuda a los desarrolladores y herramientas de análisis de código a entender qué tipo de datos se espera.*
 

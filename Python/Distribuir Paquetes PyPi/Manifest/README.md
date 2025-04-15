@@ -19,46 +19,46 @@
 
 - **`include`:** *Incluye Ficheros específicos en la distribución.*
 
-  ```plaintext
+  ```bash
   include ./README.*
   include ./setup.cfg
   ```
 
 - **`exclude`:** *Excluye Ficheros específicos de la distribución.*
 
-  ```plaintext
+  ```bash
   exclude ./*.pyc
   ```
 
 - **`recursive-include`:** *Incluye todos los Ficheros en un directorio específico, incluyendo subdirectorios.*
   - **Exclusiones específicas:** *Al usar recursive-exclude, se deben proporcionar tanto el directorio como un patrón de fichero (puede ser * para todos los ficheros).*
 
-  ```plaintext
+  ```bash
   recursive-include ./Package *.txt
   ```
 
 - **`recursive-exclude`:** *Excluye todos los Ficheros en un directorio específico, incluyendo subdirectorios.*
   - **Exclusiones específicas:** *Al usar recursive-exclude, se deben proporcionar tanto el directorio como un patrón de fichero (puede ser * para todos los ficheros).*
 
-  ```plaintext
+  ```bash
   recursive-exclude ./Package *.pyc
   ```
 
 - **`global-include`:** *Incluye todos los Ficheros que coincidan con el patrón especificado en todos los directorios.*
 
-  ```plaintext
+  ```bash
   global-include ./*.txt
   ```
 
 - **`global-exclude`:** *Excluye todos los Ficheros que coincidan con el patrón especificado en todos los directorios.*
 
-  ```plaintext
+  ```bash
   global-exclude ./*.pyc
   ```
 
 - **`prune`:** *Excluye directorios enteros de la distribución.*
 
-  ```plaintext
+  ```bash
   prune ./tests
   ```
 
@@ -66,7 +66,7 @@
 
 **Aquí hay un ejemplo de un Fichero `MANIFEST.in`:**
 
-```plaintext
+```bash
 include ./README.*
 include ./LICENSE.*
 recursive-include ./Package/data *
@@ -87,7 +87,7 @@ prune ./Package/tests
 
 **Aquí tienes algunos ejemplos que muestran cómo usar comentarios en un Fichero `MANIFEST.in`:**
 
-```plaintext
+```bash
 # Incluir el Fichero de documentación principal
 include ./README.*
 
@@ -109,7 +109,7 @@ prune ./Package/tests
 1. **Explicaciones Generales:**
   *Puedes usar comentarios para proporcionar explicaciones generales sobre qué hace cada línea o bloque de configuraciones en el Fichero.*
 
-   ```plaintext
+   ```bash
    # Incluir Ficheros de configuración
    include ./*.cfg
    ```
@@ -117,7 +117,7 @@ prune ./Package/tests
 2. **Notas sobre Excepciones:**
   *Los comentarios pueden ser útiles para documentar excepciones o condiciones especiales que se aplican a ciertas reglas de inclusión o exclusión.*
 
-   ```plaintext
+   ```bash
    # Excluir Ficheros temporales que podrían ser generados por el editor
    exclude ./*.tmp
    ```
@@ -125,7 +125,7 @@ prune ./Package/tests
 3. **Desactivación Temporal de Líneas:**
   *Puedes comentar líneas temporales para desactivar su efecto sin eliminarlas del Fichero.*
 
-   ```plaintext
+   ```bash
    # Incluye ejemplos de scripts, pero está comentado temporalmente
    # recursive-include ./Examples *.py
    ```
