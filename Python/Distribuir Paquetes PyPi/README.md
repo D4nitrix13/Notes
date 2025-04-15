@@ -2170,6 +2170,41 @@ find . -type d -name "__pycache__" -exec rm -r {} +
 
 *Esto **elimina físicamente** los directorios `__pycache__`.*
 
+---
+
+### **¿Qué significa `+` en `-exec ... {} +`?**
+
+- *El `+` le indica a `find` que **ejecute el comando lo menos posible**, agrupando **tantos resultados como quepan en una sola llamada al comando**.*
+- *Es decir, en lugar de ejecutar `rm -r` una vez por cada directorio `__pycache__`, lo hace en **bloques**:*
+
+```bash
+rm -r dir1 dir2 dir3 ...
+```
+
+*Esto lo hace **mucho más eficiente** que la versión tradicional con `\;`, que ejecuta el comando **una vez por cada coincidencia**:*
+
+```bash
+find . -type d -name "__pycache__" -exec rm -r {} \;
+# Esto ejecuta:
+# rm -r dir1
+# rm -r dir2
+# rm -r dir3
+# ...
+```
+
+---
+
+### **Resumen Comparativo**
+
+| **Sintaxis**        | **Significado**                                                                  |
+| ------------------- | -------------------------------------------------------------------------------- |
+| *`-exec ... {} \;`* | *Ejecuta el comando* **una vez por cada archivo o directorio**                   |
+| *`-exec ... {} +`*  | *Ejecuta el comando* **una sola vez con todos los resultados posibles a la vez** |
+
+*Este comando busca todos los directorios llamados `__pycache__` desde el directorio actual (`.`), y luego los **elimina todos en una sola llamada a `rm -r`**, o en varias si hay demasiados para pasarlos todos de una vez (limitado por la longitud máxima de línea de comandos del sistema).*
+
+---
+
 #### **Forma B — Exclusión Lógica Desde `MANIFEST.in`:**
 
 ```ini
