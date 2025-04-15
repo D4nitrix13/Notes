@@ -34,7 +34,6 @@ setup(
     license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
         "Operating System :: POSIX :: Linux",
         "Topic :: Terminals :: Terminal Emulators/X Terminals",
     ],
@@ -148,7 +147,6 @@ setup(
     license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
         "Operating System :: POSIX :: Linux",
         "Topic :: Terminals :: Terminal Emulators/X Terminals",
     ],
@@ -240,7 +238,6 @@ setup(
   ```python
   [
       "Programming Language :: Python :: 3",
-      "License :: OSI Approved :: MIT License",
       "Operating System :: POSIX :: Linux",
       "Topic :: Terminals :: Terminal Emulators/X Terminals"
   ]
