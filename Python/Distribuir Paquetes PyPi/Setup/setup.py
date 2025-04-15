@@ -1,8 +1,3 @@
-# Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/D4nitrix13
-# GitLab: https://gitlab.com/D4nitrix13
-# Email: danielperezdev@proton.me
-
 from io import TextIOWrapper
 
 from setuptools import find_packages, setup
@@ -14,15 +9,15 @@ with open(file=r"README.md", mode="r", encoding="utf-8") as f:
 
 setup(
     name="pycrypy",
-    version="1.0.5",
+    version="1.0.0.dev",
     author="Daniel Benjamin Perez Morales",
     author_email="danielperezdev@proton.me",
-    description="Esta utilidad, desarrollada en Python3, simplifica significativamente el proceso de configuracion de Alacritty, permitiendo ajustar de manera simple la fuente, el tema, el padding, los cursores y los estilos de la fuente.",
+    description="This utility, developed in Python3, significantly simplifies the configuration process of Alacritty, allowing easy adjustments to font, theme, padding, cursors, and font styles.",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/D4nitrix13/pycrypy.git",
     packages=find_packages(where="src"),
-    package_dir={"": "src"},  # Indica que los paquetes están en "src"
+    package_dir={"": "src"},  # Indicates that packages are in "src"
     license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -33,12 +28,46 @@ setup(
     keywords="alacritty",
     python_requires=">=3.6",
     install_requires=[
-        "pytoml >= 0.1.21",
-        "colored >= 2.2.4",
-        "mypy >= 1.10.0",
-        "pyinstaller >= 6.6.0",
-        "prettytable >= 3.10.2",
+        "altgraph >= 0.17.4",
+        "certifi >= 2025.1.31",
+        "cffi >= 1.17.1",
+        "charset-normalizer >= 3.4.1",
+        "colored >= 2.3.0",
+        "cryptography >= 44.0.2",
+        "docutils >= 0.21.2",
+        "id >= 1.5.0",
+        "idna >= 3.10",
+        "jaraco.classes >= 3.4.0",
+        "jaraco.context >= 6.0.1",
+        "jaraco.functools >= 4.1.0",
+        "jeepney >= 0.9.0",
+        "keyring >= 25.6.0",
+        "markdown-it-py >= 3.0.0",
+        "mdurl >= 0.1.2",
+        "more-itertools >= 10.6.0",
+        "mypy >= 1.15.0",
+        "mypy-extensions >= 1.0.0",
+        "nh3 >= 0.2.21",
+        "packaging >= 24.2",
+        "prettytable >= 3.16.0",
+        "pycparser >= 2.22",
+        "Pygments >= 2.19.1",
+        "pyinstaller >= 6.12.0",
+        "pyinstaller-hooks-contrib >= 2025.2",
+        "readme_renderer >= 44.0",
+        "requests >= 2.32.3",
+        "requests-toolbelt >= 1.0.0",
+        "rfc3986 >= 2.0.0",
+        "rich >= 14.0.0",
+        "SecretStorage >= 3.3.3",
+        "setuptools >= 78.1.0",
+        "toml >= 0.10.2",
+        "twine >= 6.1.0",
+        "types-toml >= 0.10.8.20240310",
+        "typing_extensions >= 4.13.2",
+        "urllib3 >= 2.4.0",
+        "wcwidth >= 0.2.13",
     ],
     include_package_data=True,
-    entry_points={"console_scripts": ["pycrypy = cli.main:main"]},
+    entry_points=dict(console_scripts=["pycrypy = cli.main:main"]),
 )
