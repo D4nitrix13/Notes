@@ -37,6 +37,9 @@ config.ini
 # Ignorar directorios generados automáticamente
 /build/
 /node_modules/
+
+# Ignorar ficheros temporales de Python
+**/__pycache__/
 ```
 
 ```css
@@ -70,6 +73,10 @@ proyecto/
 - *`config.ini` ignorará un fichero específico llamado `config.ini`.*
 
 - *`/build/` y `/node_modules/` ignorarán los directorios llamados `build` y `node_modules`, respectivamente, junto con todo su contenido.*
+
+- *`**/__pycache__/` ignorará todos los directorios llamados `__pycache__` en cualquier nivel de subdirectorio.*
+  - *`**` es un comodín que representa cualquier número de directorios entre el directorio actual y el directorio `__pycache__`. Esto significa que se ignorarán todos los directorios `__pycache__` en cualquier lugar dentro de la estructura de directorios del proyecto.*
+  - *`__pycache__` es un directorio utilizado por Python para almacenar bytecode compilado.*
 
 - *Puedes crear y personalizar tu fichero `.gitignore` según las necesidades específicas de tu proyecto. Es importante tener en cuenta que los patrones en este fichero se aplican de manera recursiva a los subdirectorios a menos que se especifique lo contrario.*
 
