@@ -38,7 +38,7 @@
    **Para mostrar información detallada sobre una etiqueta específica, puedes usar:**
 
    ```bash
-   git show <nombre_etiqueta>
+   git show <label-name>
    ```
 
 5. **Eliminar una etiqueta:**
@@ -46,7 +46,7 @@
    **Puedes eliminar una etiqueta específica utilizando:**
 
    ```bash
-   git tag -d <nombre_etiqueta>
+   git tag -d <label-name>
    ```
 
 6. **Empujar etiquetas al repositorio remoto:**
@@ -54,7 +54,7 @@
    **Para empujar etiquetas al repositorio remoto, puedes usar:**
 
    ```bash
-   git push origin <nombre_etiqueta>
+   git push origin <label-name>
    ```
 
    **Para empujar todas las etiquetas al repositorio remoto:**
@@ -76,7 +76,7 @@
    **No abreviado:**
 
    ```bash
-   git tag <nombre_etiqueta> [<commit>]
+   git tag <label-name> [<commit>]
    ```
 
    **Por ejemplo, para etiquetar el commit actual como v1.0.0:**
@@ -96,7 +96,7 @@
    **No abreviado:**
 
    ```bash
-   git tag --annotate <nombre_etiqueta> --message "Versión 1.0.0 lanzada" [<commit>]
+   git tag --annotate <label-name> --message "Versión 1.0.0 lanzada" [<commit>]
    ```
 
    **Por ejemplo, para etiquetar el commit actual con un mensaje:**
@@ -130,7 +130,7 @@
    **No abreviado:**
 
    ```bash
-   git show <nombre_etiqueta>
+   git show <label-name>
    ```
 
    **Por ejemplo, para mostrar información detallada sobre la etiqueta v1.0.0:**
@@ -150,7 +150,7 @@
    **No abreviado:**
 
    ```bash
-   git tag --delete <nombre_etiqueta>
+   git tag --delete <label-name>
    ```
 
    **Por ejemplo, para eliminar la etiqueta v1.0.0:**
@@ -178,15 +178,15 @@
    **No abreviado:**
 
    ```bash
-   git push origin <nombre_etiqueta>
+   git push origin <label-name>
    ```
 
    ```bash
-   git push origin -u <nombre_etiqueta>
+   git push origin -u <label-name>
    ```
 
    ```bash
-   git push origin --set-upstream <nombre_etiqueta>
+   git push origin --set-upstream <label-name>
    ```
 
    **Por ejemplo, para empujar la etiqueta v1.0.0 al repositorio remoto:**
