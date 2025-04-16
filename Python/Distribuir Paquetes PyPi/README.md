@@ -2227,6 +2227,28 @@ global-exclude **/__pycache__/*
 
 - **Actualización de Paquetes:** *Si has actualizado un paquete y `pip` sigue usando una versión antigua debido a la caché, limpiar la caché asegura que `pip` descargue la versión más reciente disponible.*
 
+---
+
+### **Limpieza Antes De Construir El Paquete**
+
+**Antes de construir el paquete con:**
+
+```bash
+python3 -m build
+# o alternativamente:
+python3 setup.py sdist bdist_wheel
+```
+
+E*s recomendable eliminar los directorios generados por compilaciones anteriores para evitar conflictos o residuos de versiones pasadas:*
+
+```bash
+rm -r dist/ src/pycrypy.egg-info/
+```
+
+*Esto asegura que los archivos `.tar.gz` y `.whl` generados en `dist/` reflejen exclusivamente los cambios actuales del proyecto, sin incluir metadatos obsoletos o duplicados.*
+
+---
+
 ### ***Comando `pip cache purge`***
 
 **Para usar este comando, simplemente ejecuta:**
