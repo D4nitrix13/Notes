@@ -22,8 +22,8 @@
 
 ### **Cómo Deben Escribirse Las Rutas**
 
-| **Incorrecto**                   | **Correcto**                   |
-| -------------------------------- | ------------------------------ |
+| **Incorrecto**                 | **Correcto**                   |
+| ------------------------------ | ------------------------------ |
 | *`include README.md`*          | *`include README.md`*          |
 | *`recursive-include src *`*    | *`recursive-include src *`*    |
 | *`recursive-exclude Themes *`* | *`recursive-exclude Themes *`* |
@@ -172,6 +172,58 @@ prune Package/tests
    ```
 
 *Recuerda que los comentarios no afectan la funcionalidad del Fichero `MANIFEST.in` y solo sirven para documentación y organización dentro del Fichero mismo.*
+
+---
+
+### **Comparación Entre Las Dos Formas**
+
+1. **`*/.mypy_cache/*` y `*/__pycache__/*`**
+
+   - **Significado:**
+     - *El patrón `*/.mypy_cache/*` significa "excluir todos los directorios llamados `.mypy_cache` que se encuentren en **cualquier nivel** del árbol de directorios, pero solo a un nivel de profundidad".*
+     - *Similarmente, `*/__pycache__/*` excluye los directorios `__pycache__` en cualquier nivel de profundidad, pero solo un nivel de subdirectorios.*
+
+   - **Limitación:**
+     - *Solo tiene en cuenta un nivel de subdirectorios, lo que significa que si tienes directorios con más de un nivel de subdirectorios (por ejemplo, `foo/bar/.mypy_cache`), **no los excluirá**.*
+
+2. **`**/__pycache__/*` y `**/.mypy_cache/*`**
+
+   - **Significado:**
+     - *El patrón `**/__pycache__/*` significa "excluir todos los directorios llamados `__pycache__` que se encuentren **en cualquier nivel** de subdirectorios, sin importar cuántos niveles de profundidad haya".*
+     - *De igual forma, `**/.mypy_cache/*` se aplica a cualquier directorio `.mypy_cache`, sin importar cuán profundo esté en el árbol.*
+
+   - **Ventaja:**
+     - **Recursión profunda:** *El uso de `**` permite excluir estos directorios **en todos los niveles del árbol de directorios** (independientemente de cuántos subdirectorios haya). Esto es útil para proyectos más grandes o complejos que podrían tener directorios anidados con estos nombres en niveles profundos.*
+
+---
+
+## **¿Cuál es mejor?**
+
+- **Uso de `**`:**
+  - **Más completo y preciso.** *Es **más robusto**, ya que cubre todos los niveles del árbol de directorios, garantizando que no queden archivos o directorios de caché en niveles más profundos.*
+  - **Recomendado** *cuando estás trabajando en proyectos con estructuras de directorios complejas o si no estás seguro de cuántos niveles de directorios pueden existir en tu proyecto.*
+
+- **Uso de `*/`:**
+  - **Más limitado**. *Aunque puede funcionar en muchos proyectos simples, **no cubre todos los casos** posibles en estructuras complejas, donde los directorios `__pycache__` o `.mypy_cache` están en niveles más profundos.*
+
+---
+
+## **¿Qué significa el `**`?**
+
+*El `**` es un **comodín recursivo** en las herramientas de `setuptools` que coincide con **todos los directorios** y **subdirectorios** en cualquier nivel. Es similar a cómo funciona en los sistemas de archivos o en los globbing de shells, pero en el contexto de `MANIFEST.in` se usa para hacer que la coincidencia sea **más profunda y extensa**.*
+
+- **`**/__pycache__/*`:**
+  - *Coincide con cualquier directorio `__pycache__`, independientemente de cuántos niveles de directorios haya antes de él.*
+  - *Ejemplo de coincidencias: `./foo/__pycache__/`, `./bar/baz/__pycache__/`, `./a/b/c/d/__pycache__/`.*
+
+- **Conclusión**
+
+- **Si tu proyecto es simple** *y no tiene muchas subcarpetas anidadas, `*/__pycache__/*` puede ser suficiente.*
+- **Si tu proyecto es más complejo** *y quieres asegurarte de excluir todos los directorios `__pycache__` o `.mypy_cache` en cualquier nivel del árbol de directorios, **usa `**/__pycache__/*`**. Es la opción **más robusta y flexible**.*
+
+*En resumen, el uso de `**` es generalmente preferible, ya que te garantiza que **se excluyen todos los directorios** en cualquier nivel del árbol de directorios, lo cual es más seguro a largo plazo.*
+
+---
 
 ### ***Uso***
 
