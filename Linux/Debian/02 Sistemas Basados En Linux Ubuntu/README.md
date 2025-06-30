@@ -8,13 +8,13 @@
 **`Indice`**
 
 - [***Sistemas basados en Linux Ubuntu***](#sistemas-basados-en-linux-ubuntu)
-- [***Usuarios en linux***](#usuarios-en-linux)
-- [***Configurando GRUB en Ubuntu***](#configurando-grub-en-ubuntu)
-- [***Atajo Linux!!***](#atajo-linux)
-- [***Gestores de paquetes en Linux Ubuntu***](#gestores-de-paquetes-en-linux-ubuntu)
-- [***Cambiar el tema de la terminal en Ubuntu***](#cambiar-el-tema-de-la-terminal-en-ubuntu)
-- [***Permisos en linux***](#permisos-en-linux)
-- [***Permisos en Directorios en Linux***](#permisos-en-directorios-en-linux)
+  - [***Usuarios en linux***](#usuarios-en-linux)
+  - [***Configurando GRUB en Ubuntu***](#configurando-grub-en-ubuntu)
+  - [***Atajo Linux!!***](#atajo-linux)
+  - [***Gestores de paquetes en Linux Ubuntu***](#gestores-de-paquetes-en-linux-ubuntu)
+  - [***Cambiar el tema de la terminal en Ubuntu***](#cambiar-el-tema-de-la-terminal-en-ubuntu)
+  - [***Permisos en linux***](#permisos-en-linux)
+  - [***Permisos en Directorios en Linux***](#permisos-en-directorios-en-linux)
   - [***Preparación del entorno***](#preparación-del-entorno)
     - [***Caso 1: Sin permiso de lectura (`r`)***](#caso-1-sin-permiso-de-lectura-r)
       - [***Comando para quitar el permiso de lectura***](#comando-para-quitar-el-permiso-de-lectura)
@@ -37,14 +37,14 @@
       - [***2. Quitar permisos de escritura del directorio padre***](#2-quitar-permisos-de-escritura-del-directorio-padre)
     - [***Solución para borrar un directorio sin permisos***](#solución-para-borrar-un-directorio-sin-permisos)
     - [***Resumen***](#resumen)
-- [***Enlaces duros y simbolicos***](#enlaces-duros-y-simbolicos)
+  - [***Enlaces duros y simbolicos***](#enlaces-duros-y-simbolicos)
 - [***Curl***](#curl)
-- [***Jerarquia de directorios***](#jerarquia-de-directorios)
-- [***Opciones de comando `ls`***](#opciones-de-comando-ls)
+  - [***Jerarquia de directorios***](#jerarquia-de-directorios)
+  - [***Opciones de comando `ls`***](#opciones-de-comando-ls)
 
 ---
 
-# ***Usuarios en linux***
+## ***Usuarios en linux***
 
 *El comando sudo su root en Linux se utiliza para cambiar al usuario root.*
 
@@ -66,7 +66,7 @@ sudo su
 
 ---
 
-# ***Configurando GRUB en Ubuntu***
+## ***Configurando GRUB en Ubuntu***
 
 *GRUB es el acrónimo de "GRand Unified Bootloader". En español, se podría traducir como "Cargador de Arranque Unificado Grande". Es un gestor de arranque múltiple, lo que significa que permite seleccionar entre diferentes sistemas operativos durante el arranque del equipo.*
 
@@ -138,7 +138,7 @@ sudo su
 
 ---
 
-# ***Atajo Linux!!***
+## ***Atajo Linux!!***
 
 > *!! es un evento de diseño en la línea de comandos de Bash que se refiere al último comando ejecutado.*
 
@@ -164,7 +164,7 @@ sudo su
 
 ---
 
-# ***Gestores de paquetes en Linux Ubuntu***
+## ***Gestores de paquetes en Linux Ubuntu***
 
 > *Los gestores de paquetes más comunes en Ubuntu son APT,Snap y dpkg.*
 
@@ -262,7 +262,7 @@ sudo dpkg -i package.deb
 
 ---
 
-# ***Cambiar el tema de la terminal en Ubuntu***
+## ***Cambiar el tema de la terminal en Ubuntu***
 
 1. *Abre la terminal.*
 
@@ -431,7 +431,7 @@ sudo apt-get install -y curl
 
 ---
 
-# ***Permisos en linux***
+## ***Permisos en linux***
 
 > *En linux existen diferentes tipos de permisos para los ficheros y directorios, estos son: **lectura**, **escritura** y **ejecución**. Los tres primeros son para el usuario, los otros tres permisos son para grupos y los ultimos tres permisos son para otros usuario*
 
@@ -786,7 +786,7 @@ chmod a=r fichero.py
 
 ---
 
-# ***Permisos en Directorios en Linux***
+## ***Permisos en Directorios en Linux***
 
 - **`r` (lectura):** *Permite listar el contenido del directorio.*
 - **`w` (escritura):** *Permite crear, modificar o eliminar ficheros dentro del directorio.*
@@ -1041,7 +1041,7 @@ sudo rm -r directory
 
 ---
 
-# ***Enlaces duros y simbolicos***
+## ***Enlaces duros y simbolicos***
 
 > *Un **enlace duro** es esencialmente un nombre adicional para un ficheros existente en los sistemas de ficheros de Unix y Linux. Todos los enlaces duros a un ficheros realmente se refieren al mismo ficheros, y es posible tener varios enlaces duros a un solo ficheros.* ***Un enlace simbólico** (también conocido como symlink o soft link) es un tipo especial de ficheros que sirve como referencia a otro ficheros o directorio.*
 
@@ -1187,7 +1187,7 @@ ln --symbolic fichero.py enlace_simbolico.py
 
 ---
 
-# ***Jerarquia de directorios***
+## ***Jerarquia de directorios***
 
 > *En los sistemas Linux, la jerarquía de directorios se organiza de acuerdo con el estándar Filesystem Hierarchy Standard (FHS).*
 
@@ -1263,7 +1263,7 @@ ln --symbolic fichero.py enlace_simbolico.py
 
 ---
 
-# ***Opciones de comando `ls`***
+## ***Opciones de comando `ls`***
 
 *`ls --format=long`: Muestra la información detallada de los ficheros, incluyendo permisos, número de enlaces, propietario, grupo, tamaño, fecha y nombre del fichero.*
 
