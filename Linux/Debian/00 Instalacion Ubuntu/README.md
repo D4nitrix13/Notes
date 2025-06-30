@@ -27,11 +27,11 @@
   - *Actualizar el sistema*
 
       ```bash
-      sudo apt-get install -y update
+      sudo apt-get update
       ```
 
      ```bash
-      sudo apt-get install -y upgrade
+      sudo apt-get upgrade -y
      ```
 
   - *Instalar VirtualBox*
@@ -366,13 +366,13 @@
          2. *Actualizamos el sistema*
 
               ```bash
-              sudo apt-get install -y update
+              sudo apt-get update
               ```
 
          3. *Terminamos de actualizar el sistema*
 
               ```bash
-               sudo apt-get install -y upgrade
+               sudo apt-get upgrade -y
                ```
 
       3. *![virtualbox #56](../Images/Img%20Virtualbox/55%20Virtualbox.png "../Images/Img Virtualbox/55 Virtualbox.png")*
