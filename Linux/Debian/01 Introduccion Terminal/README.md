@@ -8,11 +8,11 @@
 ---
 
 - [***Introduccion ala terminal***](#introduccion-ala-terminal)
-- [***Primeros Comandos***](#primeros-comandos)
+  - [***Primeros Comandos***](#primeros-comandos)
 
 ---
 
-# ***Primeros Comandos***
+## ***Primeros Comandos***
 
 > **Conceptos importantes sobre linux**
 
