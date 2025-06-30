@@ -5,16 +5,16 @@
 # ***Instalacion de Ubuntu***
 
 - [***Instalacion de Ubuntu***](#instalacion-de-ubuntu)
-- [***VirtualBox***](#virtualbox)
-- [***Instalar Ubuntu***](#instalar-ubuntu)
-- [***Instalacion en Maquina Virtual***](#instalacion-en-maquina-virtual)
-- [***Designaciones de Disco en Linux***](#designaciones-de-disco-en-linux)
-- [***Instalacion del sistema operativo en Hardware***](#instalacion-del-sistema-operativo-en-hardware)
-- [***Si tenemos problema al particionar el disco se puede deber a muchas razones***](#si-tenemos-problema-al-particionar-el-disco-se-puede-deber-a-muchas-razones)
+  - [***VirtualBox***](#virtualbox)
+  - [***Instalar Ubuntu***](#instalar-ubuntu)
+  - [***Instalacion en Maquina Virtual***](#instalacion-en-maquina-virtual)
+  - [***Designaciones de Disco en Linux***](#designaciones-de-disco-en-linux)
+  - [***Instalacion del sistema operativo en Hardware***](#instalacion-del-sistema-operativo-en-hardware)
+  - [***Si tenemos problema al particionar el disco se puede deber a muchas razones***](#si-tenemos-problema-al-particionar-el-disco-se-puede-deber-a-muchas-razones)
 
 ---
 
-# ***VirtualBox***
+## ***VirtualBox***
 
 > *Una máquina virtual (VM, por sus siglas en inglés) es un entorno virtualizado que emula un sistema informático físico y permite ejecutar sistemas operativos y aplicaciones como si estuvieran instalados en hardware físico. Esto es útil para probar software, realizar pruebas de seguridad, ejecutar sistemas operativos múltiples en un mismo hardware, entre otros usos.*
 
@@ -44,7 +44,7 @@
       vboxmanage --version
       ```
 
-# ***Instalar Ubuntu***
+## ***Instalar Ubuntu***
 
 > *Ubuntu es un sistema operativo de código abierto basado en el kernel de Linux. Es conocido por su enfoque en la facilidad de uso, la estabilidad y la seguridad. Ubuntu se distribuye gratuitamente y está respaldado por una comunidad activa de desarrolladores y usuarios.*
 
@@ -92,7 +92,7 @@
 
 ---
 
-# ***Instalacion en Maquina Virtual***
+## ***Instalacion en Maquina Virtual***
 
 1. *Ejecutamos el siguiente comando para abrir virtualbox*
 
@@ -277,7 +277,7 @@
 
 ---
 
-# ***Designaciones de Disco en Linux***
+## ***Designaciones de Disco en Linux***
 
 > *En sistemas operativos basados en Linux, los discos duros y otros dispositivos de almacenamiento son representados en el sistema de ficheros como ficheros en el directorio `/dev`. La designación de disco base suele seguir el patrón `/dev/sda`, donde "sda" podría ser reemplazado por otras letras según la cantidad de discos presentes en el sistema (por ejemplo, `/dev/sdb`, `/dev/sdc`, etc.).*
 
@@ -375,6 +375,15 @@
                sudo apt-get upgrade -y
                ```
 
+         4. **Ejecutamos el instalador de las Guest Additions**
+             - *Utilizamos el siguiente comando para iniciar la instalación de las VirtualBox Guest Additions, que permiten habilitar funciones como el redimensionamiento automático de pantalla, portapapeles compartido y carpetas compartidas:*
+
+             ```bash
+             sudo ./VBoxLinuxAdditions.run
+             ```
+
+              - *Es importante ejecutarlo con permisos de superusuario (sudo) para que pueda compilar e instalar correctamente los módulos del kernel necesarios.*
+
       3. *![virtualbox #56](../Images/Img%20Virtualbox/55%20Virtualbox.png "../Images/Img Virtualbox/55 Virtualbox.png")*
 
       4. *![virtualbox #57](../Images/Img%20Virtualbox/56%20Virtualbox.png "../Images/Img Virtualbox/56 Virtualbox.png")*
@@ -393,7 +402,7 @@
 
 ---
 
-# ***Instalacion del sistema operativo en Hardware***
+## ***Instalacion del sistema operativo en Hardware***
 
 ***Recomendacion al hacer las particiones para intalar el sistema operativo en hardware***
 
@@ -453,6 +462,6 @@
 
 ---
 
-# ***Si tenemos problema al particionar el disco se puede deber a muchas razones***
+## ***Si tenemos problema al particionar el disco se puede deber a muchas razones***
 
 1. *[Guía partition wizard](https://www.partitionwizard.com/partitionmanager/cannot-shrink-volume-win10.html "https://www.partitionwizard.com/partitionmanager/cannot-shrink-volume-win10.html")*
