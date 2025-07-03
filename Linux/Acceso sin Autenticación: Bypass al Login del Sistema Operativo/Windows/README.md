@@ -311,6 +311,8 @@ Logitech Wireless Gamepad F710 [0305]
 
 3. *Elige la unidad USB correspondiente. En este caso:*
 
+   *![Select Usb Booteable](./Images/Select%20Usb%20Booteable.png "./Images/Select%20Usb%20Booteable.png")*
+
    ```bash
    ADATA USB Flash Drive
    ```
@@ -412,7 +414,7 @@ Logitech Wireless Gamepad F710 [0305]
    exit
    ```
 
-   ![Salir de diskpart](./Images/Usb%20Booteable%20-%20Exit%20Diskpart.png "./Images/Usb%20Booteable%20-%20Exit%20Diskpart.png")
+   *![Salir de diskpart](./Images/Usb%20Booteable%20-%20Exit%20Diskpart.png "./Images/Usb%20Booteable%20-%20Exit%20Diskpart.png")*
 
 ---
 
@@ -446,7 +448,7 @@ cd System32
 
 ### **Pasos detallados con comandos e imágenes**
 
-#### *1. Entrar al símbolo del sistema desde el entorno de recuperación*
+#### **1. Entrar al símbolo del sistema desde el entorno de recuperación**
 
 **Cuando inicie el USB de Windows:**
 
@@ -470,7 +472,7 @@ Se han movido 1 archivos.
 
 ---
 
-#### *3. Reemplazar `Utilman.exe` por `cmd.exe`*
+#### **3. Reemplazar `Utilman.exe` por `cmd.exe`**
 
 ```cmd
 copy cmd.exe Utilman.exe
@@ -486,13 +488,13 @@ copy cmd.exe Utilman.exe
 
 ---
 
-#### *4. Salir del entorno de recuperación*
+#### **4. Salir del entorno de recuperación**
 
 ```cmd
 exit
 ```
 
-![Exit Cmd](./Images/Usb%20Booteable%20-%20Exit%20Cmd.png "./Images/Usb%20Booteable%20-%20Exit%20Cmd.png")
+*![Exit Cmd](./Images/Usb%20Booteable%20-%20Exit%20Cmd.png "./Images/Usb%20Booteable%20-%20Exit%20Cmd.png")*
 
 *Selecciona la opción: `Continuar - Salir y continuar con Windows`*
 
