@@ -3,11 +3,8 @@
 <!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
-# ***Indices***
-
-- [***Indices***](#indices)
-- [***Debian***](#debian)
+# **Indices**
 
 ---
 
-# ***[Debian](https://github.com/D4nitrix13/Notes/tree/master/Linux/Debian "https://github.com/D4nitrix13/Notes/tree/master/Linux/Debian")***
+- **[Debian](https://github.com/D4nitrix13/Notes/tree/master/Linux/Debian "https://github.com/D4nitrix13/Notes/tree/master/Linux/Debian")**
