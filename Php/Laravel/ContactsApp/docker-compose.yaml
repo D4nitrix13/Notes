@@ -1,0 +1,57 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me
+
+# version: '3.8'
+
+secrets:
+  POSTGRES_PASSWORD:
+    file: ./secrets/POSTGRES_PASSWORD.txt
+
+services:
+  # 172.18.0.2
+  postgresql:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.db
+    restart: always
+    ports:
+      - 5432:5432
+    secrets:
+      - POSTGRES_PASSWORD
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_PASSWORD_FILE: /run/secrets/POSTGRES_PASSWORD
+  # 172.18.0.3
+  app:
+    depends_on:
+      - postgresql
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    expose:
+      - 8000
+    ports:
+      - 8000:8000
+  # 172.18.0.4
+  pgadmin4:
+    depends_on:
+      - postgresql
+    image: elestio/pgadmin
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+      PGADMIN_LISTEN_PORT: 8080
+
+  # 172.18.0.5
+  stripe:
+    depends_on:
+      - app
+    image: stripe/stripe-cli:v1.29.0
+    restart: always
+    command: [ "listen", "--forward-to", "app:8000/stripe/webhook" ]

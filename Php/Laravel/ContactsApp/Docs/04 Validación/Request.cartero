@@ -1,0 +1,29 @@
+version = 1
+url = "http://172.17.0.2:80/ejercicio3"
+method = "POST"
+
+[body]
+type = "raw"
+format = "json"
+body = '''
+{
+ "name": "Keyboard",
+ "description": "Mechanical RGB Keyboard",
+ "price": 200,
+ "has_battery": true,
+ "battery_duration": 8,
+ "colors": ["blue", "white", "black"],
+ "dimensions": { "width": 40, "height": 5, "length": 20 },
+ "accessories": [
+  { "name": "Wrist rest", "price": 20 },
+  { "name": "Keycaps", "price": 15 }
+ ]
+}'''
+
+[headers]
+Accept = "application/json"
+Content-Type = "application/json"
+
+[variables]
+
+[inactive-params]

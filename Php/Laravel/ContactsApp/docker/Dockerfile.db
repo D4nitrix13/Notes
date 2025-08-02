@@ -1,0 +1,6 @@
+ARG VERSION=latest
+FROM postgres:${VERSION}
+
+COPY --chown=postgres:postgres ./scripts/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+ENTRYPOINT [ "docker-entrypoint.sh" ]
+CMD [ "postgres" ]

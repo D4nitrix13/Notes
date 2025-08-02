@@ -1,0 +1,49 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me
+
+# Construction
+# docker image build --tag d4nitrix13/laravel-guide --no-cache -f "Dockerfile.dev" "$(pwd)"
+
+# Recurso https://docs.docker.com/build/building/best-practices/
+
+ARG version=8.3.0
+FROM php:${version}
+
+RUN apt update && \
+    cd $(mktemp -d) && \
+    curl -sSLO https://github.com/sharkdp/bat/releases/latest/download/bat_0.25.0_amd64.deb && \
+    dpkg -i bat_0.25.0_amd64.deb && \
+    curl -sSLO https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd_1.1.5_amd64_xz.deb && \
+    dpkg --install lsd_1.1.5_amd64_xz.deb && \
+    curl -sSLO https://github.com/git/git/archive/refs/tags/v2.49.0-rc0.tar.gz && \
+    tar -xvf v2.49.0-rc0.tar.gz && \
+    cd "$(pwd)/git-2.49.0-rc0" && \
+    apt install -y libcurl4-openssl-dev libssl-dev zlib1g-dev libexpat1-dev tcl8.6 tk8.6 gettext tini --no-install-recommends && \
+    make prefix=/usr/local all && \
+    mv git /usr/local/bin/ && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /App
+
+# --chown=rooot:root -> --chown=0:0
+COPY --chown=0:0 ./ /App
+
+# SIGTERM -> 15
+STOPSIGNAL 15
+
+# root -> 0
+USER 0
+SHELL [ "/bin/bash", "-plic" ]
+HEALTHCHECK NONE
+EXPOSE 8000/tcp
+LABEL stage="development"
+LABEL maintainer="Daniel Benjamin Perez Morales"
+LABEL email="danielperezdev@proton.me"
+LABEL github="https://github.com/D4nitrix13"
+LABEL gitlab="https://gitlab.com/D4nitrix13"
+
+ENTRYPOINT [ "tini", "--" ]
+CMD [ "/bin/bash", "-pli" ]
+
