@@ -3,16 +3,30 @@
 <!-- Gitlab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
-# **Middlewares**
+# **Middlewares y protección de rutas**
 
-si no estamos autenticados ni siquiera deberiamos poder acceder aqui
+*[Checking Subscription Status](https://laravel.com/docs/12.x/cashier-paddle#checking-subscription-status "https://laravel.com/docs/12.x/cashier-paddle#checking-subscription-status")*
+
+> **"si no estamos autenticados ni siquiera deberiamos poder acceder aqui"**
+
+*Esto se refiere a que cualquier acceso a rutas sensibles (como `/contacts/`) debe estar protegido mediante middleware como `auth`, para que solo usuarios autenticados puedan acceder.*
+
+---
+
+## **Prueba con `curl`**
+
+*Se ejecutó el siguiente comando:*
 
 ```bash
 curl -sSX GET 'http://172.17.0.2:8000/contacts/' \
   -H 'Cookie: XSRF-TOKEN=eyJpdiI6IklFRXhjT1dKVDVUOTdleGNsNE9ad0E9PSIsInZhbHVlIjoidjgvMUF5enVBYnFBWG83emVGQnJ3T0RjZWU3amxlNmNScHFnVHdSZTNkbkpBNHk2UWZXRVVEV2s5TC83eXFtcGtqUnhOYXZ2U0w2N1dTK2ZBa3ZDSmkwc3Vib1daa1FOOWlmMGV5OC9yZ1NVNE5xekJLZ0hIckhEZkF6QVZuT3IiLCJtYWMiOiI0ZGU5YmQ2OTliMjkyNDQyOWQxMjRkMWY1OGRhOTBkYzQ1OGY2NDk4YThiOTBhMWUxMGRhYTM1YTQyNTEyMjE5IiwidGFnIjoiIn0%3D; contacts_app_session=eyJpdiI6IlpBMGVhQWd5YThtZGYySmVUUU9weFE9PSIsInZhbHVlIjoiMkNNYklwWlBQa0JwOWNTUXlldkhJRW1hcDFjZ3I1eGtGMU9aSDArRjk2TDZrTytjaW9aKzFrM29RU2hSdWNZYjVjcVp6NFJKK2taa2ROeHF4VW90TlYyV0JtRjEzTmNGeXk4SGlhT2pLOGZrTkpyNUlzNHZCRVBBdmx6cWVjR1IiLCJtYWMiOiIxN2JlMTc1YjliM2EzMjBiYWUzZDRjODEyMTMzYWM3MGJiYWNlNzYwZjNlMDg2OGJkODE0MjRkODJlNjY5M2MxIiwidGFnIjoiIn0%3D' | html2text
 ```
 
-salida
+*Este comando intenta simular una petición HTTP GET a la ruta `/contacts/` incluyendo cookies de sesión y token CSRF.*
+
+---
+
+## **Resultado del comando**
 
 ```bash
   Error: Call to a member function contacts() on null in file /App/ApplicationLaravel/app/Http/Controllers/ContactController.php on line 54
@@ -65,40 +79,119 @@ salida
     #45 {main}
 ```
 
-php artisan make:controller StripeController
+*Este error ocurre porque **`auth()->user()` es `null`**, lo cual indica que no hay un usuario autenticado. Al intentar acceder a `auth()->user()->contacts()`, Laravel lanza un error porque no se puede invocar un método en `null`.*
 
-aqui romperemos la nomenclatura de laravel ya que ...
+---
 
-<https://laravel.com/docs/12.x/cashier-paddle#checking-subscription-status>
+## **Causa del error**
 
-php artisan make:middleware EnsureUserIsSubscribed
+*El error revela que **no hay middleware `auth` protegiendo la ruta**, lo cual permitió que un usuario no autenticado llegara hasta el controlador.*
 
-llega una peticion va el primer midleware luego al siguiente es una especie de pila
+**Solución:** *proteger la ruta con el middleware `auth`:*
 
-app/Http/Kernel.php
-ponemos la siguitene linea en
-
-"subscription" => \App\Http\Middleware\EnsureUserIsSubscribed::class
-
-en web.php
-esto pude recibir una string o una lista de string siempre y cuato los nombres esten registrados
-Route::middleware();
-
-```sql
-SELECT trial_ends_at FROM users WHERE email = 'nopago@gmail.com'; 
-    trial_ends_at    
----------------------
- 2025-07-09 23:39:46
-(1 row)
-
-UPDATE users SET trial_ends_at = '2025-06-25 23:39:46' WHERE email = 'nopago@gmail.com';
-
+```php
+Route::middleware('auth')->group(function () {
+    Route::get('/contacts', [ContactController::class, 'index']);
+});
 ```
 
-<https://stackoverflow.com/questions/29253979/displaying-html-with-blade-shows-the-html-code>
+---
 
-para renderizar html en blender en vez de esto hariamos lo siguiente
-resources/views/components/alert.blade.php
+## **Cashier Paddle / Stripe y prueba de suscripción**
 
-{{ $message }}
-{!! $message !!}
+```bash
+php artisan make:controller StripeController
+```
+
+*Aunque Laravel recomienda que los controladores sigan su convención, aquí mencionas que romperás la convención probablemente para agrupar lógica específica de Stripe, como suscripciones, pagos o webhooks.*
+
+---
+
+## **Middleware personalizado**
+
+```bash
+php artisan make:middleware EnsureUserIsSubscribed
+```
+
+*Este comando crea un middleware llamado `EnsureUserIsSubscribed`. Sirve para proteger rutas que requieren que el usuario tenga una suscripción activa.*
+
+---
+
+## **Cómo funciona un middleware**
+
+> *"llega una peticion va el primer midleware luego al siguiente es una especie de pila"*
+
+*Laravel ejecuta middlewares en orden, como una pila (stack). Cada middleware puede permitir continuar (`$next($request)`) o abortar la ejecución.*
+
+---
+
+## **Registro del middleware**
+
+```php
+// En app/Http/Kernel.php
+"subscription" => \App\Http\Middleware\EnsureUserIsSubscribed::class,
+```
+
+*Esto permite usar el middleware como `subscription` en las rutas:*
+
+```php
+Route::middleware(['auth', 'subscription'])->group(function () {
+    // Rutas protegidas
+});
+```
+
+---
+
+## **Uso de `Route::middleware()`**
+
+```php
+Route::middleware('auth'); // un middleware
+Route::middleware(['auth', 'subscription']); // múltiples middlewares
+```
+
+*Laravel acepta tanto una cadena como un arreglo de strings, siempre que estén registrados en `Kernel.php`.*
+
+---
+
+## **Consulta SQL para prueba de suscripciones**
+
+```sql
+-- Verificar cuándo termina el periodo de prueba
+SELECT trial_ends_at FROM users WHERE email = 'non-payment@gmail.com';
+
+-- Forzar que ya haya terminado el periodo
+UPDATE users SET trial_ends_at = '2025-06-25 23:39:46' WHERE email = 'non-payment@gmail.com';
+```
+
+*Esto se usa para probar que el middleware `EnsureUserIsSubscribed` **bloquea al usuario** si su suscripción o periodo de prueba ha expirado.*
+
+---
+
+## **Renderizar HTML en Blade**
+
+*Por defecto, Blade escapa el contenido de variables por seguridad:*
+
+```blade
+{{ $message }} // esto escapa HTML
+```
+
+*Si necesitas **renderizar HTML crudo**, usa:*
+
+```blade
+{!! $message !!} // NO escapa HTML — úsalos con cuidado para evitar XSS
+```
+
+*Esto es útil si `$message` contiene etiquetas HTML como `<strong>` o `<a>` y quieres que se muestren como tal.*
+
+---
+
+## **Conclusión**
+
+**Este bloque de apuntes cubre cómo:**
+
+* *Proteger rutas con middleware*
+* *Evitar errores por usuarios no autenticados*
+* *Aplicar lógica de suscripción con Cashier*
+* *Usar middlewares personalizados*
+* *Modificar base de datos para pruebas*
+* *Renderizar contenido HTML en vistas Blade*
