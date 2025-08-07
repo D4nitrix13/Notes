@@ -128,7 +128,7 @@ Route::post(
 
 ---
 
-# **Explicación Detallada de Validaciones en Laravel**
+## **Explicación Detallada de Validaciones en Laravel**
 
 *Laravel proporciona un sistema de validación robusto para manejar la entrada de datos en las solicitudes HTTP. A continuación, se explican en detalle cada una de las reglas de validación usadas en el código:*
 
