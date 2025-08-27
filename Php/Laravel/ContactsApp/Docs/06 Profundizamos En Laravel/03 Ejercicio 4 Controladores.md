@@ -53,15 +53,15 @@
    }
    ```
 
-   > [!NOTE]
-   > *No es necesario convertir manualmente el modelo a JSON ni extraer cada campo individualmente. Si `$product` contiene una instancia del modelo `Product`, simplemente retorna:*
-
    ```php
    return [
     "message" => "Product created successfully",
     "product" => $product
    ];
    ```
+
+> [!NOTE]
+> *No es necesario convertir manualmente el modelo a JSON ni extraer cada campo individualmente. Si `$product` contiene una instancia del modelo `Product`, simplemente retorna:*
 
 ---
 
