@@ -5,7 +5,7 @@
 
 # **MVC** *(Modelo-Vista-Controlador)*
 
-*Es un **patrón de arquitectura de software** que se utiliza comúnmente en el desarrollo de aplicaciones web y de escritorio. Su propósito es **separar las responsabilidades** dentro de una aplicación para mejorar la organización, mantenimiento y escalabilidad del código. A continuación te doy una descripción más detallada de los tres componentes principales de este patrón:*
+*Es un **patrón de arquitectura de software** que se utiliza comúnmente en el desarrollo de aplicaciones web y de escritorio. Su propósito es **separar las responsabilidades** dentro de una aplicación para mejorar la organización, mantenimiento y escalabilidad del código.*
 
 ## **1. Modelo (Model)**
 
