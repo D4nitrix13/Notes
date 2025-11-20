@@ -8,17 +8,17 @@
 ---
 
 - [***Introduccion ala terminal***](#introduccion-ala-terminal)
-  - [***Primeros Comandos***](#primeros-comandos)
+  - [***firstos Comandos***](#firstos-comandos)
 
 ---
 
-## ***Primeros Comandos***
+## ***firstos Comandos***
 
 > **Conceptos importantes sobre linux**
 
-1. *Directorio: En programacion un directorio es una directorio*
+1. *Directorio: En programcion un directory es una directory*
 
-2. *Fichero: En programacion un fichero es una fichero con o sin extensio*
+2. *Fichero: En programcion un file es una file con o sin extensio*
 
    1. **Ejemplo:**
 
@@ -26,31 +26,31 @@
          script.py
          ```
 
-   2. *script es el nombre del fichero y lo que esta luego del punto es la extension del fichero*
+   2. *script es el nombre del file y lo que esta luego del punto es la extension del file*
 
-3. ***.:** Representa el directorio actual.*
+3. ***.:** Representa el directory actual.*
 
-4. ***~:** Representa el directorio home del usuario actual.*
+4. ***~:** Representa el directory home del usuario actual.*
 
-   1. *Por ejemplo, si tu nombre de usuario es daniel, ~ generalmente se traduciría a /home/daniel.*
+   1. *Por ejemplo, si tu nombre de usuario es D4nitrix13, ~ generalmente se traduciría a /home/D4nitrix13.*
 
-5. ***..:** Representa el directorio padre del directorio actual. Entonces, si estás en /home/daniel/Escritorio/directorio y ejecutas cd .., te moverías al directorio /home/daniel/Escritorio.*
+5. ***..:** Representa el directory padre del directory actual. Entonces, si estás en /home/D4nitrix13/Desktop/directory y ejecutas cd .., te moverías al directory /home/D4nitrix13/Desktop.*
 
-   1. ***Ejemplo:** ../descargas: Esto te movería al directorio descargas que se encuentra en el mismo nivel que tu directorio actual. Entonces, si estás en /home/daniel/Escritorio/directorio y ejecutas*
+   1. ***Ejemplo:** ../Dowloands: Esto te movería al directory Dowloands que se encuentra en el mismo nivel que tu directory actual. Entonces, si estás en /home/D4nitrix13/Desktop/directory y ejecutas*
 
        ```bash
-       cd ../descargas 
+       cd ../Dowloands 
        ```
 
-   2. *Te moverías al directorio /home/daniel/Escritorio/descargas.*
+   2. *Te moverías al directory /home/D4nitrix13/Desktop/Dowloands.*
 
 > ***Comandos***
 
-1. *`<kbd>` **Ctrl** `</kbd>` + `<kbd>` **Alt** `</kbd>` + `<kbd>` **t** `</kbd>`*
+1. **`Ctrl`** **`+`** **`Alt`** **`+`** **`t`**
 
     - *Abre una nueva ventana de terminal*
 
-2. *`<kbd>` **Alt** `</kbd>` + `<kbd>` **tab** `</kbd>`*
+2. **`Alt`** **`+`** **tab**
 
    - *moverte entre ventana*
 
@@ -70,7 +70,7 @@
    pwd
    ```
 
-    - *muestra la ruta completa del directorio en el que te encuentras actualmente*
+    - *muestra la ruta completa del directory en el que te encuentras actualmente*
     - **Traduccion:** *"Print Working Directory", que se traduce al español como "Imprimir el Directorio de Trabajo*
 
 5. *`clear`*
@@ -85,17 +85,17 @@
 
    1. *Otra manera de hacerlo*
 
-      - `<kbd>` **Ctrl** `</kbd>` **+** `<kbd>` **l** `</kbd>`
+      - **`Ctrl`** **`+`** **`l`**
 
-6. *cd `<directorio>`*
+6. *cd `<directory>`*
 
      ```bash
-      cd <directorio>
+      cd <directory>
       ```
 
-   - *Este comando se utiliza para cambiar el directorio de trabajo actual a otro directorio y toma como parametro el nombre del directorio*
+   - *Este comando se utiliza para cambiar el directory de trabajo actual a other directory y toma como parametro el nombre del directory*
 
-     - *Entonces, cd . simplemente te mantendría en el mismo directorio.*
+     - *Entonces, cd . simplemente te mantendría en el mismo directory.*
 
    - **Traduccion:** *Change Directory, Cambiar - Directorio*
 
@@ -106,7 +106,7 @@
    ```
 
    ```bash
-   ls ./Escritorio/
+   ls ./Desktop/
    ```
 
    ```bash
@@ -114,87 +114,87 @@
    ```
 
    ```bash
-   ls ../directorio/
+   ls ../directory/
    ```
 
-   - *Este comando se utiliza para listar los ficheros y directorios en el directorio actual. **Tambien se le puede pasar rutas relativas como absoluta***
+   - *Este comando se utiliza para listar los ficheros y directorios en el directory actual. **Tambien se le puede pasar rutas relativas como absoluta***
    - **Traduccion:** *"List", lista*
 
 8. *`mkdir`*
 
    ```bash
-   mkdir directorio/
+   mkdir directory/
    ```
 
    ```bash
-   mkdir ./Escritorio/directorio/
+   mkdir ./Desktop/directory/
    ```
 
    ```bash
-   mkdir ../directorio/
+   mkdir ../directory/
    ```
 
    ```bash
-   mkdir directorio/ otro/
+   mkdir directory/ other/
    ```
 
    ```bash
-   mkdir ./Escritorio/directorio ./Escritorio/otro/
+   mkdir ./Desktop/directory ./Desktop/other/
    ```
 
    ```bash
-   mkdir ../directorio/ ../otro/
+   mkdir ../directory/ ../other/
    ```
 
    ```bash
-   mkdir ./"nuevo directorio"/
+   mkdir ./"new directory"/
    ```
 
    ```bash
-   mkdir ./nuevo\ directorio/
+   mkdir ./new\ directory/
    ```
 
-   - *Este comando se utiliza para crear un nuevo directorio. Toma como parámetro el nombre del directorio que se desea crear. **Tambien se le puede pasar rutas relativas como absoluta***
+   - *Este comando se utiliza para crear un new directory. Toma como parámetro el nombre del directory que se desea crear. **Tambien se le puede pasar rutas relativas como absoluta***
 
    - **Traduccion:** *Make Directory, Crear Directorio*
 
 9. *`rmdir`*
 
    ```bash
-   rmdir directorio/
+   rmdir directory/
    ```
 
    ```bash
-   rmdir ./Escritorio/directorio/
+   rmdir ./Desktop/directory/
    ```
 
    ```bash
-   rmdir ../directorio/
+   rmdir ../directory/
    ```
 
    ```bash
-   rmdir directorio/ otro/
+   rmdir directory/ other/
    ```
 
    ```bash
-   rmdir ./Escritorio/directorio/ ./Escritorio/otro/
+   rmdir ./Desktop/directory/ ./Desktop/other/
    ```
 
    ```bash
-   rmdir ../directorio/ ../otro/
+   rmdir ../directory/ ../other/
    ```
 
    ```bash
-   rmdir ./"nuevo directorio"/
+   rmdir ./"new directory"/
    ```
 
    ```bash
-   rmdir ./nuevo\ directorio/
+   rmdir ./new\ directory/
    ```
 
-   - *Este comando se utiliza para eliminar un directorio vacío. Toma como parámetro el nombre del directorio que se desea eliminar. **Tambien se le puede pasar rutas relativas como absoluta***
+   - *Este comando se utiliza para eliminar un directory vacío. Toma como parámetro el nombre del directory que se desea eliminar. **Tambien se le puede pasar rutas relativas como absoluta***
 
-     - ***Nota:** rmdir sólo eliminará un directorio si está vacío*
+     - ***Nota:** rmdir sólo eliminará un directory si está vacío*
 
      - **Se pueden pasar mas de un parametro**
 
@@ -203,126 +203,126 @@
 10. *`touch`*
 
     ```bash
-    touch fichero.txt
+    touch file.txt
     ```
 
     ```bash
-    touch ./Escritorio/directorio/fichero.txt
+    touch ./Desktop/directory/file.txt
     ```
 
     ```bash
-    touch ../directorio/fichero.txt
+    touch ../directory/file.txt
     ```
 
     ```bash
-    touch fichero.txt fichero2.txt
+    touch file.txt fichero2.txt
     ```
 
     ```bash
-    touch ./Escritorio/directorio/fichero.txt ./Escritorio/directorio/fichero2.txt
+    touch ./Desktop/directory/file.txt ./Desktop/directory/fichero2.txt
     ```
 
     ```bash
-    touch ../directorio/fichero.txt ../directorio/copia.txt
+    touch ../directory/file.txt ../directory/copy.txt
     ```
 
     ```bash
-    touch ./"mi primer programa.py"
+    touch ./"my first program.py"
     ```
 
     ```bash
-    touch ./"mi primer programa".py
+    touch ./"my first program".py
     ```
 
     ```bash
-    touch ./mi\ primer\ programa.py
+    touch ./my\ first\ program.py
     ```
 
-    - *El comando touch en Linux se utiliza para cambiar las marcas de tiempo de acceso y modificación de un fichero. También se puede utilizar para crear un nuevo fichero si el fichero especificado no existe. **Tambien se le puede pasar rutas relativas como absoluta***
+    - *El comando touch en Linux se utiliza para cambiar las marcas de tiempo de acceso y modificación de un file. También se puede utilizar para crear un new file si el file especificado no existe. **Tambien se le puede pasar rutas relativas como absoluta***
 
     - **Se pueden pasar mas de un parametro**
 
 11. *`rm`*
 
       ```bash
-      rm fichero.txt
+      rm file.txt
       ```
 
       ```bash
-      rm ./Escritorio/directorio/fichero.txt
+      rm ./Desktop/directory/file.txt
       ```
 
       ```bash
-      rm ../directorio/fichero.txt
+      rm ../directory/file.txt
       ```
 
       ```bash
-      rm fichero.txt copia.txt
+      rm file.txt copy.txt
       ```
 
       ```bash
-      rm ./Escritorio/directorio/fichero.txt ./Escritorio/directorio/copia.txt
+      rm ./Desktop/directory/file.txt ./Desktop/directory/copy.txt
       ```
 
       ```bash
-      rm ../directorio/fichero.txt ../directorio/copia.txt
+      rm ../directory/file.txt ../directory/copy.txt
       ```
 
       ```bash
-      rm ./"mi primer programa.py"
+      rm ./"my first program.py"
       ```
 
       ```bash
-      rm ./"mi primer programa".py
+      rm ./"my first program".py
       ```
 
       ```bash
-      rm ./mi\ primer\ programa.py
+      rm ./my\ first\ program.py
       ```
 
       - *El comando rm en Linux se utiliza para eliminar ficheros y directorios. **Tambien se le puede pasar rutas relativas como absoluta***
 
         - **Se pueden pasar mas de un parametro**
 
-        - *Este comando eliminará el fichero llamado fichero.txt del directorio actual. Ten en cuenta que este comando no moverá el fichero a la papelera de reciclaje, sino que lo eliminará permanentemente. Por lo tanto, debes tener cuidado al usarlo.*
+        - *Este comando eliminará el file llamado file.txt del directory actual. Ten en cuenta que este comando no moverá el file a la papelera de reciclaje, sino que lo eliminará permanentemente. Por lo tanto, debes tener cuidado al usarlo.*
 
       - **Traduccion:** *Las siglas rm provienen del inglés y significan "remove", que en español se traduce como "eliminar".*
 
 12. *`cp`*
 
       ```bash
-      cp fichero.txt ./copia.txt
+      cp file.txt ./copy.txt
       ```
 
       ```bash
-      cp ./Escritorio/directorio/fichero.txt ./Escritorio/directorio/copia.txt
+      cp ./Desktop/directory/file.txt ./Desktop/directory/copy.txt
       ```
 
       ```bash
-      cp ../directorio/fichero.txt ../directorio/copia.txt
+      cp ../directory/file.txt ../directory/copy.txt
       ```
 
       - *Se utilizan para copiar ficheros.*
 
-        - *Si la el fichero ya existe, será sobrescrito.*
+        - *Si la el file ya existe, será sobrescrito.*
 
       - **Traduccion:** *cp proviene de las siglas en inglés "copy", que significa "copiar".*
 
 13. *`mv`*
 
     ```bash
-    mv fichero.txt ./copia.txt
+    mv file.txt ./copy.txt
     ```
 
     ```bash
-    mv ./Escritorio/directorio/fichero.txt ./Escritorio/directorio/copia.txt
+    mv ./Desktop/directory/file.txt ./Desktop/directory/copy.txt
     ```
 
     ```bash
-    mv ../directorio/fichero.txt ../directorio/copia.txt
+    mv ../directory/file.txt ../directory/copy.txt
     ```  
 
-    - *Este comando mover el fichero a otra ubicacion si ya existe, será sobrescrito.*
+    - *Este comando mover el file a otra ubicacion si ya existe, será sobrescrito.*
 
       - *Además, mv también se puede utilizar para renombrar ficheros.*
 
@@ -345,50 +345,50 @@
 15. *`cat`*
 
       ```bash
-      cat ./fichero.txt
+      cat ./file.txt
       ```
 
       ```bash
-      cat ./fichero.txt ./fichero2.txt
+      cat ./file.txt ./fichero2.txt
       ```
 
       ```bash
-      cat ./fichero.txt > ./fichero2.txt
+      cat ./file.txt > ./fichero2.txt
       ```
 
       ```bash
-      cat ./Escritorio/directorio/fichero.txt
+      cat ./Desktop/directory/file.txt
       ```
 
       ```bash
-      cat ./Escritorio/directorio/fichero.txt ./Escritorio/directorio/fichero2.txt
+      cat ./Desktop/directory/file.txt ./Desktop/directory/fichero2.txt
       ```
 
       ```bash
-      cat ./Escritorio/directorio/fichero.txt > ./Escritorio/directorio/fichero2.txt
+      cat ./Desktop/directory/file.txt > ./Desktop/directory/fichero2.txt
       ```
 
       ```bash
-      cat ../directorio/fichero.txt
+      cat ../directory/file.txt
       ```
 
       ```bash
-      cat ../directorio/fichero.txt ../directorio/fichero2.txt
+      cat ../directory/file.txt ../directory/fichero2.txt
       ```
 
       ```bash
-      cat ../directorio/fichero.txt > ../directorio/fichero2.txt
+      cat ../directory/file.txt > ../directory/fichero2.txt
       ```
 
       ```bash
-      cat ./fichero.txt ./fichero2.txt > fichero3.txt
+      cat ./file.txt ./fichero2.txt > fichero3.txt
       ```
 
      - *El comando cat en Linux se utiliza para concatenar y mostrar ficheros.*
 
-       - *Este comando concatenará el contenido de **fichero.txt** y **fichero2.txt**, y el resultado se guardará en **fichero3.txt**. **Si fichero3.txt ya existe, será sobrescrito si no sera se creara el fichero.***
+       - *Este comando concatenará el contenido de **file.txt** y **fichero2.txt**, y el resultado se guardará en **fichero3.txt**. **Si fichero3.txt ya existe, será sobrescrito si no sera se creara el file.***
 
-       - *El símbolo > en Linux se utiliza para redirigir la salida de un comando a un fichero.*
+       - *El símbolo > en Linux se utiliza para redirigir la salida de un comando a un file.*
 
        - **Se pueden pasar mas de un parametro**
 
@@ -404,29 +404,29 @@
 
       - **Traduccion:** *man es un acrónimo de "manual", y man `<comando>` muestra la página del manual para el `<comando>`. Las páginas del manual contienen una descripción detallada del comando, sus opciones y su uso.*
 
-17. *`nano <fichero>`*
+17. *`nano <file>`*
 
       ```bash
-      nano fichero.txt
+      nano file.txt
       ```
 
-      - *nano es un editor de texto en la línea de comandos de Linux. nano fichero.txt abrirá el fichero fichero.txt en el editor nano.*
+      - *nano es un editor de texto en la línea de comandos de Linux. nano file.txt abrirá el file file.txt en el editor nano.*
 
-18. *`grep palabra <fichero>`*
+18. *`grep palabra <file>`*
 
       ```bash
-      grep lista fichero.txt
+      grep lista file.txt
       ```
 
     - *El comando grep en Linux se utiliza para buscar texto en ficheros.*
 
-      - *El comando grep lista fichero.txt buscará la palabra "lista" en el fichero fichero.txt y mostrará las líneas que contienen esa palabra.*
+      - *El comando grep lista file.txt buscará la palabra "lista" en el file file.txt y mostrará las líneas que contienen esa palabra.*
 
     - **Traduccion:** *grep es un acrónimo de "Global Regular Expression Print", Impresión global de expresiones regulares.*
 
-19. *`comando con opciones`*
+19. *`Comando con opciones`*
 
-     - > *Las opciones en Linux, también conocidas como flags o switches, son argumentos que se utilizan para modificar el comportamiento de un comando. Generalmente se añaden después del nombre del comando y antes de cualquier otro argumento.*
+     - > *Las opciones en Linux, también conocidas como flags o switches, son argumentos que se utilizan para modificar el comportamiento de un comando. Generalmente se añaden después del nombre del comando y antes de cualquier other argumento.*
 
        - > *Las opciones suelen comenzar con un guion - o dos guiones --. Las opciones que comienzan con un solo guion suelen ser abreviaturas de una sola letra, mientras que las opciones que comienzan con dos guiones suelen ser palabras completas.*
 
@@ -441,45 +441,45 @@
        - *Este comando mostrará la ayuda para el comando `ls`*
 
    ```bash
-   rm -r ./directorio
+   rm -r ./directory
    ```
 
    ```bash
-   rm -r -i ./directorio
+   rm -r -i ./directory
    ```
 
    ```bash
-   rm -ri ./directorio
+   rm -ri ./directory
    ```
 
    ```bash
-   rm -ir ./directorio
+   rm -ir ./directory
    ```
 
    ```bash
-   rm --recursive ./directorio 
+   rm --recursive ./directory 
    ```
 
    ```bash
-   rm --recursive --interactive ./directorio
+   rm --recursive --interactive ./directory
    ```
 
    ```bash
-   rm --interactive --recursive ./directorio
+   rm --interactive --recursive ./directory
    ```
 
    ```bash
-   rm --recursive -i ./directorio
+   rm --recursive -i ./directory
    ```
 
    ```bash
-   rm -i --recursive ./directorio
+   rm -i --recursive ./directory
    ```
 
    ```bash
-   rm -r --interactive ./directorio
+   rm -r --interactive ./directory
    ```
 
    ```bash
-   rm --interactive -r ./directorio
+   rm --interactive -r ./directory
    ```
