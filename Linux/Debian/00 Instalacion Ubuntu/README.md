@@ -2,6 +2,7 @@
 <!-- GitHub: https://github.com/D4nitrix13 -->
 <!-- GitLab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
+
 # ***Instalacion de Ubuntu***
 
 - [***Instalacion de Ubuntu***](#instalacion-de-ubuntu)
@@ -100,109 +101,109 @@
      virtualbox
      ```
 
-      1. *![virtualbox #1](../Images/Img%20Virtualbox/00%20Virtualbox.png "../Images/Img Virtualbox/00 Virtualbox.png")*
+      1. *![Image Virtualbox Number #1](../Images/Img%20Virtualbox/00%20Virtualbox.png "../Images/Img Virtualbox/00 Virtualbox.png")*
 
-      2. *![virtualbox #2](../Images/Img%20Virtualbox/01%20Virtualbox.png "../Images/Img Virtualbox/01 Virtualbox.png")*
+      2. *![Image Virtualbox Number #2](../Images/Img%20Virtualbox/01%20Virtualbox.png "../Images/Img Virtualbox/01 Virtualbox.png")*
 
-      3. *![virtualbox #3](../Images/Img%20Virtualbox/02%20Virtualbox.png "../Images/Img Virtualbox/02 Virtualbox.png")*
+      3. *![Image Virtualbox Number #3](../Images/Img%20Virtualbox/02%20Virtualbox.png "../Images/Img Virtualbox/02 Virtualbox.png")*
 
-      4. *![virtualbox #4](../Images/Img%20Virtualbox/03%20Virtualbox.png "../Images/Img Virtualbox/03 Virtualbox.png")*
+      4. *![Image Virtualbox Number #4](../Images/Img%20Virtualbox/03%20Virtualbox.png "../Images/Img Virtualbox/03 Virtualbox.png")*
 
-      5. *![virtualbox #5](../Images/Img%20Virtualbox/04%20Virtualbox.png "../Images/Img Virtualbox/04 Virtualbox.png")*
+      5. *![Image Virtualbox Number #5](../Images/Img%20Virtualbox/04%20Virtualbox.png "../Images/Img Virtualbox/04 Virtualbox.png")*
 
-      6. *![virtualbox #6](../Images/Img%20Virtualbox/05%20Virtualbox.png "../Images/Img Virtualbox/05 Virtualbox.png")*
+      6. *![Image Virtualbox Number #6](../Images/Img%20Virtualbox/05%20Virtualbox.png "../Images/Img Virtualbox/05 Virtualbox.png")*
 
-      7. *![virtualbox #7](../Images/Img%20Virtualbox/06%20Virtualbox.png "../Images/Img Virtualbox/06 Virtualbox.png")*
+      7. *![Image Virtualbox Number #7](../Images/Img%20Virtualbox/06%20Virtualbox.png "../Images/Img Virtualbox/06 Virtualbox.png")*
 
-      8. *![virtualbox #8](../Images/Img%20Virtualbox/07%20Virtualbox.png "../Images/Img Virtualbox/07 Virtualbox.png")*
+      8. *![Image Virtualbox Number #8](../Images/Img%20Virtualbox/07%20Virtualbox.png "../Images/Img Virtualbox/07 Virtualbox.png")*
 
-      9. *![virtualbox #9](../Images/Img%20Virtualbox/08%20Virtualbox.png "../Images/Img Virtualbox/08 Virtualbox.png")*
+      9. *![Image Virtualbox Number #9](../Images/Img%20Virtualbox/08%20Virtualbox.png "../Images/Img Virtualbox/08 Virtualbox.png")*
 
-      10. *![virtualbox #10](../Images/Img%20Virtualbox/09%20Virtualbox.png "../Images/Img Virtualbox/09 Virtualbox.png")*
+      10. *![Image Virtualbox Number #10](../Images/Img%20Virtualbox/09%20Virtualbox.png "../Images/Img Virtualbox/09 Virtualbox.png")*
 
-      11. *![virtualbox #11](../Images/Img%20Virtualbox/10%20Virtualbox.png "../Images/Img Virtualbox/10 Virtualbox.png")*
+      11. *![Image Virtualbox Number #11](../Images/Img%20Virtualbox/10%20Virtualbox.png "../Images/Img Virtualbox/10 Virtualbox.png")*
 
-      12. *![virtualbox #12](../Images/Img%20Virtualbox/11%20Virtualbox.png "../Images/Img Virtualbox/11 Virtualbox.png")*
+      12. *![Image Virtualbox Number #12](../Images/Img%20Virtualbox/11%20Virtualbox.png "../Images/Img Virtualbox/11 Virtualbox.png")*
 
-      13. *![virtualbox #13](../Images/Img%20Virtualbox/12%20Virtualbox.png "../Images/Img Virtualbox/12 Virtualbox.png")*
+      13. *![Image Virtualbox Number #13](../Images/Img%20Virtualbox/12%20Virtualbox.png "../Images/Img Virtualbox/12 Virtualbox.png")*
 
-      14. *![virtualbox #14](../Images/Img%20Virtualbox/13%20Virtualbox.png "../Images/Img Virtualbox/13 Virtualbox.png")*
+      14. *![Image Virtualbox Number #14](../Images/Img%20Virtualbox/13%20Virtualbox.png "../Images/Img Virtualbox/13 Virtualbox.png")*
 
-      15. *![virtualbox #15](../Images/Img%20Virtualbox/14%20Virtualbox.png "../Images/Img Virtualbox/14 Virtualbox.png")*
+      15. *![Image Virtualbox Number #15](../Images/Img%20Virtualbox/14%20Virtualbox.png "../Images/Img Virtualbox/14 Virtualbox.png")*
 
-      16. *![virtualbox #16](../Images/Img%20Virtualbox/15%20Virtualbox.png "../Images/Img Virtualbox/15 Virtualbox.png")*
+      16. *![Image Virtualbox Number #16](../Images/Img%20Virtualbox/15%20Virtualbox.png "../Images/Img Virtualbox/15 Virtualbox.png")*
 
-      17. *![virtualbox #17](../Images/Img%20Virtualbox/16%20Virtualbox.png "../Images/Img Virtualbox/16 Virtualbox.png")*
+      17. *![Image Virtualbox Number #17](../Images/Img%20Virtualbox/16%20Virtualbox.png "../Images/Img Virtualbox/16 Virtualbox.png")*
 
-      18. *![virtualbox #18](../Images/Img%20Virtualbox/17%20Virtualbox.png "../Images/Img Virtualbox/17 Virtualbox.png")*
+      18. *![Image Virtualbox Number #18](../Images/Img%20Virtualbox/17%20Virtualbox.png "../Images/Img Virtualbox/17 Virtualbox.png")*
 
-      19. *![virtualbox #19](../Images/Img%20Virtualbox/18%20Virtualbox.png "../Images/Img Virtualbox/18 Virtualbox.png")*
+      19. *![Image Virtualbox Number #19](../Images/Img%20Virtualbox/18%20Virtualbox.png "../Images/Img Virtualbox/18 Virtualbox.png")*
 
-      20. *![virtualbox #20](../Images/Img%20Virtualbox/19%20Virtualbox.png "../Images/Img Virtualbox/19 Virtualbox.png")*
+      20. *![Image Virtualbox Number #20](../Images/Img%20Virtualbox/19%20Virtualbox.png "../Images/Img Virtualbox/19 Virtualbox.png")*
 
-      21. *![virtualbox #21](../Images/Img%20Virtualbox/20%20Virtualbox.png "../Images/Img Virtualbox/20 Virtualbox.png")*
+      21. *![Image Virtualbox Number #21](../Images/Img%20Virtualbox/20%20Virtualbox.png "../Images/Img Virtualbox/20 Virtualbox.png")*
 
-      22. *![virtualbox #22](../Images/Img%20Virtualbox/21%20Virtualbox.png "../Images/Img Virtualbox/21 Virtualbox.png")*
+      22. *![Image Virtualbox Number #22](../Images/Img%20Virtualbox/21%20Virtualbox.png "../Images/Img Virtualbox/21 Virtualbox.png")*
 
-      23. *![virtualbox #23](../Images/Img%20Virtualbox/22%20Virtualbox.png "../Images/Img Virtualbox/22 Virtualbox.png")*
+      23. *![Image Virtualbox Number #23](../Images/Img%20Virtualbox/22%20Virtualbox.png "../Images/Img Virtualbox/22 Virtualbox.png")*
 
-      24. *![virtualbox #24](../Images/Img%20Virtualbox/23%20Virtualbox.png "../Images/Img Virtualbox/23 Virtualbox.png")*
+      24. *![Image Virtualbox Number #24](../Images/Img%20Virtualbox/23%20Virtualbox.png "../Images/Img Virtualbox/23 Virtualbox.png")*
 
-      25. *![virtualbox #25](../Images/Img%20Virtualbox/24%20Virtualbox.png "../Images/Img Virtualbox/24 Virtualbox.png")*
+      25. *![Image Virtualbox Number #25](../Images/Img%20Virtualbox/24%20Virtualbox.png "../Images/Img Virtualbox/24 Virtualbox.png")*
 
-      26. *![virtualbox #26](../Images/Img%20Virtualbox/25%20Virtualbox.png "../Images/Img Virtualbox/25 Virtualbox.png")*
+      26. *![Image Virtualbox Number #26](../Images/Img%20Virtualbox/25%20Virtualbox.png "../Images/Img Virtualbox/25 Virtualbox.png")*
 
-      27. *![virtualbox #27](../Images/Img%20Virtualbox/26%20Virtualbox.png "../Images/Img Virtualbox/26 Virtualbox.png")*
+      27. *![Image Virtualbox Number #27](../Images/Img%20Virtualbox/26%20Virtualbox.png "../Images/Img Virtualbox/26 Virtualbox.png")*
 
-      28. *![virtualbox #28](../Images/Img%20Virtualbox/27%20Virtualbox.png "../Images/Img Virtualbox/27 Virtualbox.png")*
+      28. *![Image Virtualbox Number #28](../Images/Img%20Virtualbox/27%20Virtualbox.png "../Images/Img Virtualbox/27 Virtualbox.png")*
 
-      29. *![virtualbox #29](../Images/Img%20Virtualbox/28%20Virtualbox.png "../Images/Img Virtualbox/28 Virtualbox.png")*
+      29. *![Image Virtualbox Number #29](../Images/Img%20Virtualbox/28%20Virtualbox.png "../Images/Img Virtualbox/28 Virtualbox.png")*
 
-      30. *![virtualbox #30](../Images/Img%20Virtualbox/29%20Virtualbox.png "../Images/Img Virtualbox/29 Virtualbox.png")*
+      30. *![Image Virtualbox Number #30](../Images/Img%20Virtualbox/29%20Virtualbox.png "../Images/Img Virtualbox/29 Virtualbox.png")*
 
-      31. *![virtualbox #31](../Images/Img%20Virtualbox/30%20Virtualbox.png "../Images/Img Virtualbox/30 Virtualbox.png")*
+      31. *![Image Virtualbox Number #31](../Images/Img%20Virtualbox/30%20Virtualbox.png "../Images/Img Virtualbox/30 Virtualbox.png")*
 
-      32. *![virtualbox #32](../Images/Img%20Virtualbox/31%20Virtualbox.png "../Images/Img Virtualbox/31 Virtualbox.png")*
+      32. *![Image Virtualbox Number #32](../Images/Img%20Virtualbox/31%20Virtualbox.png "../Images/Img Virtualbox/31 Virtualbox.png")*
 
-      33. *![virtualbox #33](../Images/Img%20Virtualbox/32%20Virtualbox.png "../Images/Img Virtualbox/32 Virtualbox.png")*
+      33. *![Image Virtualbox Number #33](../Images/Img%20Virtualbox/32%20Virtualbox.png "../Images/Img Virtualbox/32 Virtualbox.png")*
 
-      34. *![virtualbox #34](../Images/Img%20Virtualbox/33%20Virtualbox.png "../Images/Img Virtualbox/33 Virtualbox.png")*
+      34. *![Image Virtualbox Number #34](../Images/Img%20Virtualbox/33%20Virtualbox.png "../Images/Img Virtualbox/33 Virtualbox.png")*
 
-      35. *![virtualbox #35](../Images/Img%20Virtualbox/34%20Virtualbox.png "../Images/Img Virtualbox/34 Virtualbox.png")*
+      35. *![Image Virtualbox Number #35](../Images/Img%20Virtualbox/34%20Virtualbox.png "../Images/Img Virtualbox/34 Virtualbox.png")*
 
-      36. *![virtualbox #36](../Images/Img%20Virtualbox/35%20Virtualbox.png "../Images/Img Virtualbox/35 Virtualbox.png")*
+      36. *![Image Virtualbox Number #36](../Images/Img%20Virtualbox/35%20Virtualbox.png "../Images/Img Virtualbox/35 Virtualbox.png")*
 
-      37. *![virtualbox #37](../Images/Img%20Virtualbox/36%20Virtualbox.png "../Images/Img Virtualbox/36 Virtualbox.png")*
+      37. *![Image Virtualbox Number #37](../Images/Img%20Virtualbox/36%20Virtualbox.png "../Images/Img Virtualbox/36 Virtualbox.png")*
 
-      38. *![virtualbox #38](../Images/Img%20Virtualbox/37%20Virtualbox.png "../Images/Img Virtualbox/37 Virtualbox.png")*
+      38. *![Image Virtualbox Number #38](../Images/Img%20Virtualbox/37%20Virtualbox.png "../Images/Img Virtualbox/37 Virtualbox.png")*
 
-      39. *![virtualbox #39](../Images/Img%20Virtualbox/38%20Virtualbox.png "../Images/Img Virtualbox/38 Virtualbox.png")*
+      39. *![Image Virtualbox Number #39](../Images/Img%20Virtualbox/38%20Virtualbox.png "../Images/Img Virtualbox/38 Virtualbox.png")*
 
-      40. *![virtualbox #40](../Images/Img%20Virtualbox/39%20Virtualbox.png "../Images/Img Virtualbox/39 Virtualbox.png")*
+      40. *![Image Virtualbox Number #40](../Images/Img%20Virtualbox/39%20Virtualbox.png "../Images/Img Virtualbox/39 Virtualbox.png")*
 
-      41. *![virtualbox #41](../Images/Img%20Virtualbox/40%20Virtualbox.png "../Images/Img Virtualbox/40 Virtualbox.png")*
+      41. *![Image Virtualbox Number #41](../Images/Img%20Virtualbox/40%20Virtualbox.png "../Images/Img Virtualbox/40 Virtualbox.png")*
 
-      42. *![virtualbox #42](../Images/Img%20Virtualbox/41%20Virtualbox.png "../Images/Img Virtualbox/41 Virtualbox.png")*
+      42. *![Image Virtualbox Number #42](../Images/Img%20Virtualbox/41%20Virtualbox.png "../Images/Img Virtualbox/41 Virtualbox.png")*
 
-      43. *![virtualbox #43](../Images/Img%20Virtualbox/42%20Virtualbox.png "../Images/Img Virtualbox/42 Virtualbox.png")*
+      43. *![Image Virtualbox Number #43](../Images/Img%20Virtualbox/42%20Virtualbox.png "../Images/Img Virtualbox/42 Virtualbox.png")*
 
-      44. *![virtualbox #44](../Images/Img%20Virtualbox/43%20Virtualbox.png "../Images/Img Virtualbox/43 Virtualbox.png")*
+      44. *![Image Virtualbox Number #44](../Images/Img%20Virtualbox/43%20Virtualbox.png "../Images/Img Virtualbox/43 Virtualbox.png")*
 
-      45. *![virtualbox #45](../Images/Img%20Virtualbox/44%20Virtualbox.png "../Images/Img Virtualbox/44 Virtualbox.png")*
+      45. *![Image Virtualbox Number #45](../Images/Img%20Virtualbox/44%20Virtualbox.png "../Images/Img Virtualbox/44 Virtualbox.png")*
 
-      46. *![virtualbox #46](../Images/Img%20Virtualbox/45%20Virtualbox.png "../Images/Img Virtualbox/45 Virtualbox.png")*
+      46. *![Image Virtualbox Number #46](../Images/Img%20Virtualbox/45%20Virtualbox.png "../Images/Img Virtualbox/45 Virtualbox.png")*
 
-      47. *![virtualbox #47](../Images/Img%20Virtualbox/46%20Virtualbox.png "../Images/Img Virtualbox/46 Virtualbox.png")*
+      47. *![Image Virtualbox Number #47](../Images/Img%20Virtualbox/46%20Virtualbox.png "../Images/Img Virtualbox/46 Virtualbox.png")*
 
-      48. *![virtualbox #48](../Images/Img%20Virtualbox/47%20Virtualbox.png "../Images/Img Virtualbox/47 Virtualbox.png")*
+      48. *![Image Virtualbox Number #48](../Images/Img%20Virtualbox/47%20Virtualbox.png "../Images/Img Virtualbox/47 Virtualbox.png")*
 
-      49. *![virtualbox #49](../Images/Img%20Virtualbox/48%20Virtualbox.png "../Images/Img Virtualbox/48 Virtualbox.png")*
+      49. *![Image Virtualbox Number #49](../Images/Img%20Virtualbox/48%20Virtualbox.png "../Images/Img Virtualbox/48 Virtualbox.png")*
 
-      50. *![virtualbox #50](../Images/Img%20Virtualbox/49%20Virtualbox.png "../Images/Img Virtualbox/49 Virtualbox.png")*
+      50. *![Image Virtualbox Number #50](../Images/Img%20Virtualbox/49%20Virtualbox.png "../Images/Img Virtualbox/49 Virtualbox.png")*
 
-      51. *![virtualbox #51](../Images/Img%20Virtualbox/50%20Virtualbox.png "../Images/Img Virtualbox/50 Virtualbox.png")*
+      51. *![Image Virtualbox Number #51](../Images/Img%20Virtualbox/50%20Virtualbox.png "../Images/Img Virtualbox/50 Virtualbox.png")*
 
-      52. *![virtualbox #52](../Images/Img%20Virtualbox/51%20Virtualbox.png "../Images/Img Virtualbox/51 Virtualbox.png")*
+      52. *![Image Virtualbox Number #52](../Images/Img%20Virtualbox/51%20Virtualbox.png "../Images/Img Virtualbox/51 Virtualbox.png")*
 
 > *Las particiones son divisiones lógicas en el disco duro de tu computadora que permiten organizar y gestionar el espacio de almacenamiento. Estas divisiones son esenciales por varias razones:*
 
@@ -331,7 +332,7 @@
 2. **Insertar el CD de Guest Additions:**
 
    - *Desde el menú de VirtualBox, selecciona "Dispositivos" -> "Insertar imagen de CD de Guest Additions..."*
-   - *![virtualbox #53](../Images/Img%20Virtualbox/52%20Virtualbox.png "../Images/Img Virtualbox/52 Virtualbox.png")*
+   - *![Image Virtualbox Number #53](../Images/Img%20Virtualbox/52%20Virtualbox.png "../Images/Img Virtualbox/52 Virtualbox.png")*
 
 3. **Acceder al Terminal en el Sistema Invitado:**
 
@@ -343,13 +344,13 @@
       sudo apt-get install -y build-essential linux-headers-$(uname -r)
       ```
 
-   - *![virtualbox #58](../Images/Img%20Virtualbox/57%20Virtualbox.png "../Images/Img Virtualbox/57 Virtualbox.png")*
+   - *![Image Virtualbox Number #58](../Images/Img%20Virtualbox/57%20Virtualbox.png "../Images/Img Virtualbox/57 Virtualbox.png")*
 
 4. **Ejecutar el script de instalacion:**
 
    1. *Ir al directorio y ejecutarlo*
 
-      1. *![virtualbox #54](../Images/Img%20Virtualbox/53%20Virtualbox.png "../Images/Img Virtualbox/53 Virtualbox.png")*
+      1. *![Image Virtualbox Number #54](../Images/Img%20Virtualbox/53%20Virtualbox.png "../Images/Img Virtualbox/53 Virtualbox.png")*
 
          ```bash
          cd /media/daniel/VBox_Gas_6.1.38
@@ -361,7 +362,7 @@
          ls
          ```
 
-         1. *![virtualbox #55](../Images/Img%20Virtualbox/54%20Virtualbox.png "../Images/Img Virtualbox/54 Virtualbox.png")*
+         1. *![Image Virtualbox Number #55](../Images/Img%20Virtualbox/54%20Virtualbox.png "../Images/Img Virtualbox/54 Virtualbox.png")*
 
          2. *Actualizamos el sistema*
 
@@ -384,9 +385,9 @@
 
               - *Es importante ejecutarlo con permisos de superusuario (sudo) para que pueda compilar e instalar correctamente los módulos del kernel necesarios.*
 
-      3. *![virtualbox #56](../Images/Img%20Virtualbox/55%20Virtualbox.png "../Images/Img Virtualbox/55 Virtualbox.png")*
+      3. *![Image Virtualbox Number #56](../Images/Img%20Virtualbox/55%20Virtualbox.png "../Images/Img Virtualbox/55 Virtualbox.png")*
 
-      4. *![virtualbox #57](../Images/Img%20Virtualbox/56%20Virtualbox.png "../Images/Img Virtualbox/56 Virtualbox.png")*
+      4. *![Image Virtualbox Number #57](../Images/Img%20Virtualbox/56%20Virtualbox.png "../Images/Img Virtualbox/56 Virtualbox.png")*
 
 5. **Reiniciar la Máquina Virtual:**
 
@@ -456,7 +457,7 @@
 
 > *La BIOS, que significa "Basic Input/Output System" (Sistema Básico de Entrada/Salida), es un software esencial almacenado en un chip de memoria flash en la placa base de una computadora. La BIOS es fundamental para el inicio y la operación básica del sistema antes de que el sistema operativo se cargue desde el disco duro o cualquier otro dispositivo de almacenamiento.*
 
-1. *Para entrar ala bios hay muchas formas. Mantener presionada la tecla ``<kbd>``Shift``</kbd>`` y reiniciar el sistema operativo en windows. O apagar el ordenador y presionar las teclas especiales como ``<kbd>``f11``</kbd>``,``<kbd>``f12``</kbd>`` para abrir la bios*
+1. *Para entrar ala bios hay muchas formas. Mantener presionada la tecla **Shift** y reiniciar el sistema operativo en windows. O apagar el ordenador y presionar las teclas especiales como **f11**,**f12** para abrir la bios*
 
 2. *Cuando entremos ala Bios ir ala opcion modo avanzado y luego ir a **BOOT** y luego colocar la USB de primero para que arranque el sistema operativo desde el usb de primero*
 
