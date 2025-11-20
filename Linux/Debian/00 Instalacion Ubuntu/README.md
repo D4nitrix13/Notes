@@ -12,6 +12,21 @@
   - [***Designaciones de Disco en Linux***](#designaciones-de-disco-en-linux)
   - [***Instalacion del sistema operativo en Hardware***](#instalacion-del-sistema-operativo-en-hardware)
   - [***Si tenemos problema al particionar el disco se puede deber a muchas razones***](#si-tenemos-problema-al-particionar-el-disco-se-puede-deber-a-muchas-razones)
+    - [**¿En máquina virtual es UEFI o Legacy?**](#en-máquina-virtual-es-uefi-o-legacy)
+    - [*En **VirtualBox***](#en-virtualbox)
+    - [*En **VMware***](#en-vmware)
+    - [*En **QEMU/KVM***](#en-qemukvm)
+    - [**¿Es necesaria la partición EFI en una máquina virtual?**](#es-necesaria-la-partición-efi-en-una-máquina-virtual)
+    - [**Depende del modo en que está arrancando la VM**](#depende-del-modo-en-que-está-arrancando-la-vm)
+    - [**Cómo verificar si estás en UEFI o Legacy (Desde El Instalador)**](#cómo-verificar-si-estás-en-uefi-o-legacy-desde-el-instalador)
+    - [**Método 1: Desde la terminal del instalador**](#método-1-desde-la-terminal-del-instalador)
+    - [**Método 2: Revisar ficheros existentes**](#método-2-revisar-ficheros-existentes)
+    - [**Método 3: Revisar el particionado automático**](#método-3-revisar-el-particionado-automático)
+    - [**¿Cuándo Se Puede Instalar Ubuntu Sin Crear /boot/efi?**](#cuándo-se-puede-instalar-ubuntu-sin-crear-bootefi)
+    - [**1. Cuando YA existe una partición EFI en el disco**](#1-cuando-ya-existe-una-partición-efi-en-el-disco)
+    - [**2. Cuando instalas en modo BIOS/Legacy**](#2-cuando-instalas-en-modo-bioslegacy)
+    - [**Cuándo Es Obligatorio Crear /Boot/Efi (Vfat)**](#cuándo-es-obligatorio-crear-bootefi-vfat)
+    - [**Resumen General (Tabla Definitiva)**](#resumen-general-tabla-definitiva)
 
 ---
 
@@ -466,3 +481,151 @@
 ## ***Si tenemos problema al particionar el disco se puede deber a muchas razones***
 
 1. *[Guía partition wizard](https://www.partitionwizard.com/partitionmanager/cannot-shrink-volume-win10.html "https://www.partitionwizard.com/partitionmanager/cannot-shrink-volume-win10.html")*
+
+### **¿En máquina virtual es UEFI o Legacy?**
+
+*Depende de la configuración del software de virtualización.*
+
+### *En **VirtualBox***
+
+- *Por defecto: **Legacy / BIOS (CSM)***
+- *Si activas: **System → Enable EFI (special OSes)***
+  *→ entonces usas **UEFI***
+
+### *En **VMware***
+
+- *La mayoría de versiones modernas usan **UEFI** por defecto en sistemas Linux nuevos.*
+
+### *En **QEMU/KVM***
+
+- *Si usas `OVMF` → **UEFI***
+- *Si usas BIOS por defecto → **Legacy***
+
+---
+
+### **¿Es necesaria la partición EFI en una máquina virtual?**
+
+### **Depende del modo en que está arrancando la VM**
+
+| **Modo de arranque** | **¿Necesita partición EFI VFAT?** | **Explicación**                                     |
+| -------------------- | --------------------------------- | --------------------------------------------------- |
+| **UEFI**             | **Sí**                            | *GRUB se instala en una partición EFI obligatoria.* |
+| **Legacy / BIOS**    | **No**                            | *GRUB se instala en el MBR del disco.*              |
+
+- **Conclusión:**
+
+- *Si tu máquina virtual está en **UEFI**, debes crear **/boot/efi***
+- *Si está en **Legacy**, NO necesitas partición EFI*
+
+---
+
+### **Cómo verificar si estás en UEFI o Legacy (Desde El Instalador)**
+
+### **Método 1: Desde la terminal del instalador**
+
+*En el menú del USB o en “Try Ubuntu”, abre una terminal:*
+
+```bash
+[ -d /sys/firmware/efi ] && echo "UEFI" || echo "Legacy"
+```
+
+- *Si devuelve **UEFI** → Estás arrancando en UEFI*
+- *Si devuelve **Legacy** → Estás arrancando en BIOS*
+
+---
+
+### **Método 2: Revisar ficheros existentes**
+
+**En UEFI:**
+
+```bash
+ls /sys/firmware/efi
+```
+
+- *Si devuelve contenido → UEFI*
+
+- **Output**
+
+    ```bash
+    config_table  efivars  esrt  fw_platform_size  fw_vendor  runtime  runtime-map  systab
+    ```
+
+- *Si da error → Legacy*
+
+---
+
+### **Método 3: Revisar el particionado automático**
+
+- *Si el instalador crea o pide una partición **FAT32 /boot/efi** → Estás en **UEFI***
+- *Si solo crea `/` y `swap` → Estás en **Legacy***
+
+---
+
+### **¿Cuándo Se Puede Instalar Ubuntu Sin Crear /boot/efi?**
+
+*Sí, se puede instalar Ubuntu sin crear manualmente la partición VFAT `/boot/efi`, pero **solo en situaciones específicas**. Aquí está explicado claramente:*
+
+---
+
+### **1. Cuando YA existe una partición EFI en el disco**
+
+*Situaciones:*
+
+- *Ya había Windows instalado antes (modo UEFI).*
+- *Habías tenido otra distro Linux.*
+- *El fabricante dejó creada la partición EFI.*
+
+*En estos casos el instalador detecta automáticamente:*
+
+```bash
+/dev/sda1  100–512 MB  FAT32  EFI System Partition
+```
+
+*Entonces Ubuntu usa esa partición para:*
+
+- *Instalar GRUB*
+- *Montar `/boot/efi`*
+
+- **No necesitas crearla de nuevo.**
+
+---
+
+### **2. Cuando instalas en modo BIOS/Legacy**
+
+**Esto sucede cuando:**
+
+- *El firmware está en **Legacy Mode / CSM***
+- *El disco usa **MBR***
+- *Secure Boot está **deshabilitado***
+
+*Entonces Ubuntu NO usa particiones EFI.*
+*En este caso:*
+
+- *GRUB se instala en el **MBR del disco***
+- *No se requiere VFAT ni `/boot/efi`*
+
+---
+
+### **Cuándo Es Obligatorio Crear /Boot/Efi (Vfat)**
+
+*Debes crearla manualmente si:*
+
+- *Estás en modo **UEFI***
+- *El disco está en **GPT***
+- ***No existe** una partición EFI previa*
+
+*Si no la creas, el instalador fallará con errores como:*
+
+> *“Failed to install grub-efi-amd64”* **o** *“No EFI system partition was found”*
+
+---
+
+### **Resumen General (Tabla Definitiva)**
+
+| **Situación**                        | **¿Requiere /boot/efi (VFAT)?** | **Motivo**                     |
+| ------------------------------------ | ------------------------------- | ------------------------------ |
+| *Ya existe partición EFI*            | *No*                            | *El instalador la reutiliza.*  |
+| *BIOS/Legacy Mode*                   | *No*                            | *GRUB va al MBR.*              |
+| *Disco MBR*                          | *No*                            | *MBR no usa EFI.*              |
+| *UEFI + disco GPT sin partición EFI* | *Sí*                            | *GRUB necesita partición EFI.* |
+| *UEFI con partición EFI borrada*     | *Sí*                            | *Tienes que crearla.*          |
