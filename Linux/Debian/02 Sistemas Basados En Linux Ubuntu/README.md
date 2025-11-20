@@ -18,24 +18,24 @@
   - [***Preparación del entorno***](#preparación-del-entorno)
     - [***Caso 1: Sin permiso de lectura (`r`)***](#caso-1-sin-permiso-de-lectura-r)
       - [***Comando para quitar el permiso de lectura***](#comando-para-quitar-el-permiso-de-lectura)
-      - [***Qué sucede al listar el directorio***](#qué-sucede-al-listar-el-directorio)
+      - [***Qué sucede al listar el directory***](#qué-sucede-al-listar-el-directory)
     - [***Caso 2: Sin permiso de escritura (`w`)***](#caso-2-sin-permiso-de-escritura-w)
       - [***Comando para quitar el permiso de escritura***](#comando-para-quitar-el-permiso-de-escritura)
-      - [***Qué sucede al intentar crear o modificar un fichero***](#qué-sucede-al-intentar-crear-o-modificar-un-fichero)
+      - [***Qué sucede al intentar crear o modificar un file***](#qué-sucede-al-intentar-crear-o-modificar-un-file)
     - [***Caso 3: Sin permiso de ejecución (`x`)***](#caso-3-sin-permiso-de-ejecución-x)
       - [***Comando para quitar el permiso de ejecución***](#comando-para-quitar-el-permiso-de-ejecución)
       - [***Efectos de la falta de permiso de ejecución***](#efectos-de-la-falta-de-permiso-de-ejecución)
     - [***Relación entre permisos***](#relación-entre-permisos)
     - [***Restaurar permisos***](#restaurar-permisos)
-    - [***Qué sucede si un directorio no tiene todos los permisos y se intenta borrar***](#qué-sucede-si-un-directorio-no-tiene-todos-los-permisos-y-se-intenta-borrar)
-    - [***Permisos necesarios para borrar un directorio***](#permisos-necesarios-para-borrar-un-directorio)
-    - [***Caso: Directorio sin todos los permisos***](#caso-directorio-sin-todos-los-permisos)
-      - [***Comando para eliminar un directorio***](#comando-para-eliminar-un-directorio)
+    - [***Qué sucede si un directory no tiene todos los permisos y se intenta borrar***](#qué-sucede-si-un-directory-no-tiene-todos-los-permisos-y-se-intenta-borrar)
+    - [***Permisos necesarios para borrar un directory***](#permisos-necesarios-para-borrar-un-directory)
+    - [***Caso: Directory sin todos los permisos***](#caso-directory-sin-todos-los-permisos)
+      - [***Comando para eliminar un directory***](#comando-para-eliminar-un-directory)
       - [***Situaciones***](#situaciones)
     - [***Demostración práctica***](#demostración-práctica)
-      - [***1. Quitar permisos de ejecución del directorio***](#1-quitar-permisos-de-ejecución-del-directorio)
-      - [***2. Quitar permisos de escritura del directorio padre***](#2-quitar-permisos-de-escritura-del-directorio-padre)
-    - [***Solución para borrar un directorio sin permisos***](#solución-para-borrar-un-directorio-sin-permisos)
+      - [***1. Quitar permisos de ejecución del directory***](#1-quitar-permisos-de-ejecución-del-directory)
+      - [***2. Quitar permisos de escritura del directory padre***](#2-quitar-permisos-de-escritura-del-directory-padre)
+    - [***Solución para borrar un directory sin permisos***](#solución-para-borrar-un-directory-sin-permisos)
     - [***Resumen***](#resumen)
   - [***Enlaces duros y simbolicos***](#enlaces-duros-y-simbolicos)
 - [***Curl***](#curl)
@@ -70,19 +70,19 @@ sudo su
 
 *GRUB es el acrónimo de "GRand Unified Bootloader". En español, se podría traducir como "Cargador de Arranque Unificado Grande". Es un gestor de arranque múltiple, lo que significa que permite seleccionar entre diferentes sistemas operativos durante el arranque del equipo.*
 
-*GRUB es muy flexible y potente, ya que puede cargar una amplia variedad de sistemas operativos y también puede cargar una gran cantidad de formatos de fichero de kernel.*
+*GRUB es muy flexible y potente, ya que puede cargar una amplia variedad de sistemas operativos y también puede cargar una gran cantidad de formatos de file de kernel.*
 
 *Por ejemplo, si tienes instalados Linux y Windows en la misma máquina, GRUB te permitirá elegir cuál de ellos quieres arrancar cuando enciendas tu computadora.*
 
-> **Para editar el fichero de configuracion de grub**
+> **Para editar el file de configuracion de grub**
 
-1. *Para ver el contenido del fichero*
+1. *Para ver el contenido del file*
 
    ```bash
    cat /etc/default/grub
    ```
 
-   - *![Img-Grub #1](../Images/Img%20Grub/00%20img-grub.png "../Images/Img Grub/00 img-grub.png")*
+   - *![Image Grub Number #1](../Images/Img%20Grub/00%20img-grub.png "../Images/Img Grub/00 img-grub.png")*
 
 2. *Para editarlo*
 
@@ -90,15 +90,15 @@ sudo su
    sudo nano /etc/default/grub
    ```
 
-   - *![Img-Grub #2](../Images/Img%20Grub/01%20img-grub.png "../Images/Img Grub/01 img-grub.png")*
+   - *![Image Grub Number #2](../Images/Img%20Grub/01%20img-grub.png "../Images/Img Grub/01 img-grub.png")*
 
       ```bash
       sudo update-grub
       ```
 
-      - > *Luego de editar el fichero debes ejecutar sudo update-grub y reiniciar el sistema operativo para aplicar los cambios.*
+      - > *Luego de editar el file debes ejecutar sudo update-grub y reiniciar el sistema operativo para aplicar los cambios.*
 
-   - *El fichero real de la configuracion del grub se encuentra en esta ruta **`/bootgrub/grub.cfg`**.Este fichero es la configuración principal de GRUB, el gestor de arranque.*
+   - *El file real de la configuracion del grub se encuentra en esta ruta **`/bootgrub/grub.cfg`**.Este file es la configuración principal de GRUB, el gestor de arranque.*
 
       ```bash
       sudo nano /boot/grub/grub.cfg
@@ -108,13 +108,13 @@ sudo su
       cat /boot/grub/grub.cfg
       ```
 
-   - *con cat`/bootgrub/grub.cfg` Este comando mostrará el contenido del fichero grub.cfg, que incluye las entradas del menú de arranque, las opciones de arranque y otros ajustes de GRUB. Este fichero normalmente no se edita directamente, sino que se genera a partir de otros ficheros de configuración mediante el comando update-grub.*
+   - *con cat`/bootgrub/grub.cfg` Este comando mostrará el contenido del file grub.cfg, que incluye las entradas del menú de arranque, las opciones de arranque y otros ajustes de GRUB. Este file normalmente no se edita directamente, sino que se genera a partir de otros ficheros de configuración mediante el comando update-grub.*
 
    - *La extensión .cfg se utiliza generalmente para ficheros de configuración. Estos ficheros contienen los ajustes para programas y aplicaciones. En este caso, grub.cfg contiene la configuración para el gestor de arranque GRUB.*
 
-3. *![Img-Grub #3](../Images/Img%20Grub/02%20img-grub.png "../Images/Img Grub/02 img-grub.png")*
+3. *![Image Grub Number #3](../Images/Img%20Grub/02%20img-grub.png "../Images/Img Grub/02 img-grub.png")*
 
-   1. *La línea GRUB_DEFAULT=0 es una configuración en el fichero de configuración de GRUB, que normalmente se encuentra en /etc/default/grub en sistemas Linux.*
+   1. *La línea GRUB_DEFAULT=0 es una configuración en el file de configuración de GRUB, que normalmente se encuentra en /etc/default/grub en sistemas Linux.*
 
       - *GRUB_DEFAULT controla qué entrada del menú de GRUB se selecciona por defecto cuando el sistema arranca. Las entradas del menú se cuentan desde 0, por lo que GRUB_DEFAULT=0 significa que se seleccionará la primera entrada del menú.*
 
@@ -128,9 +128,9 @@ sudo su
 
       - > *Entonces GRUB_DEFAULT=0 seleccionará "Ubuntu" por defecto.*
 
-4. *![Img-Grub #4](../Images/Img%20Grub/03%20img-grub.png "../Images/Img Grub/03 img-grub.png")*
+4. *![Image Grub Number #4](../Images/Img%20Grub/03%20img-grub.png "../Images/Img Grub/03 img-grub.png")*
 
-   1. *La línea GRUB_TIMEOUT=10 es una configuración en el fichero de configuración de GRUB, que normalmente se encuentra en /etc/default/grub en sistemas Linux.*
+   1. *La línea GRUB_TIMEOUT=10 es una configuración en el file de configuración de GRUB, que normalmente se encuentra en /etc/default/grub en sistemas Linux.*
 
       - *GRUB_TIMEOUT controla cuánto tiempo (en segundos) GRUB espera antes de arrancar automáticamente la entrada del menú por defecto. En este caso, GRUB_TIMEOUT=10 significa que GRUB esperará 10 segundos antes de arrancar la entrada por defecto.*
 
@@ -160,7 +160,7 @@ sudo su
 
 2. *Otro ejemplo*
 
-   1. *![Img-Grub #5](../Images/Img%20Grub/04%20img-grub.png "../Images/Img Grub/04 img-grub.png")*
+   1. *![Image Grub Number #5](../Images/Img%20Grub/04%20img-grub.png "../Images/Img Grub/04 img-grub.png")*
 
 ---
 
@@ -168,11 +168,11 @@ sudo su
 
 > *Los gestores de paquetes más comunes en Ubuntu son APT,Snap y dpkg.*
 
-1. ***`APT`** (Advanced Package Tool): Herramienta Avanzada de Paquetes. Es una interfaz de línea de comandos para la gestión de paquetes en Ubuntu y otras distribuciones basadas en Debian. APT simplifica el proceso de instalación, actualización y eliminación de software.*
+1. **`APT`** *(Advanced Package Tool): Herramienta Avanzada de Paquetes. Es una interfaz de línea de comandos para la gestión de paquetes en Ubuntu y otras distribuciones basadas en Debian. APT simplifica el proceso de instalación, actualización y eliminación de software.*
 
-2. ***`dpkg` (Debian Package):** *Paquete Debian. Es el sistema de gestión de paquetes de bajo nivel en Debian y sus derivados, incluyendo Ubuntu. dpkg se utiliza para instalar, eliminar y proporcionar información sobre los paquetes .deb.**
+2. **`dpkg` (Debian Package):** *Paquete Debian. Es el sistema de gestión de paquetes de bajo nivel en Debian y sus derivados, incluyendo Ubuntu. dpkg se utiliza para instalar, eliminar y proporcionar información sobre los paquetes .deb.*
 
-3. ***`Snap`:** *Snap es un sistema de gestión de paquetes desarrollado por Canonical, los creadores de Ubuntu. Los paquetes Snap son autocontenidos, lo que significa que incluyen todas las dependencias necesarias para que la aplicación funcione, lo que facilita su instalación y actualización. "Snap" no es un acrónimo, por lo que no tiene una traducción directa ni un significado más allá de ser el nombre del sistema de gestión de paquetes.**
+3. **`Snap`:** *Snap es un sistema de gestión de paquetes desarrollado por Canonical, los creadores de Ubuntu. Los paquetes Snap son autocontenidos, lo que significa que incluyen todas las dependencias necesarias para que la aplicación funcione, lo que facilita su instalación y actualización. "Snap" no es un acrónimo, por lo que no tiene una traducción directa ni un significado más allá de ser el nombre del sistema de gestión de paquetes.*
 
 > *El comando apt list en Ubuntu y otras distribuciones basadas en Debian se utiliza para listar los paquetes disponibles en los repositorios de software configurados en el sistema.*
 
@@ -226,7 +226,7 @@ sudo apt-get upgrade
 
 - *`add-apt-repository`: Añade un repositorio a la lista de fuentes de paquetes de APT.*
 
-- *`ppa:user/repo`: El repositorio que quieres añadir. PPA significa Personal Package Archive que es su traduccion es fichero de Paquetes Personal.*
+- *`ppa:user/repo`: El repositorio que quieres añadir. PPA significa Personal Package Archive que es su traduccion es file de Paquetes Personal.*
 
 ***Ejemplo***
 
@@ -266,7 +266,7 @@ sudo dpkg -i package.deb
 
 1. *Abre la terminal.*
 
-   1. *Crea un fichero one-dark.sh*
+   1. *Crea un file one-dark.sh*
 
       ```bash
       touch ./one-dark.sh
@@ -276,7 +276,7 @@ sudo dpkg -i package.deb
       nano one-dark.sh
       ```
 
-      - *Colocar esto en el fichero one-dark.s*
+      - *Colocar esto en el file one-dark.s*
 
          ```bash
             #!/usr/bin/env bash
@@ -409,15 +409,15 @@ sudo dpkg -i package.deb
 
 2. *Se nos creara un perfil lo seleccionamos y le damos como predeterminado*
 
-   1. *![Theme_Terminal #1](../Images/Img%20Tema%20Terminal/00%20theme-terminal.png "../Images/Img Tema Terminal/00 theme-terminal.png")*
+   1. *![Image Theme Terminal #1](../Images/Img%20Tema%20Terminal/00%20theme-terminal.png "../Images/Img Tema Terminal/00 theme-terminal.png")*
 
-   2. *![Theme_Terminal #2](../Images/Img%20Tema%20Terminal/01%20theme-terminal.png "../Images/Img Tema Terminal/01 theme-terminal.png")*
+   2. *![Image Theme Terminal #2](../Images/Img%20Tema%20Terminal/01%20theme-terminal.png "../Images/Img Tema Terminal/01 theme-terminal.png")*
 
 3. *Configurando fuente, transparencia, tamaño*
 
-   1. *![Theme_Terminal #3](../Images/Img%20Tema%20Terminal/02%20theme-terminal.png "../Images/Img Tema Terminal/02 theme-terminal.png")*
+   1. *![Image Theme Terminal #3](../Images/Img%20Tema%20Terminal/02%20theme-terminal.png "../Images/Img Tema Terminal/02 theme-terminal.png")*
 
-   2. *![Theme_Terminal #4](../Images/Img%20Tema%20Terminal/03%20theme-terminal.png "../Images/Img Tema Terminal/03 theme-terminal.png")*
+   2. *![Image Theme Terminal #4](../Images/Img%20Tema%20Terminal/03%20theme-terminal.png "../Images/Img Tema Terminal/03 theme-terminal.png")*
 
 > *Instalación de curl en Ubuntu*
 
@@ -435,29 +435,29 @@ sudo apt-get install -y curl
 
 > *En linux existen diferentes tipos de permisos para los ficheros y directorios, estos son: **lectura**, **escritura** y **ejecución**. Los tres primeros son para el usuario, los otros tres permisos son para grupos y los ultimos tres permisos son para otros usuario*
 
-1. ***Lectura:** *Permite ver el contenido del fichero o directorio.**
+1. **Lectura:** *Permite ver el contenido del file o directory.*
 
-2. ***Escritura:** *Permite modificar el contenido del fichero o directorio.**
+2. **Escritura:** *Permite modificar el contenido del file o directory.*
 
-3. ***Ejecución:** *Permite ejecutar el fichero o acceder al directorio.**
+3. **Ejecución:** *Permite ejecutar el file o acceder al directory.*
 
-4. ***Orden:** *El primero es lectura, el segundo escritura el ultimo. `---------` significa que el ficheros o directorio no tiene ningún permiso establecido para el propietario, el grupo y otros usuarios.**
+4. **Orden:** *El primero es lectura, el segundo escritura el ultimo. `---------` significa que el ficheros o directory no tiene ningún permiso establecido para el propietario, el grupo y otros usuarios.*
 
-> para ver los permisos de un fichero o directorio, utilizamos el comando `ls -l` o `--format=long`.
+> *para ver los permisos de un file o directory, utilizamos el comando `ls -l` o `--format=long`.*
 
-1. *Si es un fichero, el primer carácter será una -*
+1. *Si es un file, el primer carácter será una -*
 
    ```bash
-   ls -l fichero.py
+   ls -l file.py
    ```
 
       ```bash
-      ls --format=long fichero.py
+      ls --format=long file.py
       ```
 
       - *Otra manera de hacerlo*
 
-   1. **Output:** *`-rw-rw-r-- 1 daniel daniel    0 feb  1 16:04 fichero.py`*
+   1. **Output:** *`-rw-rw-r-- 1 daniel daniel    0 feb  1 16:04 file.py`*
 
       1. `-rw-rw-r--`: *Estos son los permisos del ficheros. Se dividen en cuatro partes:*
 
@@ -479,37 +479,37 @@ sudo apt-get install -y curl
 
       10. *`feb 1 16:04`: Esta es la fecha y hora de la última modificación del ficheros.*
 
-      11. *`fichero.py`: Este es el nombre del ficheros.*
+      11. *`file.py`: Este es el nombre del ficheros.*
 
-2. *Si es un directorio, el primer carácter será una d.*
+2. *Si es un directory, el primer carácter será una d.*
 
    ```bash
-   ls -l fichero.py
+   ls -l file.py
    ```
 
    ```bash
-   ls --format=long fichero.py
+   ls --format=long file.py
    ```
 
-      1. *Output: `drwxrwxr-x`: Estos son los permisos del directorio. Se dividen en cuatro partes:*
+      1. *Output: `drwxrwxr-x`: Estos son los permisos del directory. Se dividen en cuatro partes:*
 
-         1. *El primer carácter d indica el tipo. Un d significa que es un directorio.*
+         1. *El primer carácter d indica el tipo. Un d significa que es un directory.*
 
-         2. *Los siguientes tres caracteres rwx representan los permisos del grupo del directorio. Al igual que el propietario, el grupo tiene permisos de lectura `(r)`, escritura `(w)` y ejecución `(x)`.*
+         2. *Los siguientes tres caracteres rwx representan los permisos del grupo del directory. Al igual que el propietario, el grupo tiene permisos de lectura `(r)`, escritura `(w)` y ejecución `(x)`.*
 
          3. *Los últimos tres caracteres r-x representan los permisos de todos los demás usuarios. En este caso, otros usuarios tienen permisos de lectura `(r)` y ejecución `(x)`, pero no de escritura.*
 
-         4. *`2`: Este es el número de enlaces al directorio. Para los directorios, este número es el número de subdirectorios + 2 (uno por el directorio mismo y otro por su directorio padre).*
+         4. *`2`: Este es el número de enlaces al directory. Para los directorios, este número es el número de subdirectorios + 2 (uno por el directory mismo y otro por su directory padre).*
 
-         5. *`daniel`: El primer daniel es el propietario del directorio.*
+         5. *`daniel`: El primer daniel es el propietario del directory.*
 
-         6. *`daniel`: El segundo daniel es el grupo del directorio.*
+         6. *`daniel`: El segundo daniel es el grupo del directory.*
 
-         7. *`4096:` Este es el tamaño del directorio en bytes. Este número representa el tamaño del espacio en disco que se utiliza para almacenar las metainformaciones del directorio, pero no el tamaño de los ficheros dentro del directorio.*
+         7. *`4096:` Este es el tamaño del directory en bytes. Este número representa el tamaño del espacio en disco que se utiliza para almacenar las metainformaciones del directory, pero no el tamaño de los ficheros dentro del directory.*
 
-         8. *`feb 1 16:04`: Esta es la fecha y hora de la última modificación del directorio.*
+         8. *`feb 1 16:04`: Esta es la fecha y hora de la última modificación del directory.*
 
-         9. *`directorio`: Este es el nombre del directorio.*
+         9. *`directory`: Este es el nombre del directory.*
 
 > *En la primera posición, un guion `-` indica que el elemento es un ficheros regular. Otros posibles valores en esta posición incluyen `d` para directorios, `l` para enlaces simbólicos, `s` para sockets, `p` para pipes, `c` para ficheros de caracteres especiales y `b` para ficheros de bloques especiales.*
 
@@ -517,128 +517,128 @@ sudo apt-get install -y curl
 
 2. *Si es un enlace simbólico, el primer carácter será una l.*
 
-3. *Si es un fichero regular, el primer carácter será un guion.*
+3. *Si es un file regular, el primer carácter será un guion.*
 
-4. > *Para cambiar los permisos de un fichero o directorio, utilizamos el comando `chmod`.*
+4. > *Para cambiar los permisos de un file o directory, utilizamos el comando `chmod`.*
 
 > *`chmod [opciones] modo ficheros`*
 
--*`u` (usuario), `g` (grupo), `o` (otros), `a` (todos): especifica a quién se aplicarán los cambios.*
+- *`u` (usuario), `g` (grupo), `o` (otros), `a` (todos): especifica a quién se aplicarán los cambios.*
 
--*`+` (añadir permisos), `-` (quitar permisos), `=` (establecer permisos): especifica qué acción se realizará.*
+- *`+` (añadir permisos), `-` (quitar permisos), `=` (establecer permisos): especifica qué acción se realizará.*
 
--*`r` (lectura), `w` (escritura), `x` (ejecución): especifica qué permisos se cambiarán.*
+- *`r` (lectura), `w` (escritura), `x` (ejecución): especifica qué permisos se cambiarán.*
 
--*Añadir permisos al usuario*
+- *Añadir permisos al usuario*
 
 ```bash
-chmod u+w fichero.py
+chmod u+w file.py
 ```
 
 ```bash
-chmod u+r fichero.py
+chmod u+r file.py
 ```
 
 ```bash
-chmod u+x fichero.py
+chmod u+x file.py
 ```
 
 - *Añadir permisos al grupo*
 
 ```bash
-chmod g+w fichero.py
+chmod g+w file.py
 ```
 
 ```bash
-chmod g+r fichero.py
+chmod g+r file.py
 ```
 
 ```bash
-chmod g+x fichero.py
+chmod g+x file.py
 ```
 
 - *Añadir permisos a otros usarios*
 
 ```bash
-chmod o+w fichero.py
+chmod o+w file.py
 ```
 
 ```bash
-chmod o+r fichero.py
+chmod o+r file.py
 ```
 
 ```bash
-chmod o+x fichero.py
+chmod o+x file.py
 ```
 
 - *Quitar permisos al usuario*
 
 ```bash
-chmod u-w fichero.py
+chmod u-w file.py
 ```
 
 ```bash
-chmod u-r fichero.py
+chmod u-r file.py
 ```
 
 ```bash
-chmod u-x fichero.py
+chmod u-x file.py
 ```
 
 - *Quitar permisos al grupo*
 
 ```bash
-chmod g-w fichero.py
+chmod g-w file.py
 ```
 
 ```bash
-chmod g-r fichero.py
+chmod g-r file.py
 ```
 
 ```bash
-chmod g-x fichero.py
+chmod g-x file.py
 ```
 
 - *Quitar permisos a otros usarios*
 
 ```bash
-chmod o-w fichero.py
+chmod o-w file.py
 ```
 
 ```bash
-chmod o-r fichero.py
+chmod o-r file.py
 ```
 
 ```bash
-chmod o-x fichero.py
+chmod o-x file.py
 ```
 
 - *Añadir multiples permisos separando por coma*
 
 ```bash
-chmod u+x,g+r,o+w fichero.py
+chmod u+x,g+r,o+w file.py
 ```
 
 ```bash
-chmod u-x,g-r,o-w fichero.py
+chmod u-x,g-r,o-w file.py
 ```
 
 ```bash
-chmod u-x,g+r,g+x fichero.py
+chmod u-x,g+r,g+x file.py
 ```
 
-- *Establecer permisos de lectura y escritura y ejecucion para todos los usuarios en el ficheros fichero.py **a: Esto significa "todos", que incluye al usuario propietario, al grupo y a otros usuarios.***
+- *Establecer permisos de lectura y escritura y ejecucion para todos los usuarios en el ficheros file.py **a: Esto significa "todos", que incluye al usuario propietario, al grupo y a otros usuarios.***
 
 ```bash
-chmod a=rwx fichero.py
-```
-
-```bash
-chmod a=rw fichero.py
+chmod a=rwx file.py
 ```
 
 ```bash
-chmod a=r fichero.py
+chmod a=rw file.py
+```
+
+```bash
+chmod a=r file.py
 ```
 
 > [!TIP]
@@ -653,10 +653,10 @@ chmod a=r fichero.py
 > *Por lo tanto, si quieres dar permisos de lectura, escritura y ejecución al propietario `(rwx)`, y solo lectura al grupo y a otros `(r--)`*
 
    ```bash
-   chmod 744 fichero.py
+   chmod 744 file.py
    ```
 
-> *En este caso, `7` `(4+2+1)` en decimal representa `rwx` en binario para el propietario, y `4` en decimal representa `r--` en binario para el grupo y otros. `-rwxr--r-- 1 daniel daniel    0 feb  1 16:04 fichero.py`*
+> *En este caso, `7` `(4+2+1)` en decimal representa `rwx` en binario para el propietario, y `4` en decimal representa `r--` en binario para el grupo y otros. `-rwxr--r-- 1 daniel daniel    0 feb  1 16:04 file.py`*
 
 1. *`000` es igual a `---` (ningún permiso)*
 2. *`001` es igual a `--x` (permiso de ejecución)*
@@ -695,10 +695,10 @@ chmod a=r fichero.py
 *Comando `chmod` con opciones*
 
    ```bash
-   chmod [opción] modo fichero
+   chmod [opción] modo file
    ```
 
-- `-v` `--verbose` *: muestra un diagnóstico para cada fichero procesado*
+- `-v` `--verbose` *: muestra un diagnóstico para cada file procesado*
 
 - `-c` `--changes` *: como verbose pero informando sólo cuando se hace un cambio*
 
@@ -706,97 +706,97 @@ chmod a=r fichero.py
 
 - `-R` `--recursive` *: cambia los permisos recursivamente*
 
-1. *Cambiar el permiso de todos los ficheros de un directorio de forma recursiva*
+1. *Cambiar el permiso de todos los ficheros de un directory de forma recursiva*
 
-   - *chmod tiene la opción recursiva que le permite cambiar los permisos de todos los ficheros de un directorio y sus subdirectorios.*
+   - *chmod tiene la opción recursiva que le permite cambiar los permisos de todos los ficheros de un directory y sus subdirectorios.*
 
    ```bash
-   chmod -R 755 directorio
+   chmod -R 755 directory
    ```
 
    ```bash
-   chmod --recursive 755 directorio
+   chmod --recursive 755 directory
    ```
 
 2. *`chmod +x` o `chmod a+x`: Ejecución para todos*
 
-   - *Uno de los casos más utilizados de chmod es dar a un fichero el bit de ejecución. A menudo, después de descargar un fichero ejecutable, necesitarás añadir este permiso antes de usarlo. Para dar permiso al propietario, al grupo y a todos los demás para ejecutar el fichero:*
+   - *Uno de los casos más utilizados de chmod es dar a un file el bit de ejecución. A menudo, después de descargar un file ejecutable, necesitarás añadir este permiso antes de usarlo. Para dar permiso al propietario, al grupo y a todos los demás para ejecutar el file:*
 
    ```bash
-   chmod +x /direccion/del/fichero
+   chmod +x /address/of/file
    ```
 
    ```bash
-   chmod a+x /direccion/del/fichero
+   chmod a+x /address/of/file
    ```
 
 3. *`chmod 666`: Nadie ejecuta*
 
-   - *Para dar al propietario, al grupo y a todos los demás, permisos de lectura y escritura en el fichero.*
+   - *Para dar al propietario, al grupo y a todos los demás, permisos de lectura y escritura en el file.*
 
    ```bash
-   chmod -c 666  /direccion/del/fichero
+   chmod -c 666  /address/of/file
    ```
 
    ```bash
-   chmod --changes 666  /direccion/del/fichero
+   chmod --changes 666  /address/of/file
    ```
 
-4. *El siguiente ejemplo aplicará el permiso de lectura/escritura al fichero para el propietario. La opción verbose hará que chmod informe sobre la acción.*
+4. *El siguiente ejemplo aplicará el permiso de lectura/escritura al file para el propietario. La opción verbose hará que chmod informe sobre la acción.*
 
    ```bash
-   chmod -v u+rw /direccion/del/fichero
-   ```
-
-   ```bash
-   chmod --verbose u+rw /direccion/del/fichero
-   ```
-
-5. *Este siguiente establecerá el permiso de escritura del grupo sobre el directorio y todo su contenido de forma recursiva. Informará sólo de los cambios.*
-
-   ```bash
-   chmod -cR g+w /direccion/del/directorio
+   chmod -v u+rw /address/of/file
    ```
 
    ```bash
-   chmod -Rc g+w /direccion/del/directorio
+   chmod --verbose u+rw /address/of/file
+   ```
+
+5. *Este siguiente establecerá el permiso de escritura del grupo sobre el directory y todo su contenido de forma recursiva. Informará sólo de los cambios.*
+
+   ```bash
+   chmod -cR g+w /address/of/directory
    ```
 
    ```bash
-   chmod -c -R g+w /direccion/del/directorio
+   chmod -Rc g+w /address/of/directory
    ```
 
    ```bash
-   chmod -R -c g+w /direccion/del/directorio
+   chmod -c -R g+w /address/of/directory
    ```
 
    ```bash
-   chmod --changes --recursive g+w /direccion/del/directorio
+   chmod -R -c g+w /address/of/directory
    ```
 
    ```bash
-   chmod --recursive --changes g+w /direccion/del/directorio
+   chmod --changes --recursive g+w /address/of/directory
    ```
 
-6. *Este último utilizará rFile como referencia para establecer el permiso del fichero. Cuando se complete, los permisos del fichero serán exactamente los mismos que los de rFile*
+   ```bash
+   chmod --recursive --changes g+w /address/of/directory
+   ```
+
+6. *Este último utilizará rFile como referencia para establecer el permiso del file. Cuando se complete, los permisos del file serán exactamente los mismos que los de rFile*
 
    ```bash
-   chmod --reference=/direccion/del/rFile /direccion/del/fichero
+   chmod --reference=/address/of/rFile /address/of/file
    ```
 
 ---
 
 ## ***Permisos en Directorios en Linux***
 
-- **`r` (lectura):** *Permite listar el contenido del directorio.*
-- **`w` (escritura):** *Permite crear, modificar o eliminar ficheros dentro del directorio.*
-- **`x` (ejecución):** *Permite acceder al contenido del directorio (entrar con `cd` o acceder a ficheros).*
+- **`r` (lectura):** *Permite listar el contenido del directory.*
+- **`w` (escritura):** *Permite crear, modificar o eliminar ficheros dentro del directory.*
+- **`x` (ejecución):** *Permite acceder al contenido del directory (entrar con `cd` o acceder a ficheros).*
 
 ---
 
 ## ***Preparación del entorno***
 
-*Creamos un directorio de prueba y ajustamos permisos para demostrar cada caso.*
+*Creamos un directory de prueba y ajustamos permisos para demostrar cada caso.*
 
 ```bash
 mkdir directory
@@ -823,7 +823,7 @@ chmod u-r directory
 chmod u=wx directory
 ```
 
-#### ***Qué sucede al listar el directorio***
+#### ***Qué sucede al listar el directory***
 
 ```bash
 ls -l directory
@@ -835,7 +835,7 @@ ls -l directory
   lsd: directory/: Permission denied (os error 13).
   ```
 
-  - *Sin permiso de lectura, no se puede listar el contenido del directorio, aunque se tengan permisos de ejecución (`x`).*
+  - *Sin permiso de lectura, no se puede listar el contenido del directory, aunque se tengan permisos de ejecución (`x`).*
 
 ---
 
@@ -855,7 +855,7 @@ chmod u-w directory
 chmod u=rx directory
 ```
 
-#### ***Qué sucede al intentar crear o modificar un fichero***
+#### ***Qué sucede al intentar crear o modificar un file***
 
 ```bash
 echo "Daniel" > directory/name.txt
@@ -867,7 +867,7 @@ echo "Daniel" > directory/name.txt
   bash: directory/name.txt: Permission denied
   ```
 
-  - *Sin permiso de escritura, no puedes crear, modificar ni eliminar ficheros dentro del directorio. Sin embargo, puedes listar los ficheros si tienes permiso de lectura (`r`).*
+  - *Sin permiso de escritura, no puedes crear, modificar ni eliminar ficheros dentro del directory. Sin embargo, puedes listar los ficheros si tienes permiso de lectura (`r`).*
 
 ---
 
@@ -895,14 +895,14 @@ chmod u=rw directory
   ls -l directory
   ```
 
-  - **Resultado:** *Si tienes permiso de lectura (`r`), puedes listar los ficheros, pero no puedes entrar al directorio.*
+  - **Resultado:** *Si tienes permiso de lectura (`r`), puedes listar los ficheros, pero no puedes entrar al directory.*
     Ejemplo de error al intentar acceder:
 
     ```bash
     ls: cannot access 'directory/file1.txt': Permission denied
     ```
 
-- **Acceder al directorio (`cd`):**
+- **Acceder al directory (`cd`):**
 
   ```bash
   cd directory
@@ -914,16 +914,16 @@ chmod u=rw directory
     bash: cd: directory: Permission denied
     ```
 
-- **Crear o modificar ficheros (`w`):** **
-  - *Sin permiso de ejecución, los permisos de escritura no son funcionales. Aunque tengas permiso de escritura (`w`), no puedes modificar el contenido del directorio porque no puedes "entrar" a él.*
+- **Crear o modificar ficheros (`w`):**
+  - *Sin permiso de ejecución, los permisos de escritura no son funcionales. Aunque tengas permiso de escritura (`w`), no puedes modificar el contenido del directory porque no puedes "entrar" a él.*
 
 ---
 
 ### ***Relación entre permisos***
 
-- *Sin **lectura (`r`)**, no puedes listar el contenido del directorio.*
+- *Sin **lectura (`r`)**, no puedes listar el contenido del directory.*
 - *Sin **escritura (`w`)**, no puedes modificar ni crear ficheros.*
-- *Sin **ejecución (`x`)**, no puedes acceder al directorio o interactuar con sus ficheros, incluso si tienes otros permisos.*
+- *Sin **ejecución (`x`)**, no puedes acceder al directory o interactuar con sus ficheros, incluso si tienes otros permisos.*
 
 ---
 
@@ -941,29 +941,29 @@ chmod u=rwx directory
 
 ---
 
-### ***Qué sucede si un directorio no tiene todos los permisos y se intenta borrar***
+### ***Qué sucede si un directory no tiene todos los permisos y se intenta borrar***
 
-- *En Linux, para borrar un directorio necesitas tener ciertos permisos.*
-
----
-
-### ***Permisos necesarios para borrar un directorio***
-
-1. **Permiso de escritura (`w`)** en el **directorio padre:**  
-   - *Necesitas permiso de escritura en el directorio que **contiene** el directorio que deseas eliminar.*
-   - *Esto permite que el sistema modifique el contenido del directorio padre (elimina la referencia al directorio que se está borrando).*
-
-2. **Permiso de ejecución (`x`)** en el **directorio a borrar:**  
-   - *Necesitas este permiso para poder acceder al contenido del directorio y procesar su eliminación.*
-
-3. **Permiso de escritura y ejecución (`wx`)** dentro del directorio mismo (si no está vacío):  
-   - *Si el directorio contiene ficheros o subdirectorios, se necesitan estos permisos para eliminarlos primero.*
+- *En Linux, para borrar un directory necesitas tener ciertos permisos.*
 
 ---
 
-### ***Caso: Directorio sin todos los permisos***
+### ***Permisos necesarios para borrar un directory***
 
-#### ***Comando para eliminar un directorio***
+1. **Permiso de escritura (`w`)** *en el* **directory padre:**  
+   - *Necesitas permiso de escritura en el directory que **contiene** el directory que deseas eliminar.*
+   - *Esto permite que el sistema modifique el contenido del directory padre (elimina la referencia al directory que se está borrando).*
+
+2. **Permiso de ejecución (`x`)** *en el* **directory a borrar:**  
+   - *Necesitas este permiso para poder acceder al contenido del directory y procesar su eliminación.*
+
+3. **Permiso de escritura y ejecución (`wx`)** *dentro del directory mismo (si no está vacío):*
+   - *Si el directory contiene ficheros o subdirectorios, se necesitan estos permisos para eliminarlos primero.*
+
+---
+
+### ***Caso: Directory sin todos los permisos***
+
+#### ***Comando para eliminar un directory***
 
 ```bash
 rm -r directory
@@ -971,58 +971,58 @@ rm -r directory
 
 #### ***Situaciones***
 
-1. **Sin permisos de escritura en el directorio padre:**
+1. **Sin permisos de escritura en el directory padre:**
    - **Aparece un error como:**
 
      ```bash
      rm: cannot remove 'directory': Permission denied
      ```
 
-   - *Sin permiso de escritura en el directorio **padre**, no se puede modificar el contenido del directorio contenedor, lo cual incluye eliminar el directorio objetivo.*
+   - *Sin permiso de escritura en el directory **padre**, no se puede modificar el contenido del directory contenedor, lo cual incluye eliminar el directory objetivo.*
 
-2. **Sin permisos de ejecución en el directorio a borrar:**
+2. **Sin permisos de ejecución en el directory a borrar:**
    - *Aparece un error como:*
 
      ```bash
      rm: cannot access 'directory': Permission denied
      ```
 
-   - *Sin permiso de ejecución en el directorio a borrar, el sistema no puede acceder al contenido del directorio para procesar su eliminación.*
+   - *Sin permiso de ejecución en el directory a borrar, el sistema no puede acceder al contenido del directory para procesar su eliminación.*
 
-3. **Sin permisos de escritura dentro del directorio (si no está vacío):**
+3. **Sin permisos de escritura dentro del directory (si no está vacío):**
    - *Aparece un error como:*
 
      ```bash
      rm: cannot remove 'directory/file1.txt': Permission denied
      ```
 
-   - *Sin permiso de escritura dentro del directorio, los ficheros o subdirectorios no pueden ser eliminados.*
+   - *Sin permiso de escritura dentro del directory, los ficheros o subdirectorios no pueden ser eliminados.*
 
 ---
 
 ### ***Demostración práctica***
 
-#### ***1. Quitar permisos de ejecución del directorio***
+#### ***1. Quitar permisos de ejecución del directory***
 
 ```bash
 chmod -x directory
 rm -r directory
 ```
 
-- **Resultado:** *Error. No se puede acceder al directorio para procesar su eliminación.*
+- **Resultado:** *Error. No se puede acceder al directory para procesar su eliminación.*
 
-#### ***2. Quitar permisos de escritura del directorio padre***
+#### ***2. Quitar permisos de escritura del directory padre***
 
 ```bash
 chmod -w .
 rm -r directory
 ```
 
-- **Resultado:** *Error. No se puede modificar el directorio padre para eliminar la referencia a `directory`.*
+- **Resultado:** *Error. No se puede modificar el directory padre para eliminar la referencia a `directory`.*
 
 ---
 
-### ***Solución para borrar un directorio sin permisos***
+### ***Solución para borrar un directory sin permisos***
 
 - *Si eres el propietario o tienes privilegios de superusuario, puedes usar `chmod` para restaurar los permisos o eliminarlo forzosamente con `sudo`:*
 
@@ -1035,87 +1035,87 @@ sudo rm -r directory
 
 ### ***Resumen***
 
-- *Para borrar un directorio, necesitas permisos **de escritura en el directorio padre** y **de escritura y ejecución dentro del directorio a borrar**.*
-- *Sin estos permisos, no es posible eliminar el directorio, ni siquiera con el flag `-r` de `rm`.*
+- *Para borrar un directory, necesitas permisos **de escritura en el directory padre** y **de escritura y ejecución dentro del directory a borrar**.*
+- *Sin estos permisos, no es posible eliminar el directory, ni siquiera con el flag `-r` de `rm`.*
 - *Usar `sudo` puede ser una solución, pero siempre con precaución.*
 
 ---
 
 ## ***Enlaces duros y simbolicos***
 
-> *Un **enlace duro** es esencialmente un nombre adicional para un ficheros existente en los sistemas de ficheros de Unix y Linux. Todos los enlaces duros a un ficheros realmente se refieren al mismo ficheros, y es posible tener varios enlaces duros a un solo ficheros.* ***Un enlace simbólico** (también conocido como symlink o soft link) es un tipo especial de ficheros que sirve como referencia a otro ficheros o directorio.*
+> *Un **enlace duro** es esencialmente un nombre adicional para un ficheros existente en los sistemas de ficheros de Unix y Linux. Todos los enlaces duros a un ficheros realmente se refieren al mismo ficheros, y es posible tener varios enlaces duros a un solo ficheros.* ***Un enlace simbólico** (también conocido como symlink o soft link) es un tipo especial de ficheros que sirve como referencia a otro ficheros o directory.*
 
 **Conceptos y usos:**
 
-- *Los enlaces duros son útiles cuando quieres tener acceso rápido a un ficheros que está en un directorio diferente sin tener que navegar a ese directorio.*
+- *Los enlaces duros son útiles cuando quieres tener acceso rápido a un ficheros que está en un directory diferente sin tener que navegar a ese directory.*
 
-- *Los enlaces simbólicos son útiles cuando quieres crear un enlace a un directorio (los enlaces duros a directorios no están permitidos en Linux) o cuando quieres crear un enlace a un ficheros que está en otro sistema de ficheros.*
+- *Los enlaces simbólicos son útiles cuando quieres crear un enlace a un directory (los enlaces duros a directorios no están permitidos en Linux) o cuando quieres crear un enlace a un ficheros que está en otro sistema de ficheros.*
 
 **Para crear un enlace duro:**
 
 > *La herramienta ln de Unix permite crear un enlace duro entre dos ficheros. Esto significa que ambos ficheros comparten el mismo contenido y cualquier cambio realizado en uno de ellos se reflejará en el otro.*
 
 ```bash
-ln ficheros.py enlace_duro.py
+ln ficheros.py hard_link.py
 ```
 
 ```bash
-ln fichero.py enlace_duro.py
+ln file.py hard_link.py
 ```
 
 **Para crear un enlace simbólico:**
 
 ```bash
-ln -s ficheros.py enlace_simbolico.py
+ln -s ficheros.py symbolic_link.py
 ```
 
 `-s, --symbolic              crea enlaces simbólicos en vez de enlaces duros`
 
 ```bash
-ln --symbolic fichero.py enlace_simbolico.py
+ln --symbolic file.py symbolic_link.py
 ```
 
-**output:** *`lrwxrwxrwx 1 daniel daniel 20 feb  2 13:03 enlace_simbolico.py -> ./directorio/fichero.py`*
+**output:** *`lrwxrwxrwx 1 daniel daniel 20 feb  2 13:03 symbolic_link.py -> ./directory/file.py`*
 
 *`l` significa que es un enlace simbólico.*
 
-*`enlace_simbolico.py`: Este es el nombre del enlace simbólico.*
+*`symbolic_link.py`: Este es el nombre del enlace simbólico.*
 
 *`->`: Este símbolo indica que el ficheros es un enlace simbólico que apunta a otro ficheros.*
 
-*`./directorio/fichero.py`: Este es el ficheros al que apunta el enlace simbólico. En este caso, el enlace simbólico enlace_simbolico.py apunta al ficheros fichero.py en el directorio directorio*
+*`./directory/file.py`: Este es el ficheros al que apunta el enlace simbólico. En este caso, el enlace simbólico symbolic_link.py apunta al ficheros file.py en el directory directory*
 
 **Ejemplo en código:**
 
-*Supongamos que tienes un ficheros llamado `fichero.py` y quieres crear un enlace duro llamado `enlace_duro` y un enlace simbólico llamado `enlace_simbolico`.*
+*Supongamos que tienes un ficheros llamado `file.py` y quieres crear un enlace duro llamado `hard_link` y un enlace simbólico llamado `symbolic_link`.*
 
 *Para el enlace duro, usarías:*
 
 ```bash
-ln fichero.py enlace_duro.py
+ln file.py hard_link.py
 ```
 
 ```bash
-ln fichero.py enlace_duro.py
+ln file.py hard_link.py
 ```
 
 *Para el enlace simbólico, usarías:*
 
 ```bash
-ln -s fichero.py enlace_simbolico
+ln -s file.py symbolic_link.py
 ```
 
 ```bash
-ln --symbolic fichero.py enlace_simbolico.py
+ln --symbolic file.py symbolic_link.py
 ```
 
-> *Después de ejecutar estos comandos, tanto `enlace_duro` como `enlace_simbolico` apuntarán a `fichero1.py`. Sin embargo, si `fichero1.py` se mueve o se elimina, `enlace_duro` seguirá apuntando al contenido del ficheros original, mientras que `enlace_simbolico` se romperá y no apuntará a nada.*
+> *Después de ejecutar estos comandos, tanto `hard_link` como `symbolic_link` apuntarán a `fichero1.py`. Sin embargo, si `fichero1.py` se mueve o se elimina, `hard_link` seguirá apuntando al contenido del ficheros original, mientras que `symbolic_link` se romperá y no apuntará a nada.*
 
-**un enlace simbólico es similar a un acceso directo en Windows. Apunta a la ubicación de un ficheros o directorio real en el sistema de ficheros.**
+**un enlace simbólico es similar a un acceso directo en Windows. Apunta a la ubicación de un ficheros o directory real en el sistema de ficheros.**
 
 ***Utilidades de Enlaces duros y simbolicos***
 
-> *Los enlaces simbólicos y duros son útiles para hacer que un ficheros o directorio esté disponible en múltiples ubicaciones sin duplicar el contenido real.*
+> *Los enlaces simbólicos y duros son útiles para hacer que un ficheros o directory esté disponible en múltiples ubicaciones sin duplicar el contenido real.*
 
 **Enlaces duros:**
 
@@ -1125,13 +1125,13 @@ ln --symbolic fichero.py enlace_simbolico.py
 
 1. **Versionado de software:** **Los enlaces simbólicos son comúnmente utilizados para cambiar fácilmente entre diferentes versiones de un programa. Por ejemplo, podrías tener `programa-1.0` y `programa-1.1` en tu sistema, con un enlace simbólico llamado `programa` que apunta a la versión que deseas usar. Cuando quieras cambiar de versión, simplemente cambias a qué versión apunta el enlace simbólico.**
 
-2. **Crear accesos rápidos:** **Los enlaces simbólicos pueden actuar como accesos rápidos a ficheros o directorios que se utilizan con frecuencia. Por ejemplo, podrías tener un enlace simbólico a un directorio de logs o a un ficheros de configuración en tu directorio de inicio para un acceso rápido.**
+2. **Crear accesos rápidos:** **Los enlaces simbólicos pueden actuar como accesos rápidos a ficheros o directorios que se utilizan con frecuencia. Por ejemplo, podrías tener un enlace simbólico a un directory de logs o a un ficheros de configuración en tu directory de inicio para un acceso rápido.**
 
 > *Recuerda que los enlaces duros no pueden referirse a directorios ni pueden cruzar sistemas de ficheros, mientras que los enlaces simbólicos pueden hacer ambas cosas.*
 
 ---
 
-# ***Curl***
+## ***Curl***
 
 > *`cURL` es una herramienta de línea de comandos y una biblioteca para transferir datos con URL. El nombre `cURL` significa "Client URL". Aunque no es un acrónimo oficial, a veces se interpreta como "See URL".*
 
@@ -1173,7 +1173,7 @@ ln --symbolic fichero.py enlace_simbolico.py
    curl -s https://www.example.com
    ```
 
-7. *El `-l` en cURL se utiliza con el protocolo FTP y significa "lista". Cuando se utiliza con cURL, `-l` hará que cURL liste los nombres de los ficheros en el directorio del servidor FTP en lugar de descargarlos.*
+7. *El `-l` en cURL se utiliza con el protocolo FTP y significa "lista". Cuando se utiliza con cURL, `-l` hará que cURL liste los nombres de los ficheros en el directory del servidor FTP en lugar de descargarlos.*
 
    ```bash
    curl -l https://www.example.com
@@ -1227,19 +1227,19 @@ ln --symbolic fichero.py enlace_simbolico.py
 
   - *La información de la memoria (memoria total, memoria libre, memoria usada, etc.) se obtiene de `/proc/meminfo`.*
 
-  - *La lista de procesos y la información de cada proceso (PID, usuario, uso de la CPU, uso de la memoria, estado, etc.) se obtiene de los ficheros en el directorio `/proc/[pid]`, donde `[pid]` es el ID del proceso.*
+  - *La lista de procesos y la información de cada proceso (PID, usuario, uso de la CPU, uso de la memoria, estado, etc.) se obtiene de los ficheros en el directory `/proc/[pid]`, donde `[pid]` es el ID del proceso.*
 
   - *Se usa `top` para monitorizar el rendimiento del sistema, comprobar qué procesos están consumiendo más recursos, y gestionar procesos directamente desde la interfaz de `top`*
 
 - *`/root`: Directorio personal del usuario root.*
 
-- *`/run`: Este directorio es un sistema de ficheros temporal almacenado en la memoria (tmpfs) que se monta al arrancar el sistema. Contiene información sobre el sistema desde que se arrancó y hasta que se apaga. Es volátil en el sentido de que los datos almacenados en este directorio no persisten después de un reinicio. Algunos de los datos que se almacenan aquí incluyen ficheros de bloqueo (lock files), ficheros PID (que almacenan los identificadores de proceso de los servicios en ejecución), y otros ficheros temporales necesarios para el funcionamiento correcto de los servicios en ejecución. Por ejemplo, el sistema de inicio systemd utiliza este directorio para almacenar información de estado y control sobre los servicios que gestiona.*
+- *`/run`: Este directory es un sistema de ficheros temporal almacenado en la memoria (tmpfs) que se monta al arrancar el sistema. Contiene información sobre el sistema desde que se arrancó y hasta que se apaga. Es volátil en el sentido de que los datos almacenados en este directory no persisten después de un reinicio. Algunos de los datos que se almacenan aquí incluyen ficheros de bloqueo (lock files), ficheros PID (que almacenan los identificadores de proceso de los servicios en ejecución), y otros ficheros temporales necesarios para el funcionamiento correcto de los servicios en ejecución. Por ejemplo, el sistema de inicio systemd utiliza este directory para almacenar información de estado y control sobre los servicios que gestiona.*
 
 - *`/sbin`: Contiene binarios ejecutables esenciales utilizados por el sistema y el administrador del sistema o el usuario root.*
 
-- *`/snap`: Este directorio contiene las aplicaciones empaquetadas en el formato Snap.*
+- *`/snap`: Este directory contiene las aplicaciones empaquetadas en el formato Snap.*
 
-- *`/srv`: Este directorio contiene datos específicos del sitio que se sirven por el sistema. Según el estándar Filesystem Hierarchy Standard (FHS), este directorio está destinado a contener datos para servicios proporcionados por el sistema. Por ejemplo, si el sistema está ejecutando un servidor web, los ficheros y directorios que se sirven a través del servidor web pueden residir en `/srv`. La idea es que este directorio contenga aquellos ficheros que son servidos a otros usuarios y sistemas, ya sea a través de un servidor web, FTP, rsync, etc. La estructura exacta y la organización de los directorios y ficheros bajo `/srv` dependen del administrador del sistema y de cómo se configuran los servicios específicos.*
+- *`/srv`: Este directory contiene datos específicos del sitio que se sirven por el sistema. Según el estándar Filesystem Hierarchy Standard (FHS), este directory está destinado a contener datos para servicios proporcionados por el sistema. Por ejemplo, si el sistema está ejecutando un servidor web, los ficheros y directorios que se sirven a través del servidor web pueden residir en `/srv`. La idea es que este directory contenga aquellos ficheros que son servidos a otros usuarios y sistemas, ya sea a través de un servidor web, FTP, rsync, etc. La estructura exacta y la organización de los directorios y ficheros bajo `/srv` dependen del administrador del sistema y de cómo se configuran los servicios específicos.*
 
 - *`/sys`: Este es un sistema de ficheros virtual, también conocido como sysfs, que se utiliza como una interfaz de comunicación entre el espacio del kernel y el espacio del usuario en Linux. Proporciona una estructura de ficheros para acceder a la información del kernel, incluyendo información sobre dispositivos de hardware (como USB, discos duros, etc.) y sus controladores. A diferencia de `/proc`, que es un sistema de ficheros general para una amplia gama de información del sistema, `/sys` se centra principalmente en la información del dispositivo y del controlador. Por ejemplo, puedes encontrar información sobre los buses de dispositivos, los dispositivos conectados, y sus controladores en los directorios `/sys/bus`, `/sys/devices` y `/sys/drivers` respectivamente. Sin embargo, a diferencia de los sistemas de ficheros normales, `/sys` no contiene ficheros reales en el disco. En su lugar, cuando lees los ficheros en `/sys`, estás leyendo valores directamente de la memoria del kernel.*
 
@@ -1257,15 +1257,15 @@ ln --symbolic fichero.py enlace_simbolico.py
 
   - *El ficheros `/var/log/apt/history.log` registra todas las operaciones de `apt`, incluyendo las instalaciones, actualizaciones y eliminaciones de paquetes. Cada entrada en el ficheros de registro incluye la fecha y hora de la operación, el comando exacto que se utilizó, y una lista de los paquetes afectados.*
 
-- *`/cdrom`: En muchos sistemas Linux, `/cdrom` es un punto de montaje donde se montan los discos CD-ROM. Cuando insertas un CD en tu computadora, el sistema operativo puede montar automáticamente el CD en este directorio para que puedas acceder a los ficheros del CD. Sin embargo, en algunos sistemas modernos, los CD-ROM y otros medios extraíbles pueden montarse en otros lugares, como `/media`.*
+- *`/cdrom`: En muchos sistemas Linux, `/cdrom` es un punto de montaje donde se montan los discos CD-ROM. Cuando insertas un CD en tu computadora, el sistema operativo puede montar automáticamente el CD en este directory para que puedas acceder a los ficheros del CD. Sin embargo, en algunos sistemas modernos, los CD-ROM y otros medios extraíbles pueden montarse en otros lugares, como `/media`.*
 
-- *`/lost+found`: Este es un directorio especial que existe en cada sistema de ficheros en un sistema Linux. Cuando el sistema de ficheros se recupera después de un cierre inesperado (por ejemplo, después de un corte de energía), el comando `fsck` (comprobación del sistema de ficheros) se ejecuta para verificar la integridad del sistema de ficheros. Si `fsck` encuentra bloques de datos que no están referenciados en ninguna parte del sistema de ficheros, los moverá a `/lost+found`. Cada sistema de ficheros tiene su propio directorio `/lost+found`, por lo que si tienes varios sistemas de ficheros, tendrás varios directorios `/lost+found`. En la mayoría de los casos, este directorio estará vacío a menos que `fsck` haya encontrado datos no referenciados durante una recuperación del sistema de ficheros.*
+- *`/lost+found`: Este es un directory especial que existe en cada sistema de ficheros en un sistema Linux. Cuando el sistema de ficheros se recupera después de un cierre inesperado (por ejemplo, después de un corte de energía), el comando `fsck` (comprobación del sistema de ficheros) se ejecuta para verificar la integridad del sistema de ficheros. Si `fsck` encuentra bloques de datos que no están referenciados en ninguna parte del sistema de ficheros, los moverá a `/lost+found`. Cada sistema de ficheros tiene su propio directory `/lost+found`, por lo que si tienes varios sistemas de ficheros, tendrás varios directorios `/lost+found`. En la mayoría de los casos, este directory estará vacío a menos que `fsck` haya encontrado datos no referenciados durante una recuperación del sistema de ficheros.*
 
 ---
 
 ## ***Opciones de comando `ls`***
 
-*`ls --format=long`: Muestra la información detallada de los ficheros, incluyendo permisos, número de enlaces, propietario, grupo, tamaño, fecha y nombre del fichero.*
+*`ls --format=long`: Muestra la información detallada de los ficheros, incluyendo permisos, número de enlaces, propietario, grupo, tamaño, fecha y nombre del file.*
 
 ```bash
 ls --format=long
@@ -1289,13 +1289,13 @@ ls --format=comma
 ls --format=horizontal
 ```
 
-*`ls --format=across`: Muestra la salida en formato horizontal con un solo fichero por línea.*
+*`ls --format=across`: Muestra la salida en formato horizontal con un solo file por línea.*
 
 ```bash
 ls --format=across
 ```
 
-*`ls --format=single-column`: Muestra un solo fichero por línea, en una sola columna.*
+*`ls --format=single-column`: Muestra un solo file por línea, en una sola columna.*
 
 ```bash
 ls --format=single-column
