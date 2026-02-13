@@ -20,22 +20,44 @@
 
 - **Referencia visual:**
 
-- *![`Crear Cuentas`](/Docs/Images/CrearCuentas.png "/Docs/Images/CrearCuentas.png")*
-- *![`Creacion De Cuenta Para App`](/Docs/Images/CreacionDeCuentaParaApp.png "/Docs/Images/CreacionDeCuentaParaApp.png")*
+- *![`Crear Cuentas`](/Languages/Php/Laravel/ContactsApp/Docs/Images/CrearCuentas.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/CrearCuentas.png")*
+- *![`Creacion De Cuenta Para App`](/Languages/Php/Laravel/ContactsApp/Docs/Images/CreacionDeCuentaParaApp.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/CreacionDeCuentaParaApp.png")*
 
 ---
 
 ## **Paso 2: Crear Producto en Stripe**
 
-1. *Ve a: [https://dashboard.stripe.com/test/products?active=true](https://dashboard.stripe.com/test/products?active=true "https://dashboard.stripe.com/test/products?active=true")*
+1. *Ve a: [https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/products?active=true](https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/products?active=true "https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/products?active=true")*
 2. *Haz clic en **"Add product"** (Agregar producto).*
 3. *Completa los campos:*
 
-   - **Nombre:** *`Contacts App Subscription`*
-   - **Descripción:** *`Esta entrada almacena las credenciales de la API y la información de acceso para gestionar la suscripción a la aplicación Contactos.`*
-   - *Puedes subir una imagen de referencia si deseas.*
+---
 
-- **Referencia visual:** *![`Agregar Producto`](/Docs/Images/AgregarProducto.png "/Docs/Images/AgregarProducto.png")*
+### 🧾 Configuración del Producto en Stripe
+
+Para crear el producto asociado a la suscripción de la aplicación, completa los siguientes campos:
+
+- **Nombre:**
+  `Contacts App Subscription`
+
+- **Descripción:**
+  `Suscripción mensual que habilita el acceso completo a la aplicación Contacts. Incluye autenticación mediante API, gestión de credenciales y administración del estado de la suscripción del usuario.`
+
+- **Imagen (opcional):**
+  Puedes cargar una imagen representativa del producto (logo o icono de la aplicación).
+  Formatos permitidos: **JPEG, PNG o WEBP** (máx. 2 MB).
+
+---
+
+## 💳 Configuración de la Tarifa
+
+- **Tipo de tarifa:** Recurrente
+- **Importe:** `US$ 10.00`
+- **Periodo de facturación:** Mensual
+
+Esta configuración generará un cargo automático mensual de **US$ 10.00**, facturado al inicio de cada período.
+
+- **Referencia visual:** *![`Agregar Producto`](/Languages/Php/Laravel/ContactsApp/Docs/Images/AgregarProducto.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/AgregarProducto.png")*
 
 - *Al crear el producto, Stripe te redirigirá a una página con los **precios** (Prices). No copies ni compartas la URL como:*
 
@@ -206,7 +228,7 @@ Route::get('/billing-portal', function (Request $request) {
 
 - **Imagen de referencia:**
 
-- *![`Producto Precio ID`](/Docs/Images/ProductoPrecioID.png "/Docs/Images/ProductoPrecioID.png")*
+- *![`Producto Precio ID`](/Languages/Php/Laravel/ContactsApp/Docs/Images/ProductoPrecioID.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/ProductoPrecioID.png")*
 
 ---
 
@@ -306,7 +328,7 @@ http://172.17.0.2:8000/subscription-checkout
 ```
 
 - **Imagen de referencia:**
-*![`Subscription Checkout`](/Docs/Images/SubscriptionCheckout.png "/Docs/Images/SubscriptionCheckout.png")*
+*![`Subscription Checkout`](/Languages/Php/Laravel/ContactsApp/Docs/Images/SubscriptionCheckout.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/SubscriptionCheckout.png")*
 
 > *Serás redirigido al **Stripe Checkout** con el producto seleccionado.*
 
@@ -329,7 +351,7 @@ http://172.17.0.2:8000/home?checkout=success
 **Si ves este mensaje de error:**
 
 ```bash
-No configuration provided and your test mode default configuration has not been created. Provide a configuration or create your default by saving your customer portal settings in test mode at https://dashboard.stripe.com/test/settings/billing/portal.
+No configuration provided and your test mode default configuration has not been created. Provide a configuration or create your default by saving your customer portal settings in test mode at https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/settings/billing/portal.
 ```
 
 - **Significa que no has activado el portal de clientes (Customer Portal) en modo de prueba.**
@@ -339,7 +361,7 @@ No configuration provided and your test mode default configuration has not been 
 ## **Paso 9: Activar Portal de Clientes en Stripe (Modo Test)**
 
 1. *Ve a:*
-   *[https://dashboard.stripe.com/test/settings/billing/portal](https://dashboard.stripe.com/test/settings/billing/portal "https://dashboard.stripe.com/test/settings/billing/portal")*
+   *[https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/settings/billing/portal](https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/settings/billing/portal "https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/settings/billing/portal")*
 
 2. *Haz clic en:*
    - **"Activar el enlace de prueba"**
@@ -350,7 +372,7 @@ No configuration provided and your test mode default configuration has not been 
 - *Botón: `"Activar el enlace de prueba"`*
 
 - **Imagen de referencia:**
-*![`Billing Portal`](/Docs/Images/BillingPortal.png "/Docs/Images/BillingPortal.png")*
+*![`Billing Portal`](/Languages/Php/Laravel/ContactsApp/Docs/Images/BillingPortal.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/BillingPortal.png")*
 
 ---
 
@@ -373,21 +395,21 @@ No configuration provided and your test mode default configuration has not been 
 
 - **Referencia visual:**
 
-- *![`Web Hooks`](/Docs/Images/WebHooks.png "/Docs/Images/WebHooks.png")*
+- *![`Web Hooks`](/Languages/Php/Laravel/ContactsApp/Docs/Images/WebHooks.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/WebHooks.png")*
 
 ---
 
 ## **Paso 1: Ir a Webhooks en el Dashboard de Stripe**
 
 - **Visita:**
-*[https://dashboard.stripe.com/test/webhooks](https://dashboard.stripe.com/test/webhooks "https://dashboard.stripe.com/test/webhooks")*
+*[https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/workbench/webhooks](https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/workbench/webhooks "https://dashboard.stripe.com/acct_1RcGuNLBPnpoQHwS/test/workbench/webhooks")*
 
 - *Ahí puedes ver todos los Webhooks configurados.*
 - *Pero en desarrollo local usaremos Stripe CLI para probarlo.*
 
 - **Referencia visual:**
 
-- *![`Configuration Oyente Local`](/Docs/Images/ConfigurationOyenteLocal.png "/Docs/Images/ConfigurationOyenteLocal.png")*
+- *![`Configuration Oyente Local`](/Languages/Php/Laravel/ContactsApp/Docs/Images/ConfigurationOyenteLocal.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/ConfigurationOyenteLocal.png")*
 
 ---
 
@@ -453,7 +475,7 @@ Please note: this key will expire after 90 days, at which point you'll need to r
 ```
 
 - **Referencia visual:**
-*![`Confirm Auth`](/Docs/Images/ConfirmAuth.png "/Docs/Images/ConfirmAuth.png")*
+*![`Confirm Auth`](/Languages/Php/Laravel/ContactsApp/Docs/Images/ConfirmAuth.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/ConfirmAuth.png")*
 
 | **Parte**                                                                                            | **Explicación completa**                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -554,10 +576,10 @@ POST  stripe/webhook  ..........  cashier.webhook › Laravel\Cashier\WebhookCon
 - *Stripe muestra una interfaz para que el usuario cancele su suscripción directamente desde el Billing Portal.*
 
 - *Imagen antes de cancelar:*
-  *![`Cancel Subscription`](/Docs/Images/CancelSubscription.png "/Docs/Images/CancelSubscription.png")*
+  *![`Cancel Subscription`](/Languages/Php/Laravel/ContactsApp/Docs/Images/CancelSubscription.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/CancelSubscription.png")*
 
 - *Imagen después de cancelar:*
-  *![`Subscription Has Been Canceled`](/Docs/Images/SubscriptionHasBeenCanceled.png "/Docs/Images/SubscriptionHasBeenCanceled.png")*
+  *![`Subscription Has Been Canceled`](/Languages/Php/Laravel/ContactsApp/Docs/Images/SubscriptionHasBeenCanceled.png "/Languages/Php/Laravel/ContactsApp/Docs/Images/SubscriptionHasBeenCanceled.png")*
 
 ---
 
