@@ -1,0 +1,16 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me
+
+# Excluimos la directorio target que contiene los ficheros de construcción.
+target/
+
+# Excluimos el Dockerfile y ficheros relacionados.
+Dockerfile*
+
+# Excluimos la directorio .git y ficheros de configuración de git.
+.git*
+
+# Excluimos ficheros comprimidos para evitar incluirlos en la imagen.
+*.zip
