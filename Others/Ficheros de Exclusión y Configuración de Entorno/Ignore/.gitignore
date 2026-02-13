@@ -1,0 +1,153 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me
+
+# Ignorar ficheros generados por compilación de Python (ficheros byte-compilados y optimizados)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar extensiones C compiladas
+*.so
+
+# Ignorar ficheros y directorios relacionados con distribución y empaquetado
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ignorar ficheros generados por PyInstaller (usado para construir ejecutables)
+*.manifest
+*.spec
+
+# Ignorar logs de instalación de paquetes
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar reportes de pruebas unitarias y cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Ignorar ficheros de traducción generados
+*.mo
+*.pot
+
+# Ignorar ficheros de configuración de Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Ignorar ficheros de configuración de Flask
+instance/
+.webassets-cache
+
+# Ignorar ficheros de configuración de Scrapy
+.scrapy
+
+# Ignorar ficheros generados por la documentación Sphinx
+docs/_build/
+
+# Ignorar ficheros de PyBuilder (una herramienta de construcción)
+.pybuilder/
+target/
+
+# Ignorar checkpoints de Jupyter Notebook
+.ipynb_checkpoints
+
+# Ignorar configuración por defecto de IPython
+profile_default/
+ipython_config.py
+
+# Ignorar ficheros de configuración de pyenv (entornos Python gestionados por pyenv)
+.python-version
+
+# Ignorar ficheros de configuración de pipenv y Poetry, que son administradores de dependencias
+# Aunque normalmente es recomendable incluir Pipfile.lock y poetry.lock para asegurar la reproducibilidad.
+#Pipfile.lock
+#poetry.lock
+
+# Ignorar ficheros de configuración de pdm (otro administrador de dependencias)
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# Ignorar los paquetes de PEP 582, usados por algunas herramientas
+__pypackages__/
+
+# Ignorar ficheros generados por Celery, un gestor de tareas distribuidas
+celerybeat-schedule
+celerybeat.pid
+
+# Ignorar ficheros parseados por SageMath
+*.sage.py
+
+# Ignorar entornos virtuales y variables de entorno
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignorar configuraciones específicas de Spyder (IDE de Python)
+.spyderproject
+.spyproject
+
+# Ignorar configuraciones específicas de Rope (herramienta de refactorización en Python)
+.ropeproject
+
+# Ignorar ficheros generados por la documentación de mkdocs
+/site
+
+# Ignorar cachés generadas por mypy (un chequeador de tipos para Python)
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ignorar ficheros generados por Pyre (otro chequeador de tipos)
+.pyre/
+
+# Ignorar ficheros de análisis estático de pytype
+.pytype/
+
+# Ignorar símbolos de depuración generados por Cython
+cython_debug/
+
+# Ignorar configuraciones y ficheros generados por PyCharm (IDE)
+# Si deseas ignorar la configuración completa de PyCharm, descomenta la siguiente línea:
+#.idea/
+
+# Ignorar entornos virtuales y módulos Node.js
+.venv/
+node_modules/
+
+# Ignorar la caché de Pnpm (gestor de paquetes de Node.js)
+.pnpm-store/

@@ -1,0 +1,137 @@
+{
+  "workbench.productIconTheme": "fluent-icons",
+  "symbols.hidesExplorerArrows": false,
+  "editor.fontFamily": "'Cascadia Code NF', 'CaskaydiaCove Nerd Font Mono', 'Cascadia Mono NF','GeistMono Nerd Font Mono' , 'ZedMono Nerd Font Mono', 'VictorMono Nerd Font Mono', 'UbuntuSansMono Nerd Font Mono', 'UbuntuMono Nerd Font Mono','Ubuntu Nerd Font','Tinos Nerd Font', 'Terminess Nerd Font Mono','Symbols Nerd Font Mono', 'SpaceMono Nerd Font Mono','Source Code Pro Nerd Font Mono','ShureTechMono Nerd Font Mono','RobotoMono Nerd Font Mono','RecMonoSmCasual Nerd Font Mono','ProggyClean Nerd Font Mono','ProFont IIx Nerd Font Mono','OverpassM Nerd Font Mono','OpenDyslexicM Nerd Font Mono','NotoSansM Nerd Font Mono','M+CodeLat60 Nerd Font Mono','Mononoki Nerd Font Mono','Monoid Nerd Font Mono','Monofur Nerd Font Mono','Monaspace Argon', 'Monaspace Radon', 'Monaspace Neon', 'Monaspace Xenon', 'Monaspace Krypton', 'Monaspace Boron', 'MesloLGL Nerd Font Mono','MartianMono Nerd Font Mono','Lilex Nerd Font Mono','Liberation Mono','Lekton Nerd Font Mono','JetBrainsMono Nerd Font Mono','IosevkaTermSlab Nerd Font Mono','IosevkaTerm Nerd Font Mono','Iosevka Nerd Font Mono','IntoneMono Nerd Font Mono','Inconsolata LGC Nerd Font Mono','InconsolataGo Nerd Font Mono','Inconsolata Nerd Font Mono','iMWritingMono Nerd Font','Hurmit Nerd Font Mono', 'Hasklug Nerd Font Mono', 'Hack Nerd Font Mono','GohuFont 14 Nerd Font Mono','Go Mono for Powerline' ,'GeistMono Nerd Font Mono','FiraCode Nerd Font Mono SemBd', 'FantasqueSansM Nerd Font Mono','EnvyCodeR Nerd Font Mono', 'DroidSansM Nerd Font Mono','DejaVu Sans Mono','DaddyTimeMono Nerd Font', 'D2CodingLigature Nerd Font Mono', 'Cousine Nerd Font Mono', 'BitstromWera Nerd Font Mono', 'ComicShannsMono Nerd Font','Agave Nerd Font Mono', '0xProto Nerd Font Mono', 'BigBlueTerm437 Nerd Font Mono', 'AurulentSansM Nerd Font Mono', 'Anonymous Pro for Powerline', 'IBM 3270 Semi\\-Condensed', 'Arimo Nerd Font', 'HeavyData Nerd Font Propo', '3270 Nerd Font Mono'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.lineHeight": 38,
+  "editor.guides.indentation": true,
+  "editor.scrollbar.horizontal": "auto",
+  "editor.mouseWheelZoom": true,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "expand",
+  "terminal.integrated.cursorBlinking": true,
+  "advancedNewFile.exclude": {},
+  "workbench.startupEditor": "newUntitledFile",
+  "files.defaultLanguage": "python",
+  "editor.linkedEditing": true,
+  "html.format.wrapAttributes": "force",
+  "css.styleSheets": [
+    "https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "markdown-preview-github-styles.lightTheme": "dark",
+  "markdown-preview-github-styles.colorTheme": "dark",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/CVS": false,
+    "**/.DS_Store": false,
+    "**/node_modules": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[javascript]": {
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[php]": {
+  },
+  "markdown-preview-enhanced.revealjsTheme": "moon.css",
+  "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
+  "editor.guides.bracketPairs": true,
+  "editor.language.colorizedBracketPairs": [],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.autoClosingBrackets": "languageDefined",
+  "oneDarkPro.bold": true,
+  "oneDarkPro.italic": true,
+  "oneDarkPro.vivid": true,
+  "oneDarkPro.markdownStyle": true,
+  "workbench.editor.languageDetection": true,
+  "telemetry.telemetryLevel": "off",
+  "diffEditor.renderIndicators": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.side": "left",
+  "workbench.statusBar.visible": true,
+  "window.customTitleBarVisibility": "never",
+  "workbench.sideBar.location": "right",
+  "breadcrumbs.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "explorer.openEditors.visible": 10,
+  "workbench.editor.showIcons": true,
+  "workbench.editor.tabActionCloseVisibility": true,
+  "workbench.editor.showTabs": "multiple",
+  "editor.lineNumbers": "on",
+  "editor.glyphMargin": true,
+  "editor.folding": true,
+  "window.menuBarVisibility": "classic",
+  "workbench.activityBar.location": "default",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.lineHeight": 1.5,
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "aaron-bond.better-comments",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.formatOnSave": true,
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.renderControlCharacters": false,
+  "editor.guides.bracketPairsHorizontal": true,
+  "[c]": {
+  },
+  "[lua]": {
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiCursorLimit": 10000,
+  "editor.multiCursorPaste": "spread",
+  "[csharp]": {
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "[java]": {
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyleInactive": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "eslint.format.enable": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/src/**": "${filename}.${extname} 🎶",
+    "**/lib/**": "${filename}.${extname} 🎸",
+    "**/config/**": "${filename}.${extname} 𝄞"
+  },
+  "workbench.iconTheme": "symbols",
+  "editor.fontVariations": true
+  "editor.fontWeight": "bold"
+  "terminal.integrated.fontWeight": "bold"
+  "terminal.integrated.fontWeightBold": "bold",
+  "errorLens.fontStyleItalic": true
+  "errorLens.fontWeight": "bold",
+  "terminal.integrated.fontSize": 20,
+  "[cpp]": {
+  },
+  "debugpy.debugJustMyCode": false,
+  "python.defaultInterpreterPath": "/bin/python3.12",
+  "workbench.colorTheme": "Bluloco Dark Italic",
+  "glassit-linux.opacity": 90
+}

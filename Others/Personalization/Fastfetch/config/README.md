@@ -1,0 +1,400 @@
+<!-- Autor: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- GitLab: https://gitlab.com/D4nitrix13 -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
+
+# ***Configuración Completa de Fastfetch***
+
+*Fastfetch es una herramienta de línea de comandos para mostrar información sobre tu sistema, como la distribución de Linux, el entorno de escritorio, el kernel y otros detalles relevantes, de una manera rápida y visualmente atractiva.*
+
+1. **Fichero de Configuración Principal:**
+   - *La configuración de Fastfetch se encuentra en el fichero `~/.config/fastfetch/config.jsonc`. Este fichero controla la apariencia y el contenido de la información que se muestra.*
+
+```json
+{
+  "logo": {
+    "source": "~/.config/fastfetch/pngs/Ubuntu.png",
+    "width": 18
+  },
+  "display": {
+    "separator": " 󰅂 "
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[38;5;32m   \u001b[0m 󰅂 \u001b[38;5;32m Tecnology      󰌛              "
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[1;36m┌────────────────────────────────────────────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "os",
+      "key": "   OS",
+      "keyColor": "green"
+    },
+    {
+      "type": "kernel",
+      "key": "   Kernel",
+      "keyColor": "green"
+    },
+    {
+      "type": "packages",
+      "key": "   Packages",
+      "keyColor": "green"
+    },
+    {
+      "type": "display",
+      "key": "  󰦉 Display",
+      "keyColor": "green"
+    },
+    {
+      "type": "wm",
+      "key": "   Window Manager",
+      "keyColor": "green"
+    },
+    {
+      "type": "terminal",
+      "key": "   Terminal",
+      "keyColor": "green"
+    },
+    {
+      "type": "host",
+      "key": "   Host",
+      "keyColor": "green"
+    },
+    {
+      "type": "bios",
+      "key": "   BIOS",
+      "keyColor": "green"
+    },
+    {
+      "type": "bootmgr",
+      "key": "   Boot Manager",
+      "keyColor": "green"
+    },
+    {
+      "type": "board",
+      "key": "   Board",
+      "keyColor": "green"
+    },
+    {
+      "type": "chassis",
+      "key": "  󰪫 Chassis",
+      "keyColor": "green"
+    },
+    {
+      "type": "initsystem",
+      "key": "   Initsystem",
+      "keyColor": "green"
+    },
+    {
+      "type": "uptime",
+      "key": "   Uptime",
+      "keyColor": "green"
+    },
+    {
+      "type": "loadavg",
+      "key": "  󰝲 Loadavg",
+      "keyColor": "green"
+    },
+    {
+      "type": "processes",
+      "key": "   Processes",
+      "keyColor": "green"
+    },
+    {
+      "type": "shell",
+      "key": "   Shell",
+      "keyColor": "green"
+    },
+    {
+      "type": "editor",
+      "key": "   Editor",
+      "keyColor": "green"
+    },
+    {
+      "type": "brightness",
+      "key": "  󰃝 Brightness",
+      "keyColor": "green"
+    },
+    {
+      "type": "monitor",
+      "key": "  󰍺 Monitor {}",
+      "keyColor": "green"
+    },
+    {
+      "type": "lm",
+      "key": "  󱄄 LM",
+      "keyColor": "green"
+    },
+    {
+      "type": "de",
+      "key": "   DE",
+      "keyColor": "green"
+    },
+    {
+      "type": "wmtheme",
+      "key": "  󰔎 WM Theme",
+      "keyColor": "green"
+    },
+    {
+      "type": "theme",
+      "key": "   Theme",
+      "keyColor": "green"
+    },
+    {
+      "type": "icons",
+      "key": "   Icons",
+      "keyColor": "green"
+    },
+    {
+      "type": "font",
+      "key": "   Font",
+      "keyColor": "green"
+    },
+    {
+      "type": "cursor",
+      "key": "  󰇀 Cursor",
+      "keyColor": "green"
+    },
+    {
+      "type": "wallpaper",
+      "key": "  󰸉 Wallpaper",
+      "keyColor": "green"
+    },
+    {
+      "type": "terminalfont",
+      "key": "  󰛖 Terminal Font",
+      "keyColor": "green"
+    },
+    {
+      "type": "terminalsize",
+      "key": "   Terminal Size",
+      "keyColor": "green"
+    },
+    {
+      "type": "terminaltheme",
+      "key": "   Terminal Theme",
+      "keyColor": "green"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[1;36m└────────────────────────────────────────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "title",
+      "key": "  ",
+      "keyColor": "green"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[1;36m┌────────────────────────────────────────────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "cpu",
+      "keyColor": "green",
+      "key": "  󰻠 CPU",
+      "showPeCoreCount": true,
+      "temp": true
+    },
+    {
+      "type": "cpucache",
+      "keyColor": "green",
+      "key": "   CPU Cache {}",
+      "showPeCoreCount": true,
+      "temp": true
+    },
+    {
+      "type": "cpuusage",
+      "keyColor": "green",
+      "key": "  󱕷 CPU Usage",
+      "showPeCoreCount": true,
+      "temp": true
+    },
+    {
+      "type": "gpu",
+      "keyColor": "green",
+      "key": "   GPU {}",
+      "driverSpecific": true,
+      "temp": true
+    },
+    {
+      "type": "gpu",
+      "format": "{3}",
+      "key": "   GPU Driver",
+      "keyColor": "green"
+    },
+    {
+      "type": "memory",
+      "key": "  󰍛 Memory",
+      "keyColor": "green"
+    },
+    {
+      "type": "physicalmemory",
+      "key": "   Physical Memory {}",
+      "keyColor": "green"
+    },
+    {
+      "type": "swap",
+      "key": "  󰯍 Swap {}",
+      "keyColor": "green"
+    },
+    {
+      "type": "disk",
+      "key": "   Disk {}",
+      "keyColor": "green"
+    },
+    {
+      "type": "battery",
+      "key": "   Battery {}",
+      "keyColor": "green"
+    },
+    {
+      "type": "poweradapter",
+      "key": "   Poweradapter {}",
+      "keyColor": "green"
+    },
+    {
+      "type": "player",
+      "key": "   Player {}",
+      "keyColor": "green"
+    },
+    {
+      "type": "media",
+      "key": "   Media {}",
+      "keyColor": "green"
+    },
+    {
+      "type": "publicip",
+      "key": "   Public IP",
+      "keyColor": "green"
+    },
+    {
+      "type": "localip",
+      "key": "  󰩠 IPv4",
+      "keyColor": "green",
+      "showingIpv4": true,
+      "showIpv6": false,
+      "showMac": false
+    },
+    {
+      "type": "localip",
+      "key": "  󰲐 IPv6",
+      "showIpv6": true,
+      "showIpv4": false,
+      "keyColor": "green",
+      "showMac": false
+    },
+    {
+      "type": "localip",
+      "key": "  󰒍 Mac",
+      "keyColor": "green",
+      "showingIpv4": false,
+      "showIpv6": false,
+      "showMac": true
+    },
+    {
+      "type": "dns",
+      "key": "  󰮌 Dns",
+      "keyColor": "green"
+    },
+    {
+      "type": "wifi",
+      "key": "   Wifi",
+      "keyColor": "green"
+    },
+    {
+      "type": "datetime",
+      "key": "  󰔠 Datetime",
+      "keyColor": "green"
+    },
+    {
+      "type": "locale",
+      "key": "   Locale",
+      "keyColor": "green"
+    },
+    {
+      "type": "vulkan",
+      "key": "   Vulkan",
+      "keyColor": "green"
+    },
+    {
+      "type": "opengl",
+      "key": "   OpenGL",
+      "keyColor": "green"
+    },
+    {
+      "type": "opencl",
+      "key": "   OpenCL",
+      "keyColor": "green"
+    },
+    {
+      "type": "users",
+      "key": "   Users",
+      "keyColor": "green"
+    },
+    {
+      "type": "bluetooth",
+      "key": "   Bluetooth",
+      "keyColor": "green"
+    },
+    {
+      "type": "sound",
+      "key": "  󰗅 Sound",
+      "keyColor": "green"
+    },
+    {
+      "type": "camera",
+      "key": "   Camera",
+      "keyColor": "green"
+    },
+    {
+      "type": "gamepad",
+      "key": "   Gamepad",
+      "keyColor": "green"
+    },
+    {
+      "type": "weather",
+      "key": "  󰖐 weather",
+      "keyColor": "green",
+      "timeout": 1000
+    },
+    {
+      "type": "netio",
+      "key": "  󰣸 Netio",
+      "keyColor": "green",
+      "timeout": 1000
+    },
+    {
+      "type": "diskio",
+      "key": "  󰋊 Diskio",
+      "keyColor": "green",
+      "timeout": 1000
+    },
+    {
+      "type": "physicaldisk",
+      "key": "   Physical Disk {}",
+      "keyColor": "green",
+      "temp": true
+    },
+    {
+      "type": "version",
+      "key": "   Version",
+      "keyColor": "green"
+    },
+    {
+      "type": "colors",
+      "key": "  󰌁 Colors",
+      "keyColor": "green",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[1;36m└────────────────────────────────────────────────────────────────────────────────────────┘"
+    }
+  ]
+}
+```

@@ -1,0 +1,37 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me
+
+# Dockerfiles y dockerignore
+Dockerfile*
+.dockerignore
+
+# Git y editores
+.gitignore
+.editorconfig
+.git/
+
+# Prettier
+.prettierignore
+.prettierrc
+
+# Pylint y mypy
+.pylintrc
+mypy.ini
+
+# VSCode y otras configuraciones de IDE
+.vscode
+.devcontainer
+
+# Cachés de mypy y Python
+.mypy_cache
+**/__pycache__/
+*.pyc
+
+# Otros ficheros y directorios específicos
+Docs
+Makefile
+.env.example
+eslint.config.mjs
+.pnpm-store/

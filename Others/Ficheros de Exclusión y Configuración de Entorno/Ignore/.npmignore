@@ -1,0 +1,70 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me
+
+# Ignorar directorios de desarrollo
+.git/
+node_modules/
+dist/
+build/
+temp/
+coverage/
+.vscode/
+.idea/
+.env
+*.log
+Docs/
+
+# Ignorar configuraciones específicas de administración de dependencias
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Ignorar configuraciones de ESLint y PNPM cache
+eslint.config.mjs
+.pnpm-store/
+
+# Ignorar ficheros de pruebas y cobertura
+*.test.*
+*.spec.*
+__tests__/
+__mocks__/
+coverage/
+
+# Ignorar documentación innecesaria
+docs/
+*.md
+*.markdown
+
+# Ignorar configuraciones de CI/CD
+.github/
+.gitlab-ci.yml
+.circleci/
+Dockerfile*
+
+# Ignorar ficheros de configuración locales
+*.local
+.env.local
+
+# Ignorar ficheros innecesarios del sistema operativo
+*.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Ignorar configuraciones del editor y ficheros temporales
+*.swp
+*.swo
+*.bak
+*~ 
+
+# Ignorar ficheros de configuración para contenedores de desarrollo
+.devcontainer/
+docker-compose.yml
+docker-compose.override.yml
+
+# Ignorar ficheros de lock y configuración de cache para la instalación
+.npmrc
+.nvmrc
+.npm_cache/
+.npmignore
