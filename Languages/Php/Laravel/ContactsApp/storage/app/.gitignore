@@ -1,0 +1,7 @@
+*
+!.gitignore
+public/
+!public/
+!public/profiles/
+!public/profiles/default.png
+!public/profiles/.gitignore

@@ -1,0 +1,14 @@
+{
+  "nombre": "Daniel",
+  "apellido": "Perez",
+  "edad": 18,
+  "lenguages": [
+    "Python",
+    "C",
+    "TypeScript"
+  ],
+  "website": "https://daniel.dev",
+  "Autor": "Daniel Benjamin Perez Morales",
+  "GitHub": "https://github.com/D4nitrix13",
+  "Correo electrónico": "danielperezdev@proton.me"
+}

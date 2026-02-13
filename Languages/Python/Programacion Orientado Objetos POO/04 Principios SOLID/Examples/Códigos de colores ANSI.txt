@@ -1,0 +1,35 @@
+Autor: Daniel Benjamin Perez Morales
+GitHub: https://github.com/D4nitrix13
+Correo electrónico: danielperezdev@proton.me
+
+# Códigos de colores ANSI. EL formato de texto van del 0 al 9, y los códigos para los colores del texto y del fondo van del 30 al 47.
+
+\033[0m: Reset (restablece todos los atributos de formato)
+\033[1m: Bright (aumenta la intensidad del color)
+\033[2m: Dim (disminuye la intensidad del color)
+\033[3m: Italic (texto en cursiva)
+\033[4m: Underlined (texto subrayado)
+\033[7m: Reverse (invierte los colores de fondo y de texto)
+\033[8m: Hidden (texto oculto)
+
+
+Para cambiar el color del texto:
+
+\033[30m: Black (negro)
+\033[31m: Red (rojo)
+\033[32m: Green (verde)
+\033[33m: Yellow (amarillo)
+\033[34m: Blue (azul)
+\033[35m: Magenta (magenta)
+\033[36m: Cyan (cian)
+\033[37m: White (blanco)
+Para cambiar el color de fondo:
+
+\033[40m: Black (negro)
+\033[41m: Red (rojo)
+\033[42m: Green (verde)
+\033[43m: Yellow (amarillo)
+\033[44m: Blue (azul)
+\033[45m: Magenta (magenta)
+\033[46m: Cyan (cian)
+\033[47m: White (blanco)

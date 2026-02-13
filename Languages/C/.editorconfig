@@ -1,0 +1,22 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me 
+
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+# Configuración específica para ficheros Makefile
+[Makefile]
+indent_style = tab
+# Se asegura de que se usen tabulaciones en Makefile

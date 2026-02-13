@@ -1,0 +1,10 @@
+# Author: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Email: danielperezdev@proton.me
+
+# Ejemplo de cómo cargar un fichero TOML
+# Supongamos que tenemos un fichero llamado 'config.toml' con el siguiente contenido:
+[settings]
+theme = "dark"
+version = 1.0

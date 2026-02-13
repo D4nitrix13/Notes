@@ -1,0 +1,56 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me
+
+# Construction
+# docker image build --tag d4nitrix13/laravel-vite --no-cache -f "docker/Dockerfile.dev" "$(pwd)"
+# docker image build --tag d4nitrix13/laravel-vite -f "docker/Dockerfile.dev" "$(pwd)"
+# docker container run -it -p 8000:8000 --mount type=bind,src="$(pwd)",dst=/app --name app-vite d4nitrix13/laravel-vite
+# Recurso https://docs.docker.com/build/building/best-practices/
+
+
+ARG VERSION=latest
+ARG USERNAME=zeus
+ARG UID=1000
+ARG PORT=8000/tcp
+ARG WORKDIR=/app/
+ARG SIGNAL=15
+
+FROM alpine:${VERSION}
+
+ARG USERNAME
+ARG PORT
+ARG UID
+ARG WORKDIR
+ARG SIGNAL
+
+RUN /sbin/apk update && /sbin/apk upgrade && \
+    /sbin/apk add --no-cache libpq-dev php php-pdo_pgsql php-pgsql php-cli php-fpm php-opcache \
+    php-pdo php-json php-phar php-mbstring php-xml php-xmlwriter php-dom php-session php-curl \
+    php-ctype php-zip php-bcmath php-tokenizer php-iconv php-fileinfo composer tini npm curl && \
+    adduser -Du ${UID} "${USERNAME}"
+
+# --chown=zeus:zeus -> --chown=1000:1000
+WORKDIR ${WORKDIR}
+
+# SIGTERM -> 15
+STOPSIGNAL ${SIGNAL}
+
+# Install Dependencies Development
+RUN apk add lsd bat git php-pdo_sqlite
+
+# zeus -> 1000:1000
+USER 1000:1000
+
+EXPOSE ${PORT}
+LABEL Stage="Development"
+LABEL Maintainer="Daniel Benjamin Perez Morales"
+LABEL Email="danielperezdev@proton.me"
+LABEL Github="https://github.com/D4nitrix13"
+LABEL Gitlab="https://gitlab.com/D4nitrix13"
+
+ENTRYPOINT [ "tini", "--" ]
+# /contacts-application/scripts/runApp.sh
+CMD [ "/bin/sh" ]
+

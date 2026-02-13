@@ -1,0 +1,99 @@
+{
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "bracketSameLine": false,
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "useTabs": false,
+    "endOfLine": "lf",
+    "embeddedLanguageFormatting": "auto",
+    "overrides": [
+        {
+            "files": "*.html",
+            "options": {
+                "printWidth": 120,
+                "singleQuote": false,
+                "bracketSameLine": true,
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.css",
+            "options": {
+                "printWidth": 120,
+                "singleQuote": false,
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.js",
+            "options": {
+                "parser": "babel",
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.ts",
+            "options": {
+                "parser": "typescript",
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.py",
+            "options": {
+                "parser": "python",
+                "printWidth": 88,
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "*.php",
+            "options": {
+                "parser": "php",
+                "phpVersion": "7.4",
+                "singleQuote": true,
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "*.lua",
+            "options": {
+                "parser": "lua",
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.rs",
+            "options": {
+                "parser": "rust",
+                "printWidth": 100,
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "*.c",
+            "options": {
+                "parser": "c",
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "*.yaml",
+            "options": {
+                "tabWidth": 2,
+                "printWidth": 40,
+                "singleQuote": true
+            }
+        }
+    ]
+}

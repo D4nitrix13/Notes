@@ -1,0 +1,27 @@
+# Files Ignored
+.*
+.env.*
+/storage/*.key
+fileTemporal.md
+.phpunit.result.cache
+stripe
+/public/hot
+/public/storage
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+Dockerfile
+docker-compose.yaml
+
+# Directory Ignored
+Docs/
+node_modules/
+vendor/
+.idea/
+.vscode/
+secrets/
+
+# Not Files Ignored
+!.env
+!.styleci.yml

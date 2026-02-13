@@ -1,0 +1,32 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Guia Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/D4nitrix13/Node-JS.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node"
+  ],
+  "author": "Daniel Benjamin Perez Morales - D4nitrix13",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/D4nitrix13/Node-JS/issues"
+  },
+  "homepage": "https://github.com/D4nitrix13/Node-JS#readme",
+  "dependencies": {
+    "picocolors": "1.0.1"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}

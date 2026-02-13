@@ -1,0 +1,18 @@
+# Autor: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Correo electrónico: danielperezdev@proton.me
+
+# Linux o Mac
+# si no tenemos instalado pip sudo apt-get install python3-pip
+# pip3 install textblob
+# python3 -m pip install textblob
+
+# Windows
+# pip install textblob
+# py -m pip install textblob
+
+# pip3 install pwn
+# pip3 install termcolor
+# type: ignore[import-untyped]
+# pip install pwntools

@@ -1,0 +1,45 @@
+# Author: Daniel Benjamin Perez Morales
+# GitHub: https://github.com/D4nitrix13
+# GitLab: https://gitlab.com/D4nitrix13
+# Email: danielperezdev@proton.me
+
+# Include the main documentation files.
+include README.*
+
+# Include the project's license file.
+include LICENSE*
+
+# Include the following documents related to conduct and security.
+include CODE_OF_CONDUCT.md
+include CODIGO_CONDUCTA.md
+include SECURITY.*
+include pycrypy.spec
+
+# Include the project's dependency installation requirements file.
+include requirements.txt
+
+# Include the contribution guide to assist collaborators.
+include CONTRIBUCION.md
+
+# Include all data files in the 'src' and 'dist' directories.
+recursive-include src *
+recursive-include dist *
+
+# Exclude all '.mypy_cache' directories at any level of the directory tree.
+global-exclude **/.mypy_cache *
+
+# Exclude all '__pycache__' directories at any level of the directory tree.
+global-exclude **/__pycache__ *
+
+# Exclude files in the '.git' directory to avoid including version control information.
+recursive-exclude .git *
+
+# Exclude all files in the 'Themes' directory to focus on relevant files.
+recursive-exclude Themes *
+
+# Exclude the following configuration and control files.
+exclude .gitignore
+exclude .gitattributes
+exclude .editorconfig
+exclude *.asc
+

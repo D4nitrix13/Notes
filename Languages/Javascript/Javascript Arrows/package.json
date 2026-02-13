@@ -1,0 +1,24 @@
+{
+    "name": "javascript",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "Code Tips",
+        "Map",
+        "Filter",
+        "Reduce",
+        "Arrows Functions"
+    ],
+    "author": "Daniel Benjamin Perez Morales - D4nitrix13Dev",
+    "license": "MIT",
+    "description": "Tips de Programacion",
+    "devDependencies": {
+        "standard": "^17.1.0"
+    },
+    "eslintConfig": {
+        "extends": "./node_modules/standard/eslintrc.json"
+    }
+}

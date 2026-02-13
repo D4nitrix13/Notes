@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Fri, 13 Dec 2024 16:52:09 GMT
+Server: Apache/2.4.58 (Unix) OpenSSL/1.1.1w PHP/8.2.12 mod_perl/2.0.12 Perl/v5.34.1
+Last-Modified: Thu, 12 Dec 2024 16:34:35 GMT
+ETag: "23-629154a27d17b"
+Accept-Ranges: bytes
+Content-Length: 35
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/css

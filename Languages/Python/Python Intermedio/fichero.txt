@@ -1,0 +1,11 @@
+"""
+Autor: Daniel Benjamin Perez Morales
+GitHub: https://github.com/D4nitrix13
+Correo electrónico: danielperezdev@proton.me 
+"""
+
+Mi nombre es Daniel
+Mi apellido es Perez
+18 años
+Y mi lenguaje preferido es Python
+Aunque también me gusta JavaScript

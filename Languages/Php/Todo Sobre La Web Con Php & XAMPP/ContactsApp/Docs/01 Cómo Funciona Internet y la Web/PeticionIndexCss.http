@@ -1,0 +1,12 @@
+GET /contacts-app/static/css/index.css HTTP/1.1
+Host: 172.17.0.2
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://172.17.0.2/contacts-app/index.html
+Sec-GPC: 1
+Priority: u=2
+Pragma: no-cache
+Cache-Control: no-cache
